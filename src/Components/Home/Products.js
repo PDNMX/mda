@@ -5,6 +5,9 @@ import ProductCard from "./ProductCard";
 import products from "./../../products.json";
 
 const styles = theme => ({
+    root: {
+        minHeight: 700
+    },
     box: {
         display: "flex",
         flexWrap: "wrap",
@@ -15,7 +18,7 @@ const styles = theme => ({
 const DrawerContents = props => {
     const {classes} = props;
 
-    return <div>
+    return <div className={classes.root}>
         <NavigationButtons/>
 
         <Box className={classes.box}>

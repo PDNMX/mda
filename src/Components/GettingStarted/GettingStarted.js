@@ -2,10 +2,10 @@ import React from "react";
 import {Typography, Box, withStyles, Grid} from "@material-ui/core";
 const styles = theme => ({
     root: {
-        paddingTop: theme.spacing(1)
+        padding: theme.spacing(1),
+        paddingTop: theme.spacing(3)
     },
     videoBox: {
-        padding: theme.spacing(1),
         paddingTop: theme.spacing(2),
         maxWidth: 800
     },

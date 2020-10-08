@@ -26,6 +26,7 @@ import Filter3 from "@material-ui/icons/Filter3";
 import Filter6 from "@material-ui/icons/Filter6";
 import Apps from "@material-ui/icons/Apps";
 import PDN from "../../Assets/PDN.png";
+import Footer from "./Footer";
 
 const drawerWidth = 240;
 
@@ -51,6 +52,7 @@ const useStyles = makeStyles((theme) => ({
     toolbar2:{
         background: '#34b3eb',
     },
+    /*
     footer: {
         [theme.breakpoints.up('sm')]: {
             width: `calc(100% - ${drawerWidth}px)`,
@@ -62,7 +64,7 @@ const useStyles = makeStyles((theme) => ({
     footerToolbar1:{
         background: "#666666",
         minHeight: 150
-    },
+    },*/
     menuButton: {
         marginRight: theme.spacing(2),
         [theme.breakpoints.up('sm')]: {
@@ -76,8 +78,8 @@ const useStyles = makeStyles((theme) => ({
     },
     content: {
         flexGrow: 1,
-        paddingTop: theme.spacing(10), //contents
-        padding: theme.spacing(3),
+        paddingTop: theme.spacing(10), //appbar
+        //padding: theme.spacing(3),
     },
     logoMDA:{
         paddingTop: theme.spacing(2),
@@ -220,15 +222,18 @@ function ResponsiveDrawer(props) {
             <main className={classes.content}>
                 <div className={classes.toolbar} />
                 <DrawerContents option={option}/>
+                <Footer/>
             </main>
 
             {/* Footer */}
 
-            <AppBar position="fixed" className={classes.footer}>
-                <Toolbar className={classes.footerToolbar1}>
-                    <Typography>footer</Typography>
-                </Toolbar>
-            </AppBar>
+            {/*<Hidden mdDown implementation="css">
+                <AppBar position="fixed" className={classes.footer}>
+                    <Toolbar className={classes.footerToolbar1}>
+                        <Footer/>
+                    </Toolbar>
+                </AppBar>
+            </Hidden>*/}
         </div>
     );
 }
