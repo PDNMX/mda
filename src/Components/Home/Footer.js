@@ -26,7 +26,6 @@ const styles = theme => ({
         paddingBottom: theme.spacing(5)
     },
     logoPDN: {
-        paddingTop: 15,
         maxWidth: 85
     },
     logoSESNA: {
