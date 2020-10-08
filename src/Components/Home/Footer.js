@@ -171,7 +171,7 @@ const Footer = props => {
                                 ¿Qué es la PDN?
                             </Link>
 
-                            <Link to="https://www.plataformadigitalnacional.org/terminos"
+                            <Link href="https://www.plataformadigitalnacional.org/terminos"
                                   underline="none"
                                   className={classes.link}
                             >
