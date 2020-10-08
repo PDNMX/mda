@@ -33,7 +33,7 @@ export default function ProductCard(props) {
                 />
                 <CardContent>
                     <Typography color="textSecondary">
-                        {product.institution}
+                        {product.maintainer}
                     </Typography>
                     <Typography gutterBottom variant="h6" component="h2">
                         {product.name}

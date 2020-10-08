@@ -2,7 +2,7 @@
   {
     "id": "1",
     "resourceType": "api",
-    "institution": "Durango",
+    "maintainer": "Durango",
     "name": "API de Sancionados",
     "systems": [3],
     "description": "",
@@ -12,7 +12,7 @@
   {
     "id": "2",
     "resourceType": "doc",
-    "institution": "Jalisco",
+    "maintainer": "Jalisco",
     "name": "Primeros Pasos",
     "systems": [1,2,3],
     "description": "",
@@ -22,7 +22,7 @@
   {
     "id": "3",
     "resourceType": "api",
-    "institution": "Ciudad de México",
+    "maintainer": "Ciudad de México",
     "name": "Contrataciones públicas",
     "systems": [6],
     "description": "",
@@ -32,7 +32,7 @@
   {
     "id": "4",
     "resourceType": "sys",
-    "institution": "INAI",
+    "maintainer": "INAI",
     "name": "Contrataciones públicas",
     "systems": [6],
     "description": "",
@@ -42,7 +42,7 @@
   {
     "id": "5",
     "resourceType": "sys",
-    "institution": "SHCP",
+    "maintainer": "SHCP",
     "name": "Contrataciones públicas",
     "systems": [6],
     "description": "",
@@ -52,7 +52,7 @@
   {
     "id": "6",
     "resourceType": "sys",
-    "institution": "Transparencia Mexicana",
+    "maintainer": "Transparencia Mexicana",
     "name": "Contrataciones públicas",
     "systems": [6],
     "description": "",
