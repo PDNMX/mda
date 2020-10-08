@@ -191,23 +191,26 @@ const Footer = props => {
                     />
                 </div>
                 <div align="center">
-                    <a href={"https://www.facebook.com/SESNAOficial/"}
-                       target={"_blank"} rel="noopener noreferrer"
-                       className={classes.redSocial}
+                    <Link href="https://www.facebook.com/SESNAOficial/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={classes.redSocial}
                     >
                         <Facebook/>
-                    </a>
-                    <a href={"https://twitter.com/SESNAOficial"}
-                       target={"_blank" }
-                       className={classes.redSocial} rel="noopener noreferrer"
+                    </Link>
+                    <Link href="https://twitter.com/SESNAOficial"
+                          target="_blank"
+                          className={classes.redSocial}
+                          rel="noopener noreferrer"
                     >
                         <Twitter/>
-                    </a>
-                    <a href={"https://www.youtube.com/channel/UCRUpiHth_WRkNo2sBmZIyfQ/"}
-                       target={"_blank" } rel="noopener noreferrer"
-                       className={classes.redSocial}>
+                    </Link>
+                    <Link href="https://www.youtube.com/channel/UCRUpiHth_WRkNo2sBmZIyfQ/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={classes.redSocial}>
                         <YouTube/>
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div>
