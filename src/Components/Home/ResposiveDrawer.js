@@ -25,6 +25,7 @@ import Filter2 from "@material-ui/icons/Filter2";
 import Filter3 from "@material-ui/icons/Filter3";
 import Filter6 from "@material-ui/icons/Filter6";
 import Apps from "@material-ui/icons/Apps";
+import PDN from "../../Assets/PDN.png";
 
 const drawerWidth = 240;
 
@@ -81,6 +82,9 @@ const useStyles = makeStyles((theme) => ({
     logoMDA:{
         paddingTop: theme.spacing(2),
         maxWidth: 220
+    },
+    pdnLogo:{
+        maxWidth: 80
     }
 }));
 
@@ -101,7 +105,7 @@ function ResponsiveDrawer(props) {
             <img src={MDA} alt="Mercado Digital Anticorrupción" className={classes.logoMDA}/>
             <Divider />
             <List>
-                <ListItem button onClick={() => setOption(1)}>
+                <ListItem button onClick={() => setOption(1)} selected={ option === 1}>
                     <ListItemIcon>
                         <MenuBook/>
                     </ListItemIcon>
@@ -111,51 +115,42 @@ function ResponsiveDrawer(props) {
             <Divider />
             <List>
 
-                <ListItem button onClick={() => setOption(2)}>
+                <ListItem button onClick={() => setOption(2)} selected={ option === 2}>
                     <ListItemIcon>
                         <Apps />
                     </ListItemIcon>
-                    <ListItemText primary="Cualquier sistema" />
+                    <ListItemText primary="Todos los sistemas" secondary="Todas las herramientas"/>
                 </ListItem>
 
-                <ListItem button onClick={() => setOption(3)}>
+                <ListItem button onClick={() => setOption(3)} selected={ option === 3}>
                     <ListItemIcon>
                         <Filter1 />
                     </ListItemIcon>
-                    <ListItemText primary="Sistema 1" />
+                    <ListItemText primary="Sistema 1" secondary="Declaraciones"/>
                 </ListItem>
 
-                <ListItem button onClick={() => setOption(4)}>
+                <ListItem button onClick={() => setOption(4)} selected={ option === 4}>
                     <ListItemIcon>
                         <Filter2 />
                     </ListItemIcon>
-                    <ListItemText primary="Sistema 2" />
+                    <ListItemText primary="Sistema 2" secondary="S. P. en Contrataciones"/>
                 </ListItem>
 
-                <ListItem button onClick={() => setOption(5)}>
+                <ListItem button onClick={() => setOption(5)} selected={ option === 5}>
                     <ListItemIcon>
                         <Filter3 />
                     </ListItemIcon>
-                    <ListItemText primary="Sistema 3" />
+                    <ListItemText primary="Sistema 3" secondary="Sancionados" />
                 </ListItem>
 
-                <ListItem button onClick={() => setOption(6)}>
+                <ListItem button onClick={() => setOption(6)} selected={ option === 6}>
                     <ListItemIcon>
                         <Filter6 />
                     </ListItemIcon>
-                    <ListItemText primary="Sistema 6" />
+                    <ListItemText primary="Sistema 6" secondary="Contrataciones" />
                 </ListItem>
 
             </List>
-            {/*<Divider />
-            <List>
-                {['Documentos', 'Apps'].map((text, index) => (
-                    <ListItem button key={text}>
-                        <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-                        <ListItemText primary={text} />
-                    </ListItem>
-                ))}
-            </List>*/}
         </div>
     );
 
@@ -167,7 +162,8 @@ function ResponsiveDrawer(props) {
             <AppBar />
             <AppBar position="fixed" className={classes.appBar}>
                 <Toolbar className={classes.toolbar1}>
-                    <Typography>header</Typography>
+                    <div style={{flexGrow: 1}}/>
+                    <img src={PDN} alt="PDN" className={classes.pdnLogo}/>
                 </Toolbar>
                 <Toolbar className={classes.toolbar2}>
                     <IconButton
@@ -225,6 +221,7 @@ function ResponsiveDrawer(props) {
                 <div className={classes.toolbar} />
                 <DrawerContents option={option}/>
             </main>
+
             {/* Footer */}
 
             <AppBar position="fixed" className={classes.footer}>

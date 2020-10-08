@@ -8,7 +8,7 @@ import ShoppingCart from "@material-ui/icons/ShoppingBasket";
 const styles = theme => ({
     root:{
       paddingTop: theme.spacing(2),
-      paddingBottom: theme.spacing(3)
+      paddingBottom: theme.spacing(2)
     },
     box: {
         display: "flex",

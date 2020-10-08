@@ -21,7 +21,7 @@ const DrawerContents = props => {
         <Box className={classes.box}>
             {
                 products.map((p, i) => {
-                    return <Box key={i} m={1}>
+                    return <Box key={i} m={2}>
                         <ProductCard product={p} key={i}/>
                     </Box>
                 })
