@@ -101,6 +101,19 @@ function ResponsiveDrawer(props) {
     };
 
     const [option, setOption] = React.useState(1);
+    const [filters, setFilters] = React.useState({
+        system: 0,
+        resourceType: "all"
+    });
+
+    const handleDrawerClick = (system, option) => {
+        setOption(option);
+        setFilters({
+            ...filters,
+            system: system
+        })
+
+    }
 
     const drawer = (
         <div>
@@ -117,35 +130,35 @@ function ResponsiveDrawer(props) {
             <Divider />
             <List>
 
-                <ListItem button onClick={() => setOption(2)} selected={ option === 2}>
+                <ListItem button onClick={() => handleDrawerClick(0, 2)} selected={ option === 2}>
                     <ListItemIcon>
                         <Apps />
                     </ListItemIcon>
                     <ListItemText primary="Todos los sistemas" secondary="Todas las herramientas"/>
                 </ListItem>
 
-                <ListItem button onClick={() => setOption(3)} selected={ option === 3}>
+                <ListItem button onClick={() => handleDrawerClick(1, 3)} selected={ option === 3}>
                     <ListItemIcon>
                         <Filter1 />
                     </ListItemIcon>
                     <ListItemText primary="Sistema 1" secondary="Declaraciones"/>
                 </ListItem>
 
-                <ListItem button onClick={() => setOption(4)} selected={ option === 4}>
+                <ListItem button onClick={() => handleDrawerClick(2,4)} selected={ option === 4}>
                     <ListItemIcon>
                         <Filter2 />
                     </ListItemIcon>
                     <ListItemText primary="Sistema 2" secondary="S. P. en Contrataciones"/>
                 </ListItem>
 
-                <ListItem button onClick={() => setOption(5)} selected={ option === 5}>
+                <ListItem button onClick={() => handleDrawerClick(3, 5)} selected={ option === 5}>
                     <ListItemIcon>
                         <Filter3 />
                     </ListItemIcon>
                     <ListItemText primary="Sistema 3" secondary="Sancionados" />
                 </ListItem>
 
-                <ListItem button onClick={() => setOption(6)} selected={ option === 6}>
+                <ListItem button onClick={() => handleDrawerClick(6, 6)} selected={ option === 6}>
                     <ListItemIcon>
                         <Filter6 />
                     </ListItemIcon>
@@ -221,7 +234,7 @@ function ResponsiveDrawer(props) {
             {/* CONTENTS */}
             <main className={classes.content}>
                 <div className={classes.toolbar} />
-                <DrawerContents option={option}/>
+                <DrawerContents option={option} filters={filters} setFilters={setFilters}/>
                 <Footer/>
             </main>
 

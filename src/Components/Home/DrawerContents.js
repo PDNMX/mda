@@ -24,9 +24,8 @@ const WrappedComponent = props => {
 }
 
 const DrawerContents = props => {
-    const {option} = props;
     return <div>
-        <WrappedComponent option={option}/>
+        <WrappedComponent {...props}/>
     </div>
 }
 

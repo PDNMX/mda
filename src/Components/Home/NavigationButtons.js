@@ -25,31 +25,41 @@ const styles = theme => ({
 });
 
 const NavigationButtons = props => {
-    const {classes} = props;
+    const {classes, filters, setFilters} = props;
+
+    const {resourceType} = filters? filters: "";
+
+    const buttonClass = selected => selected ? classes.selectedButton : classes.button;
+
+    const handleSetFilters = rt => setFilters({...filters, resourceType: rt});
 
     return <div className={classes.root}>
         <Box className={classes.box}>
             <Button variant="contained"
                     startIcon={<ShoppingCart/>}
-                    className={classes.selectedButton}
+                    className={buttonClass( resourceType === "all" )}
+                    onClick={() => handleSetFilters("all")}
             >
                 Todos los recursos
             </Button>
             <Button variant="contained"
                     startIcon={<Settings/>}
-                    className={classes.button}
+                    className={buttonClass( resourceType === "api")}
+                    onClick={() => handleSetFilters("api")}
             >
                 APIs
             </Button>
             <Button variant="contained"
-                    className={classes.button}
+                    className={buttonClass(resourceType === "sys")}
                     startIcon={<Computer/>}
+                    onClick={() => handleSetFilters("sys")}
             >
                 Sistemas
             </Button>
             <Button variant="contained"
-                    className={classes.button}
+                    className={buttonClass(resourceType === "doc")}
                     startIcon={<Description/>}
+                    onClick={() => handleSetFilters("doc")}
             >
                 Documentación
             </Button>

@@ -15,15 +15,31 @@ const styles = theme => ({
     }
 });
 
-const DrawerContents = props => {
-    const {classes} = props;
+const Products = props => {
+    const {classes, filters, setFilters} = props;
+
+    let prods = products.filter(p => {
+        if (filters.system === 0){
+            return true;
+        }
+        return p.systems.includes(filters.system);
+    });
+
+    prods = prods.filter(p => {
+        if (filters.resourceType === "all"){
+            return true;
+        }
+        return p.resourceType === filters.resourceType
+    });
+
+
 
     return <div className={classes.root}>
-        <NavigationButtons/>
+        <NavigationButtons filters={filters} setFilters={setFilters}/>
 
         <Box className={classes.box}>
             {
-                products.map((p, i) => {
+                prods.map((p, i) => {
                     return <Box key={i} m={2}>
                         <ProductCard product={p} key={i}/>
                     </Box>
@@ -34,4 +50,4 @@ const DrawerContents = props => {
     </div>
 }
 
-export default withStyles(styles)(DrawerContents);
+export default withStyles(styles)(Products);

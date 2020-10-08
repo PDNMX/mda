@@ -1,7 +1,7 @@
 [
   {
     "id": "1",
-    "type": "App",
+    "resourceType": "api",
     "institution": "Durango",
     "name": "API de Sancionados",
     "systems": [3],
@@ -10,18 +10,18 @@
     "url": ""
   },
   {
-    "id": "1",
-    "type": "Documentación",
+    "id": "2",
+    "resourceType": "doc",
     "institution": "Jalisco",
     "name": "Primeros Pasos",
-    "systems": [1],
+    "systems": [1,2,3],
     "description": "",
     "cover": "/products/img02.png",
     "url": ""
   },
   {
-    "id": "1",
-    "type": "App",
+    "id": "3",
+    "resourceType": "api",
     "institution": "Ciudad de México",
     "name": "Contrataciones públicas",
     "systems": [6],
@@ -30,8 +30,8 @@
     "url": ""
   },
   {
-    "id": "1",
-    "type": "Sistema",
+    "id": "4",
+    "resourceType": "sys",
     "institution": "INAI",
     "name": "Contrataciones públicas",
     "systems": [6],
@@ -40,9 +40,9 @@
     "url": ""
   },
   {
-    "id": "1",
-    "type": "Sistema",
-    "institution": "INAI",
+    "id": "5",
+    "resourceType": "sys",
+    "institution": "SHCP",
     "name": "Contrataciones públicas",
     "systems": [6],
     "description": "",
@@ -50,9 +50,9 @@
     "url": ""
   },
   {
-    "id": "1",
-    "type": "Sistema",
-    "institution": "INAI",
+    "id": "6",
+    "resourceType": "sys",
+    "institution": "Transparencia Mexicana",
     "name": "Contrataciones públicas",
     "systems": [6],
     "description": "",
