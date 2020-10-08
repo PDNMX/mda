@@ -1,26 +1,40 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Home from "./Components/Home/Home";
+import P404 from "./Components/P404";
+import Product from "./Components/ProductDetails/Main"
+import {createMuiTheme, ThemeProvider} from "@material-ui/core/styles";
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+} from "react-router-dom";
+
+const theme = createMuiTheme({
+    typography: {
+        fontFamily: ["Noto Sans SC", "sans-serif"].join(',')
+    }
+});
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <ThemeProvider theme={theme}>
+            <Router>
+                <Switch>
+                    <Route exact path="/">
+                        <Home/>
+                    </Route>
+
+                    <Route exact path="/product/:id">
+                        <Product/>
+                    </Route>
+
+                    <Route path="*">
+                        <P404/>
+                    </Route>
+                </Switch>
+            </Router>
+        </ThemeProvider>
+    );
 }
 
 export default App;
