@@ -111,7 +111,7 @@ function ResponsiveDrawer(props) {
                     <ListItemIcon>
                         <MenuBook/>
                     </ListItemIcon>
-                    <ListItemText primary="Guía de inicio" />
+                    <ListItemText primary="Inicio rápido" />
                 </ListItem>
             </List>
             <Divider />
