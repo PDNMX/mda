@@ -3,6 +3,7 @@ import {withStyles, Box} from "@material-ui/core";
 import NavigationButtons from "./NavigationButtons";
 import ProductCard from "./ProductCard";
 import products from "./../../products.json";
+import ProductDetails from "../ProductDetails/ProductDetails";
 
 const styles = theme => ({
     root: {
@@ -32,16 +33,19 @@ const Products = props => {
         return p.resourceType === filters.resourceType
     });
 
+    const [selected, setSelected] = React.useState(null);
 
+    if (selected){
+        return <ProductDetails product={selected} setSelected={setSelected}/>
+    }
 
     return <div className={classes.root}>
         <NavigationButtons filters={filters} setFilters={setFilters}/>
-
         <Box className={classes.box}>
             {
                 prods.map((p, i) => {
                     return <Box key={i} m={2}>
-                        <ProductCard product={p} key={i}/>
+                        <ProductCard product={p} key={i} setSelected={setSelected}/>
                     </Box>
                 })
             }

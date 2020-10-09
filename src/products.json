@@ -5,9 +5,16 @@
     "maintainer": "Durango",
     "name": "API de Sancionados",
     "systems": [3],
-    "description": "",
+    "abstract": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     "cover": "/products/img01.png",
-    "url": ""
+    "screenshot": "/products/img01.png",
+    "url": "",
+    "contactPoint": {
+      "organization": "SESEA Durango",
+      "phone": "5435895354",
+      "email": "techie@seseadurango.gob.mx"
+    }
   },
   {
     "id": "2",
@@ -15,9 +22,16 @@
     "maintainer": "Jalisco",
     "name": "Primeros Pasos",
     "systems": [1,2,3],
-    "description": "",
+    "abstract": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     "cover": "/products/img02.png",
-    "url": ""
+    "screenshot": "/products/img02.png",
+    "url": "",
+    "contactPoint": {
+      "organization": "SESEA Jalisco",
+      "phone": "5435895354",
+      "email": "techie@seseadurango.gob.mx"
+    }
   },
   {
     "id": "3",
@@ -25,9 +39,16 @@
     "maintainer": "Ciudad de México",
     "name": "Contrataciones públicas",
     "systems": [6],
-    "description": "",
+    "abstract": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     "cover": "/products/img03.png",
-    "url": ""
+    "screenshot": "/products/img03.png",
+    "url": "",
+    "contactPoint": {
+      "organization": "Agencia de Innovación de la Ciudad de México",
+      "phone": "5435895354",
+      "email": "techie@cdmx.gob.mx"
+    }
   },
   {
     "id": "4",
@@ -35,9 +56,16 @@
     "maintainer": "INAI",
     "name": "Contrataciones públicas",
     "systems": [6],
-    "description": "",
+    "abstract": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     "cover": "/products/img04.png",
-    "url": ""
+    "screenshot": "/products/img04.png",
+    "url": "",
+    "contactPoint": {
+      "organization": "Instituto Nacional de Transparencia, Acceso a la Información y Protección de Datos Personales",
+      "phone": "5435895354",
+      "email": "techie@inai.org.mx"
+    }
   },
   {
     "id": "5",
@@ -45,9 +73,16 @@
     "maintainer": "SHCP",
     "name": "Contrataciones públicas",
     "systems": [6],
-    "description": "",
+    "abstract": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     "cover": "/products/img05.png",
-    "url": ""
+    "screenshot": "/products/img05.png",
+    "url": "",
+    "contactPoint": {
+      "organization": "Secretaría de Hacienda y Crédito Público",
+      "phone": "5435895354",
+      "email": "techie@shcp.gob.mx"
+    }
   },
   {
     "id": "6",
@@ -55,8 +90,15 @@
     "maintainer": "Transparencia Mexicana",
     "name": "Contrataciones públicas",
     "systems": [6],
-    "description": "",
+    "abstract": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     "cover": "/products/img06.png",
-    "url": ""
+    "screenshot": "/products/img06.png",
+    "url": "",
+    "contactPoint": {
+      "organization": "Transparencia Mexicana AC",
+      "phone": "5435895354",
+      "email": "techie@transparenciamexicana.mx"
+    }
   }
 ]

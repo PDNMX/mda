@@ -5,7 +5,7 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
+import Chip from "@material-ui/core/Chip";
 import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles({
@@ -16,15 +16,30 @@ const useStyles = makeStyles({
     media: {
         height: 140,
     },
+    chip:{
+        //background: '#ffe01b',
+        color: "#ffffff",
+        fontWeight: "bold",
+        borderRadius: "3px"
+    }
 });
+
+const colors = [
+    "#3172B5",
+    "#58C2F0",
+    "#F2A29F",
+    "#59C3C4",
+    "#59C3C4",
+    "#EFCC45",
+];
 
 export default function ProductCard(props) {
     const classes = useStyles();
 
-    const {product} = props;
+    const {product, setSelected} = props;
 
     return (
-        <Card className={classes.root} elevation={3}>
+        <Card className={classes.root} elevation={3} onClick={() => setSelected(product) }>
             <CardActionArea>
                 <CardMedia
                     className={classes.media}
@@ -39,18 +54,23 @@ export default function ProductCard(props) {
                         {product.name}
                     </Typography>
                     <Typography variant="body2" color="textSecondary" component="p">
-                        Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                        across all continents except Antarctica
+                        {product.abstract}
                     </Typography>
                 </CardContent>
             </CardActionArea>
             <CardActions>
-                <Button size="small" color="primary">
-                    Share
-                </Button>
-                <Button size="small" color="primary">
-                    Learn More
-                </Button>
+
+                {product.systems.map( (s, i) => {
+                    return <Chip key={i}
+                        label={`Sistema ${s}`}
+                        className={classes.chip}
+                        size="small"
+                        style={{
+                            backgroundColor: colors[ s-1 ]
+                        }}
+                    />
+                })}
+
             </CardActions>
         </Card>
     );
