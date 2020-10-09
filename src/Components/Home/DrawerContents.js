@@ -24,6 +24,7 @@ const WrappedComponent = props => {
 }
 
 const DrawerContents = props => {
+    window.scroll(0,0);
     return <div>
         <WrappedComponent {...props}/>
     </div>
