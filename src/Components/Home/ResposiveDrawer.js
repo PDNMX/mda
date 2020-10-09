@@ -106,13 +106,15 @@ function ResponsiveDrawer(props) {
         resourceType: "all"
     });
 
+    const [selected, setSelected] = React.useState(null);
+
     const handleDrawerClick = (system, option) => {
         setOption(option);
         setFilters({
             ...filters,
             system: system
-        })
-
+        });
+        setSelected(null);
     }
 
     const drawer = (
@@ -120,7 +122,7 @@ function ResponsiveDrawer(props) {
             <img src={MDA} alt="Mercado Digital Anticorrupción" className={classes.logoMDA}/>
             <Divider />
             <List>
-                <ListItem button onClick={() => setOption(1)} selected={ option === 1}>
+                <ListItem button onClick={() => handleDrawerClick(0,1)} selected={ option === 1}>
                     <ListItemIcon>
                         <MenuBook/>
                     </ListItemIcon>
@@ -234,7 +236,13 @@ function ResponsiveDrawer(props) {
             {/* CONTENTS */}
             <main className={classes.content}>
                 <div className={classes.toolbar} />
-                <DrawerContents option={option} filters={filters} setFilters={setFilters}/>
+                <DrawerContents
+                    option={option}
+                    filters={filters}
+                    setFilters={setFilters}
+                    selected={selected}
+                    setSelected={setSelected}
+                />
                 <Footer/>
             </main>
 

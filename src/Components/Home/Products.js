@@ -17,7 +17,7 @@ const styles = theme => ({
 });
 
 const Products = props => {
-    const {classes, filters, setFilters} = props;
+    const {classes, filters, setFilters, selected, setSelected} = props;
 
     let prods = products.filter(p => {
         if (filters.system === 0){
@@ -33,7 +33,10 @@ const Products = props => {
         return p.resourceType === filters.resourceType
     });
 
-    const [selected, setSelected] = React.useState(null);
+    //const [selected, setSelected] = React.useState(null);
+
+    // si la opción cambia => setSelected(null)
+
 
     if (selected){
         return <ProductDetails product={selected} setSelected={setSelected}/>

@@ -37,6 +37,7 @@ const styles = theme => ({
 
 const ProductDetails = props => {
     const {classes, product, setSelected} = props;
+
     return <div className={classes.root}>
         <Grid container justify="center">
             <Grid item xs={12} className={classes.item}>
