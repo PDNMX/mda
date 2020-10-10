@@ -32,6 +32,10 @@ const styles = theme => ({
         "&:focus": {
             background: '#ffe01b',
             backgroundColor: '#ffe01b'
+        },
+        "&:hover": {
+            background: '#ffe01b',
+            backgroundColor: '#ffe01b'
         }
     }
 });
