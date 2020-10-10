@@ -16,11 +16,23 @@ const styles = theme => ({
         justifyContent: "center"
     },
     button: {
-        margin : theme.spacing(1)
+        margin : theme.spacing(1),
+        "&:focus": {
+            background: '#ffe01b',
+            backgroundColor: '#ffe01b'
+        },
+        "&:hover": {
+            background: '#ffe01b',
+            backgroundColor: '#ffe01b'
+        }
     },
     selectedButton:{
         margin : theme.spacing(1),
-        background: '#ffe01b'
+        background: '#ffe01b',
+        "&:focus": {
+            background: '#ffe01b',
+            backgroundColor: '#ffe01b'
+        }
     }
 });
 
