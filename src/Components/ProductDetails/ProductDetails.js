@@ -4,6 +4,7 @@ import ArrowBack from "@material-ui/icons/ArrowBack";
 import Business from "@material-ui/icons/Business";
 import Email from "@material-ui/icons/Email";
 import Call from "@material-ui/icons/Call";
+import Chip from "@material-ui/core/Chip";
 
 
 const styles = theme => ({
@@ -32,6 +33,10 @@ const styles = theme => ({
     },
     icon: {
        marginRight: theme.spacing(2)
+    },
+    chip: {
+       borderRadius: "3px",
+        marginRight: theme.spacing(1)
     }
 });
 
@@ -85,11 +90,33 @@ const ProductDetails = props => {
                     </Typography>
                 </Box>
 
+                <Typography variant="h6" paragraph>
+                    Tecnologías
+                </Typography>
+
+                <Box paddingBottom={2}>
+                    {
+                        product.technologies.map((t,i) => <Chip
+                            key={i}
+                            label={t}
+                            size="small"
+                            className={classes.chip}
+                        />)
+                    }
+                </Box>
 
                 <Typography variant="h6" paragraph>
                     Capturas de pantalla
                 </Typography>
-                <img src={product.screenshot} alt="screenshot" className={classes.screenshot}/>
+                <Box display="flex" flexWrap="wrap">
+                    {
+                        product.screenshots.map((s,i) => {
+                            return <Box key={i} p={1}>
+                                <img src={product.screenshots[i]} alt="Screenshot" className={classes.screenshot}/>
+                            </Box>
+                        })
+                    }
+                </Box>
             </Grid>
         </Grid>
 
