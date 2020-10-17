@@ -33,11 +33,6 @@ const Products = props => {
         return p.resourceType === filters.resourceType
     });
 
-    //const [selected, setSelected] = React.useState(null);
-
-    // si la opción cambia => setSelected(null)
-
-
     if (selected){
         return <ProductDetails product={selected} setSelected={setSelected}/>
     }
