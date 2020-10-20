@@ -1,115 +1,115 @@
 
-    [
-        {
-            "id": "1",
-            "resourceType": "api",
-            "maintainer": "PDN",
-            "name": "API S2. Servidores que intervienen en procedimientos de contratación",
-            "systems": [2],
-            "abstract": "API para el S2 apegado al estándar de datos correspondiente.",
-            "description": "Esta API forma parte de una solución que contempla las APIs del S2 y S3 en ambiente de desarrollo, para reproducirlo completamente se sugiere revisar la documentación",
-            "cover": "https://raw.githubusercontent.com/PDNMX/assets/master/mda/pdn_piloto/APIs2.png",
-            "screenshots": [
-              
-            ],
-            "url": "https://github.com/PDNMX/piloto_s2",
-            "contactPoint": {
-              "organization": "PDN",
-              "phone": "N/A",
-              "email": "pdn@sesna.gob.mx"
-            },
-            "technologies": [
-              "NodeJS", "MongoDB", "Docker"
-            ]
-          },
-          {
-            "id": "2",
-            "resourceType": "api",
-            "maintainer": "PDN",
-            "name": "API S3S. Servidores públicos sancionados",
-            "systems": [3],
-            "abstract": "API para el S3 Servidores públicos sancionados apegado al estándar de datos correspondiente.",
-            "description": "Esta API forma parte de una solución que contempla las APIs del S2 y S3 en ambiente de desarrollo, para reproducirlo completamente se sugiere revisar la documentación",
-            "cover": "https://raw.githubusercontent.com/PDNMX/assets/master/mda/pdn_piloto/APIs3s.png",
-            "screenshots": [
-             
-            ],
-            "url": "https://github.com/PDNMX/piloto_s3s",
-            "contactPoint": {
-              "organization": "PDN",
-              "phone": "N/A",
-              "email": "pdn@sesna.gob.mx"
-            },
-            "technologies": [
-              "NodeJS", "MongoDB", "Docker"
-            ]
-          },
-          {
-            "id": "3",
-            "resourceType": "api",
-            "maintainer": "PDN",
-            "name": "API de Particulares sancionados",
-            "systems": [3],
-            "abstract": "API para el S3 Particulares sancionados apegado al estándar de datos correspondiente.",
-            "description": "Esta API forma parte de una solución que contempla las APIs del S2 y S3 en ambiente de desarrollo, para reproducirlo completamente se sugiere revisar la documentación",
-            "cover": "https://raw.githubusercontent.com/PDNMX/assets/master/mda/pdn_piloto/APIs3p.png",
-            "screenshots": [
-             
-            ],
-            "url": "https://github.com/PDNMX/piloto_s3p",
-            "contactPoint": {
-              "organization": "PDN",
-              "phone": "N/A",
-              "email": "pdn@sesna.gob.mx"
-            },
-            "technologies": [
-              "NodeJS", "MongoDB", "Docker"
-            ]
-          },
-          {
-            "id": "4",
-            "resourceType": "tool",
-            "maintainer": "PDN",
-            "name": "Generador de datos sintéticos",
-            "systems": [2,3],
-            "abstract": "Generador de datos sintéticos para el S2 y S3 de la PDN.",
-            "description": "Generador de datos sintéticos para los Sistemas de Servidores que intervienen en procedimientos de contratación, Servidores públicos sancionados y Particulares sancionados.",
-            "cover": "https://raw.githubusercontent.com/PDNMX/assets/master/mda/pdn_piloto/generador-datos.png",
-            "screenshots": [
-             
-            ],
-            "url": "https://github.com/PDNMX/piloto_generador",
-            "contactPoint": {
-              "organization": "PDN",
-              "phone": "N/A",
-              "email": "pdn@sesna.gob.mx"
-            },
-            "technologies": [
-              "NodeJS", "MongoDB"
-            ]
-          },
-          {
-            "id": "5",
-            "resourceType": "api",
-            "maintainer": "PDN",
-            "name": "OAuth 2.0 - Implementación",
-            "systems": [2],
-            "abstract": "Implementación del protocolo de autenticación OAuth 2.0",
-            "description": "Esta implementación del protocolo de autenticación OAuth 2.0 forma parte de una solución que contempla las APIs del S2 y S3 en ambiente de desarrollo, para reproducirlo completamente se sugiere revisar la documentación",
-            "cover": "https://raw.githubusercontent.com/PDNMX/assets/master/mda/pdn_piloto/auth2.png",
-            "screenshots": [
-             
-            ],
-            "url": "https://github.com/PDNMX/piloto_oauth2.0",
-            "contactPoint": {
-              "organization": "PDN",
-              "phone": "N/A",
-              "email": "pdn@sesna.gob.mx"
-            },
-            "technologies": [
-              "NodeJS", "MongoDB", "Docker", "JWT"
-            ]
-          }
+[
+  {
+    "id": "1",
+    "resourceType": "api",
+    "maintainer": "PDN",
+    "name": "API S2 (Servidores Públicos que Intervienen en Contrataciones) ",
+    "systems": [2],
+    "abstract": "Módulo de API para incorporar datos al Sistema 2 de la PDN. Compatible con el Estándar de Datos correspondiente.",
+    "description": "Esta API forma parte de una solución de software que consta de las APIs para incorporar datos a los Sistemas 2 y 3 de la Plataforma Digital Nacional. La documentación contiene los detalles necesarios para la instalación y puesta en marcha del software.",
+    "cover": "https://raw.githubusercontent.com/PDNMX/assets/master/mda/pdn_piloto/APIs2.png",
+    "screenshots": [
+
+    ],
+    "url": "https://github.com/PDNMX/piloto_s2",
+    "contactPoint": {
+      "organization": "PDN",
+      "phone": "N/A",
+      "email": "pdn@sesna.gob.mx"
+    },
+    "technologies": [
+      "NodeJS", "MongoDB", "Docker"
     ]
+  },
+  {
+    "id": "2",
+    "resourceType": "api",
+    "maintainer": "PDN",
+    "name": "API S3S (Servidores públicos sancionados)",
+    "systems": [3],
+    "abstract": "API para el S3 Servidores públicos sancionados apegado al estándar de datos correspondiente.",
+    "description": "Esta API forma parte de una solución que contempla las APIs del S2 y S3 en ambiente de desarrollo, para reproducirlo completamente se sugiere revisar la documentación",
+    "cover": "https://raw.githubusercontent.com/PDNMX/assets/master/mda/pdn_piloto/APIs3s.png",
+    "screenshots": [
+
+    ],
+    "url": "https://github.com/PDNMX/piloto_s3s",
+    "contactPoint": {
+      "organization": "PDN",
+      "phone": "N/A",
+      "email": "pdn@sesna.gob.mx"
+    },
+    "technologies": [
+      "NodeJS", "MongoDB", "Docker"
+    ]
+  },
+  {
+    "id": "3",
+    "resourceType": "api",
+    "maintainer": "PDN",
+    "name": "API S3P (Particulares sancionados)",
+    "systems": [3],
+    "abstract": "API para el S3 Particulares sancionados apegado al estándar de datos correspondiente.",
+    "description": "Esta API forma parte de una solución que contempla las APIs del S2 y S3 en ambiente de desarrollo, para reproducirlo completamente se sugiere revisar la documentación",
+    "cover": "https://raw.githubusercontent.com/PDNMX/assets/master/mda/pdn_piloto/APIs3p.png",
+    "screenshots": [
+
+    ],
+    "url": "https://github.com/PDNMX/piloto_s3p",
+    "contactPoint": {
+      "organization": "PDN",
+      "phone": "N/A",
+      "email": "pdn@sesna.gob.mx"
+    },
+    "technologies": [
+      "NodeJS", "MongoDB", "Docker"
+    ]
+  },
+  {
+    "id": "4",
+    "resourceType": "tool",
+    "maintainer": "PDN",
+    "name": "Generador de datos sintéticos",
+    "systems": [2,3],
+    "abstract": "Generador de datos sintéticos para el Sistema 2 y Sistema 3 de la PDN.",
+    "description": "Generador de datos sintéticos para los Sistemas de Servidores que intervienen en procedimientos de contratación, Servidores públicos sancionados y Particulares sancionados.",
+    "cover": "https://raw.githubusercontent.com/PDNMX/assets/master/mda/pdn_piloto/generador-datos.png",
+    "screenshots": [
+
+    ],
+    "url": "https://github.com/PDNMX/piloto_generador",
+    "contactPoint": {
+      "organization": "PDN",
+      "phone": "N/A",
+      "email": "pdn@sesna.gob.mx"
+    },
+    "technologies": [
+      "NodeJS", "MongoDB"
+    ]
+  },
+  {
+    "id": "5",
+    "resourceType": "api",
+    "maintainer": "PDN",
+    "name": "Módulo de autorización OAuth 2.0",
+    "systems": [2],
+    "abstract": "Implementación del protocolo de autenticación OAuth 2.0",
+    "description": "Esta implementación del protocolo de autenticación OAuth 2.0 forma parte de una solución que contempla las APIs del S2 y S3 en ambiente de desarrollo, para reproducirlo completamente se sugiere revisar la documentación",
+    "cover": "https://raw.githubusercontent.com/PDNMX/assets/master/mda/pdn_piloto/auth2.png",
+    "screenshots": [
+
+    ],
+    "url": "https://github.com/PDNMX/piloto_oauth2.0",
+    "contactPoint": {
+      "organization": "PDN",
+      "phone": "N/A",
+      "email": "pdn@sesna.gob.mx"
+    },
+    "technologies": [
+      "NodeJS", "MongoDB", "Docker", "JWT"
+    ]
+  }
+]
 
 

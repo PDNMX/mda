@@ -1,16 +1,53 @@
 import React from "react";
-import {Typography, withStyles, Grid} from "@material-ui/core";
+import {Typography, withStyles, Grid, Box} from "@material-ui/core";
+import principal from "../../Assets/quick_start/screen1.png";
+import botones from "../../Assets/quick_start/screen2.png";
+import tarjeta from "../../Assets/quick_start/screen3.png";
+import detalle from "../../Assets/quick_start/screen4.png";
 const styles = theme => ({
     root: {
         padding: theme.spacing(1),
         paddingTop: theme.spacing(4)
     },
-    videoBox: {
-        paddingTop: theme.spacing(2),
-        maxWidth: 800
-    },
     item: {
         maxWidth: 1000
+    },
+    imgBox: {
+        paddingTop: theme.spacing(1),
+        paddingBottom: theme.spacing(2),
+        maxWidth: 600
+    },
+    cardBox: {
+        paddingTop: theme.spacing(1),
+        paddingBottom: theme.spacing(2),
+        maxWidth: 300
+    },
+    principal: {
+        borderStyle: "solid",
+        borderWidth: 1,
+        borderRadius: "3px",
+        maxWidth: "100%"
+    },
+    botones: {
+        borderStyle: "solid",
+        borderWidth: 1,
+        borderRadius: "3px",
+        maxWidth: "100%"
+    },
+    tarjeta:{
+        borderStyle: "solid",
+        borderWidth: 1,
+        borderRadius: "3px",
+        maxWidth: "100%"
+    },
+    detalle:{
+        borderStyle: "solid",
+        borderWidth: 1,
+        borderRadius: "3px",
+        maxWidth: "100%"
+    },
+    imgText:{
+        fontWeight: "bold"
     }
 });
 
@@ -68,26 +105,56 @@ const GettingStarted = props => {
                     </li>
                 </ul>
 
-                {/* screenShot */}
+                <div align="center">
+                    <Box className={classes.imgBox}>
+                        <img src={principal} alt="" className={classes.principal}/>
+                        <Typography variant="body2" className={classes.imgText}>
+                            Pantalla principal del MDA
+                        </Typography>
+                    </Box>
+                </div>
+
 
                 <Typography paragraph>
                     Al seleccionar cualquiera de las secciones anteriores, podrás observar que existe una serie de filtros (botones) en la parte superior central del MDA. Tales filtros te permiten refinar los recursos disponibles por tipo, por ejemplo: Todos los recursos, APIs, Sistemas o Documentación.
                 </Typography>
 
-                {/* screenShot */}
+                <div align="center">
+                    <Box className={classes.imgBox}>
+                        <img src={botones} alt="" className={classes.botones}/>
+                        <Typography variant="body2" className={classes.imgText}>
+                            Botones de filtrado por tipo de recurso
+                        </Typography>
+                    </Box>
+                </div>
 
                 <Typography paragraph>
                     Como podrás observar, los recursos del MDA se presentan en tarjetas, que cuentan con el nombre del recurso, una descripción corta y etiquetas que indican con cuáles sistemas está relacionado el recurso.
                 </Typography>
 
-                {/* screenShot */}
+                <div align="center">
+                    <Box className={classes.cardBox}>
+                        <img src={tarjeta} alt="" className={classes.tarjeta}/>
+                        <Typography variant="body2" className={classes.imgText}>
+                            Sección de detalle de un recurso
+                        </Typography>
+                    </Box>
+                </div>
 
                 <Typography paragraph>
                     Para conocer más sobre un cierto recurso, da clic sobre la tarjeta correspondiente para entrar a una vista con más detalle.
                 </Typography>
 
+                <div align="center">
+                    <Box className={classes.imgBox}>
+                        <img src={detalle} alt="" className={classes.detalle}/>
+                        <Typography variant="body2" className={classes.imgText}>
+                            Pantalla principal del MDA
+                        </Typography>
+                    </Box>
+                </div>
 
-                <Typography paragraph>
+                <Typography paragraph variant="h5">
                     Tipos de recursos disponibles
                 </Typography>
 
