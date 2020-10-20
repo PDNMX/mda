@@ -21,6 +21,9 @@ const useStyles = makeStyles({
         color: "#ffffff",
         fontWeight: "bold",
         borderRadius: "3px"
+    },
+    cardContent: {
+        height: 180
     }
 });
 
@@ -46,11 +49,11 @@ export default function ProductCard(props) {
                     image={product.cover}
                     title="Contemplative Reptile"
                 />
-                <CardContent>
+                <CardContent className={classes.cardContent}>
                     <Typography color="textSecondary">
                         {product.maintainer}
                     </Typography>
-                    <Typography gutterBottom variant="h6" component="h2">
+                    <Typography gutterBottom variant="body1">
                         {product.name}
                     </Typography>
                     <Typography variant="body2" color="textSecondary" component="p">

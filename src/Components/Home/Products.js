@@ -2,7 +2,7 @@ import React from "react";
 import {withStyles, Box} from "@material-ui/core";
 import NavigationButtons from "./NavigationButtons";
 import ProductCard from "./ProductCard";
-import products from "./../../products.json";
+import products from "../../products.json";
 import ProductDetails from "../ProductDetails/ProductDetails";
 
 const styles = theme => ({

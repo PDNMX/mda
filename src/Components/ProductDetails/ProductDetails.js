@@ -61,7 +61,7 @@ const ProductDetails = props => {
                     {product.description}
                 </Typography>
 
-                <Button variant="contained" href="#" className={classes.button}>
+                <Button variant="contained" href={product.url} target="_blank" className={classes.button}>
                     Conoce más
                 </Button>
 
@@ -105,18 +105,22 @@ const ProductDetails = props => {
                     }
                 </Box>
 
-                <Typography variant="h6" paragraph>
-                    Capturas de pantalla
-                </Typography>
-                <Box display="flex" flexWrap="wrap">
-                    {
-                        product.screenshots.map((s,i) => {
-                            return <Box key={i} p={1}>
-                                <img src={product.screenshots[i]} alt="Screenshot" className={classes.screenshot}/>
-                            </Box>
-                        })
-                    }
-                </Box>
+                {product.screenshots && Array.isArray(product.screenshots) && product.screenshots.length > 0 &&
+                <div>
+                    <Typography variant="h6" paragraph>
+                        Capturas de pantalla
+                    </Typography>
+                    <Box display="flex" flexWrap="wrap">
+                        {
+                            product.screenshots.map((s, i) => {
+                                return <Box key={i} p={1}>
+                                    <img src={product.screenshots[i]} alt="Screenshot" className={classes.screenshot}/>
+                                </Box>
+                            })
+                        }
+                    </Box>
+                </div>
+                }
             </Grid>
         </Grid>
 

@@ -19,6 +19,7 @@ import { makeStyles, useTheme } from '@material-ui/core/styles';
 import MDA from '../../Assets/logo_mda.png';
 import DrawerContents from "./DrawerContents";
 
+import Home from "@material-ui/icons/Home";
 import MenuBook from "@material-ui/icons/MenuBook";
 import Filter1 from "@material-ui/icons/Filter1";
 import Filter2 from "@material-ui/icons/Filter2";
@@ -27,6 +28,8 @@ import Filter6 from "@material-ui/icons/Filter6";
 import Apps from "@material-ui/icons/Apps";
 import PDN from "../../Assets/PDN.png";
 import Footer from "./Footer";
+import Help from "@material-ui/icons/Help";
+import CheckCircle from "@material-ui/icons/CheckCircle";
 
 const drawerWidth = 240;
 
@@ -100,7 +103,7 @@ function ResponsiveDrawer(props) {
         setMobileOpen(!mobileOpen);
     };
 
-    const [option, setOption] = React.useState(1);
+    const [option, setOption] = React.useState(0);
     const [filters, setFilters] = React.useState({
         system: 0,
         resourceType: "all"
@@ -122,45 +125,69 @@ function ResponsiveDrawer(props) {
             <img src={MDA} alt="Mercado Digital Anticorrupción" className={classes.logoMDA}/>
             <Divider />
             <List>
+                <ListItem button onClick={() => handleDrawerClick(0,0)} selected={ option === 0}>
+                    <ListItemIcon>
+                        <Home/>
+                    </ListItemIcon>
+                    <ListItemText primary="Bienvenida"/>
+                </ListItem>
+
                 <ListItem button onClick={() => handleDrawerClick(0,1)} selected={ option === 1}>
                     <ListItemIcon>
                         <MenuBook/>
                     </ListItemIcon>
                     <ListItemText primary="Inicio rápido" />
                 </ListItem>
-            </List>
-            <Divider />
-            <List>
 
-                <ListItem button onClick={() => handleDrawerClick(0, 2)} selected={ option === 2}>
+                <ListItem button onClick={() => handleDrawerClick(0,2)} selected={ option === 2}>
+                    <ListItemIcon>
+                        <Help/>
+                    </ListItemIcon>
+                    <ListItemText primary="Preguntas frecuentes" />
+                </ListItem>
+
+
+                <ListItem button onClick={() => handleDrawerClick(0,3)} selected={ option === 3}>
+                    <ListItemIcon>
+                        <CheckCircle/>
+                    </ListItemIcon>
+                    <ListItemText primary="Términos de uso" />
+                </ListItem>
+
+            </List>
+
+            <Divider/>
+
+            <List>
+                <ListItem button onClick={() => handleDrawerClick(0, 4)} selected={ option === 4}>
                     <ListItemIcon>
                         <Apps />
                     </ListItemIcon>
                     <ListItemText primary="Todos los sistemas" secondary="Todas las herramientas"/>
                 </ListItem>
 
-                <ListItem button onClick={() => handleDrawerClick(1, 3)} selected={ option === 3}>
+                <ListItem button onClick={() => handleDrawerClick(1, 5)} selected={ option === 5}>
                     <ListItemIcon>
                         <Filter1 />
                     </ListItemIcon>
                     <ListItemText primary="Sistema 1" secondary="Declaraciones"/>
                 </ListItem>
 
-                <ListItem button onClick={() => handleDrawerClick(2,4)} selected={ option === 4}>
+                <ListItem button onClick={() => handleDrawerClick(2, 6)} selected={ option === 6}>
                     <ListItemIcon>
                         <Filter2 />
                     </ListItemIcon>
                     <ListItemText primary="Sistema 2" secondary="S. P. en Contrataciones"/>
                 </ListItem>
 
-                <ListItem button onClick={() => handleDrawerClick(3, 5)} selected={ option === 5}>
+                <ListItem button onClick={() => handleDrawerClick(3, 7)} selected={ option === 7}>
                     <ListItemIcon>
                         <Filter3 />
                     </ListItemIcon>
                     <ListItemText primary="Sistema 3" secondary="Sancionados" />
                 </ListItem>
 
-                <ListItem button onClick={() => handleDrawerClick(6, 6)} selected={ option === 6}>
+                <ListItem button onClick={() => handleDrawerClick(6, 8)} selected={ option === 8}>
                     <ListItemIcon>
                         <Filter6 />
                     </ListItemIcon>
