@@ -26,16 +26,19 @@ const styles = theme => ({
         background: '#ffe01b'
     },
     screenshot:{
-       maxWidth: 380,
+        borderStyle: "solid",
+        borderWidth: 1,
+        borderRadius: 2,
+        maxWidth: 380,
         [theme.breakpoints.down("sm")]:{
-           width: "100%"
+            width: "100%"
         }
     },
     icon: {
-       marginRight: theme.spacing(2)
+        marginRight: theme.spacing(2)
     },
     chip: {
-       borderRadius: "3px",
+        borderRadius: "3px",
         marginRight: theme.spacing(1)
     }
 });

@@ -109,6 +109,30 @@
     "technologies": [
       "NodeJS", "MongoDB", "Docker", "JWT"
     ]
+  },
+  {
+    "id": "6",
+    "resourceType": "doc",
+    "maintainer": "PDN",
+    "name": "Tutorial EDCA",
+    "systems": [6],
+    "abstract": "Video tutorial y presentación sobre el Estandar de Datos de Contrataciones Abiertas.",
+    "description": "Video tutorial y presentación de introducción al Estandar de Datos de Contrataciones Abiertas y procesamiento básico de archivos en formato JSON.",
+    "cover": "https://raw.githubusercontent.com/PDNMX/tutorial_edca/main/screens/cover.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/PDNMX/tutorial_edca/main/screens/sc1.png",
+      "https://raw.githubusercontent.com/PDNMX/tutorial_edca/main/screens/sc2.png",
+      "https://raw.githubusercontent.com/PDNMX/tutorial_edca/main/screens/sc3.png"
+    ],
+    "url": "https://github.com/PDNMX/tutorial_edca",
+    "contactPoint": {
+      "organization": "PDN",
+      "phone": "N/A",
+      "email": "pdn@sesna.gob.mx"
+    },
+    "technologies": [
+      "EDCA","JSON", "OCDS"
+    ]
   }
 ]
 

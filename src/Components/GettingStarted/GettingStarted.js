@@ -63,7 +63,7 @@ const GettingStarted = props => {
                 </Typography>
 
                 <Typography align="justify" paragraph>
-                    El MDA está organizado desde la perspectiva de la PDN, en la extrema izquierda podrás encontrar
+                    El MDA está organizado desde la perspectiva de la PDN, del lado izquierdo podrás encontrar
                     un menú que cuenta con opciones para filtrar los recursos disponibles en el MDA de acuerdo con los Sistemas de la PDN.
                 </Typography>
 

@@ -35,7 +35,7 @@ const FAQ = props =>{
                 <Typography paragraph align="justify">
                     No, las herramientas del MDA están disponibles abiertamente y son de "libre uso".
                     Sin embargo, es posible que se necesite establecer algún convenio de colaboración en caso de
-                    requerir apoyo especial (instalación, tropicalización, etc.) de parte de la Institución o Persona que publica la herramienta a través del MDA.
+                    requerir apoyo especial (instalación, tropicalización, etc.) de parte de la institución o persona que publica la herramienta a través del MDA.
                 </Typography>
 
 
@@ -44,7 +44,7 @@ const FAQ = props =>{
                 </Typography>
 
                 <Typography paragraph align="justify">
-                    El MDA es un espacio en donde se comparten herramientas y conocimientos, no obstante, la responsabilidad de actualizar y mantener vigentes los mencionados recursos es responsabilidad de las Instituciones o Personas que la publican en el MDA.
+                    El MDA es un espacio en donde se comparten herramientas y conocimientos, no obstante, la responsabilidad de actualizar y mantener vigentes los mencionados recursos es responsabilidad de las instituciones o personas que la publican en el MDA.
                 </Typography>
 
                 <Typography paragraph align="justify">
@@ -82,7 +82,7 @@ const FAQ = props =>{
                 </Typography>
 
                 <Typography paragraph align="justify">
-                    Es posible que algunas Instituciones cuenten con la posibilidad de proporcionar las herramientas en esquemas de nube, es decir, no solo distribuyen el software, si no que también les es posible proporcionar el servicio a otras Instituciones y resguardar sus datos a través de su infraestructura.
+                    Es posible que algunas instituciones cuenten con la posibilidad de proporcionar las herramientas en esquemas de nube, es decir, no solo distribuyen el software, si no que también les es posible proporcionar el servicio a otras instituciones y resguardar sus datos a través de su infraestructura.
                 </Typography>
 
                 <Typography paragraph align="justify">
@@ -182,7 +182,7 @@ const FAQ = props =>{
                             </li>
                             <li>
                                 <Typography>
-                                    Entidad federativa o Institución. Ejemplo: Alta MDA de herramienta del S2 - Veracruz
+                                    Entidad federativa o institución. Ejemplo: Alta MDA de herramienta del S2 - Veracruz
                                 </Typography>
                             </li>
                         </ul>
