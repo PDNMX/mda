@@ -136,7 +136,7 @@ const GettingStarted = props => {
                     <Box className={classes.cardBox}>
                         <img src={tarjeta} alt="" className={classes.tarjeta}/>
                         <Typography variant="body2" className={classes.imgText}>
-                            Sección de detalle de un recurso
+                            Ejemplo de tarjeta de recurso
                         </Typography>
                     </Box>
                 </div>
@@ -149,7 +149,7 @@ const GettingStarted = props => {
                     <Box className={classes.imgBox}>
                         <img src={detalle} alt="" className={classes.detalle}/>
                         <Typography variant="body2" className={classes.imgText}>
-                            Pantalla principal del MDA
+                            Sección de detalle de un recurso
                         </Typography>
                     </Box>
                 </div>
