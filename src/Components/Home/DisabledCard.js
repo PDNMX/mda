@@ -53,7 +53,7 @@ export default function DisabledCard(props) {
             {/*<CardActionArea>*/}
             <div className={classes.bandita}>
                 <Typography variant="body2" style={{fontWeight:"bold"}}>
-                    Proximamente
+                    Próximamente
                 </Typography>
             </div>
                 <CardMedia
