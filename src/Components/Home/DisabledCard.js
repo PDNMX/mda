@@ -1,7 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
+//import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
@@ -24,6 +24,13 @@ const useStyles = makeStyles({
     },
     cardContent: {
         height: 170
+    },
+    bandita:{
+        position: "absolute",
+        background: '#ffe01b',
+        padding: 4,
+        borderTopLeftRadius: 3,
+        borderBottomRightRadius: 3
     }
 });
 
@@ -36,20 +43,26 @@ const colors = [
     "#EFCC45",
 ];
 
-export default function ProductCard(props) {
+export default function DisabledCard(props) {
     const classes = useStyles();
 
-    const {product, setSelected} = props;
+    const {product} = props;
 
     return (
-        <Card className={classes.root} elevation={3} onClick={() => setSelected(product) }>
-            <CardActionArea>
+        <Card className={classes.root} elevation={3}>
+            {/*<CardActionArea>*/}
+            <div className={classes.bandita}>
+                <Typography variant="body2" style={{fontWeight:"bold"}}>
+                    Proximamente
+                </Typography>
+            </div>
                 <CardMedia
                     className={classes.media}
                     image={product.cover}
                     title="Product"
                 />
                 <CardContent className={classes.cardContent}>
+
                     <Typography color="textSecondary">
                         {product.maintainer}
                     </Typography>
@@ -60,7 +73,7 @@ export default function ProductCard(props) {
                         {product.abstract}
                     </Typography>
                 </CardContent>
-            </CardActionArea>
+            {/*</CardActionArea>*/}
             <CardActions>
 
                 {product.systems.map( (s, i) => {

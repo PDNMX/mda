@@ -2,6 +2,7 @@ import React from "react";
 import {withStyles, Box} from "@material-ui/core";
 import NavigationButtons from "./NavigationButtons";
 import ProductCard from "./ProductCard";
+import DisabledCard from "./DisabledCard";
 import products from "../../products.json";
 import ProductDetails from "../ProductDetails/ProductDetails";
 
@@ -43,7 +44,11 @@ const Products = props => {
             {
                 prods.map((p, i) => {
                     return <Box key={i} m={2}>
-                        <ProductCard product={p} key={i} setSelected={setSelected}/>
+                        {
+                            p.disabled ?
+                            <DisabledCard product={p} key={i}/>:
+                            <ProductCard product={p} key={i} setSelected={setSelected}/>
+                        }
                     </Box>
                 })
             }

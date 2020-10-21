@@ -133,7 +133,51 @@
     "technologies": [
       "EDCA","JSON", "OCDS"
     ]
+  },
+  {
+    "id": "7",
+    "resourceType": "doc",
+    "maintainer": "PDN",
+    "name": "Guía del Sistema 1 (declaraciones)",
+    "systems": [6],
+    "abstract": "Documento con información relevante para los equipos encargados de desarrollar la interconexión con el Sistema 1 de la PDN.",
+    "description": "Documento que tiene la finalidad de brindar información relevante para los equipos encargados de desarrollar la interconexión de su sistema de declaraciones con la Plataforma Digital Nacional.",
+    "cover": "https://raw.githubusercontent.com/PDNMX/assets/master/mda/default_pdn_cover.png",
+    "screenshots": [
+    ],
+    "url": "https://drive.google.com/file/d/1wHQpaFdP5An8V4Vhnjj1a4GBbYIREMHo/view",
+    "contactPoint": {
+      "organization": "PDN",
+      "phone": "N/A",
+      "email": "pdn@sesna.gob.mx"
+    },
+    "technologies": [
+      "REST","OAS", "OAuth 2.0"
+    ]
+  },
+  {
+    "id": "8",
+    "disabled": true,
+    "resourceType": "sys",
+    "maintainer": "PDN",
+    "name": "Sistema de Declaración Patrimonial y de Intereses",
+    "systems": [1],
+    "abstract": "Sistema de Información para recibir las Declaraciones Patrimoniales de los Servidores Públicos.",
+    "description": "Sistema de Información diseñado por el Equipo de la Plataforma Digital Nacional para la presentación de Declaraciones Patrimoniales y de Intereses. Desarrollado usando tecnologías y estándares abiertos que facilitan la interoperabilidad con la Plataforma Digital Nacional.",
+    "cover": "https://raw.githubusercontent.com/PDNMX/assets/master/mda/default_pdn_cover.png",
+    "screenshots": [
+    ],
+    "url": "#",
+    "contactPoint": {
+      "organization": "PDN",
+      "phone": "N/A",
+      "email": "pdn@sesna.gob.mx"
+    },
+    "technologies": [
+      "NodeJS","AngularJS", "GraphQL"
+    ]
   }
+
 ]
 
 

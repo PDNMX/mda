@@ -116,28 +116,28 @@ const Footer = props => {
                                 Sistemas
                             </Typography>
 
-                            <Link href="https://www.plataformadigitalnacional.org/declaraciones"
+                            <Link href="https://plataformadigitalnacional.org/declaraciones"
                                   className={classes.link}
                                   underline="none"
                             >
                                 Declaraciones
                             </Link>
 
-                            <Link href="https://www.plataformadigitalnacional.org/servidores"
+                            <Link href="https://plataformadigitalnacional.org/servidores"
                                   className={classes.link}
                                   underline="none"
                             >
-                                Servidores en contrataciones
+                                S. P. en contrataciones
                             </Link>
 
-                            <Link href="https://www.plataformadigitalnacional.org/sancionados"
+                            <Link href="https://plataformadigitalnacional.org/sancionados"
                                   className={classes.link}
                                   underline="none"
                             >
                                 Sancionados
                             </Link>
 
-                            <Link href="https://www.plataformadigitalnacional.org/contrataciones"
+                            <Link href="https://plataformadigitalnacional.org/contrataciones"
                                   className={classes.link}
                                   underline="none"
                             >
@@ -149,28 +149,28 @@ const Footer = props => {
                                 PDN
                             </Typography>
 
-                            <Link href="https://www.plataformadigitalnacional.org/blog"
+                            <Link href="https://plataformadigitalnacional.org/blog"
                                   className={classes.link}
                                   underline="none"
                             >
                                 Blog
                             </Link>
 
-                            <Link href="https://www.plataformadigitalnacional.org/faq"
+                            <Link href="https://plataformadigitalnacional.org/faq"
                                   className={classes.link}
                                   underline="none"
                             >
                                 Preguntas frecuentes
                             </Link>
 
-                            <Link href="https://www.plataformadigitalnacional.org/about"
+                            <Link href="https://plataformadigitalnacional.org/about"
                                   className={classes.link}
                                   underline="none"
                             >
                                 ¿Qué es la PDN?
                             </Link>
 
-                            <Link href="https://www.plataformadigitalnacional.org/terminos"
+                            <Link href="https://plataformadigitalnacional.org/terminos"
                                   underline="none"
                                   className={classes.link}
                             >
