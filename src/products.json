@@ -139,7 +139,7 @@
     "resourceType": "doc",
     "maintainer": "PDN",
     "name": "Guía del Sistema 1 (declaraciones)",
-    "systems": [6],
+    "systems": [1],
     "abstract": "Documento con información relevante para los equipos encargados de desarrollar la interconexión con el Sistema 1 de la PDN.",
     "description": "Documento que tiene la finalidad de brindar información relevante para los equipos encargados de desarrollar la interconexión de su sistema de declaraciones con la Plataforma Digital Nacional.",
     "cover": "https://raw.githubusercontent.com/PDNMX/assets/master/mda/default_pdn_cover.png",
