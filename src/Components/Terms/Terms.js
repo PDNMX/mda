@@ -9,6 +9,9 @@ const styles = theme => ({
     },
     item: {
         maxWidth: 1000
+    },
+    li: {
+        paddingBottom: theme.spacing(2)
     }
 });
 
@@ -22,7 +25,15 @@ const Terms = props => {
                 </Typography>
 
                 <Typography paragraph>
-                    El Mercado Digital Anticorrupción (MDA) se creó como un espacio donde se ponen a disposición de los sujetos obligados que buscan conectarse a la Plataforma Digital Nacional (PDN),  diversas herramientas que facilitarán el desarrollo y conexión de los sistemas que conforman a la PDN. Estas herramientas y/o cualquiera de sus componentes, son de libre uso y al formar parte del MDA se da consentimiento expreso, por parte de sus desarrolladores materiales e intelectuales, así como de sus usuarios a los presentes "Términos y Condiciones."
+                    El Mercado Digital Anticorrupción (MDA) se creó como un espacio donde se ponen a disposición de los Entes públicos que deben conectarse a la Plataforma Digital Nacional (PDN), diversas herramientas que facilitarán el desarrollo y conexión de los sistemas que conforman a la PDN.
+                </Typography>
+
+                <Typography paragraph>
+                    Estas herramientas y/o cualquiera de sus componentes, son de libre uso y al formar parte del MDA, se da consentimiento expreso para su utilización, por parte de sus desarrolladores materiales e intelectuales.
+                </Typography>
+
+                <Typography>
+                    Asimismo, los usuarios al utilizar el MDA se sujetan a los presentes "Términos y Condiciones."
                 </Typography>
 
                 <Typography paragraph>
@@ -68,8 +79,19 @@ const Terms = props => {
                     Sobre el uso del Mercado Digital Anticorrupción (MDA) y cualquiera de sus recursos:
                 </Typography>
 
-                <ol>
-                    <li>
+                <ol type="I" style={{fontWeight: "bold"}}>
+                    <li className={classes.li}>
+                        <Typography style={{fontWeight: "bold"}}> Requerimientos para su uso:</Typography>
+                        <ul>
+                            <li>
+                                <Typography>
+                                    El usuario debe contar con un equipo que cumpla con las características mínimas necesarias para navegar en el sitio, recomendando su navegación en las últimas versiones de los navegadores Google Chrome, Mozilla Firefox y Safari para obtener la mejor experiencia.
+                                </Typography>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li className={classes.li}>
                         <Typography style={{fontWeight:"bold"}}>
                             Obligaciones del usuario
                         </Typography>
@@ -87,38 +109,43 @@ const Terms = props => {
                             </li>
                             <li>
                                 <Typography>
-                                    Este sitio contiene medidas de seguridad para proteger la información de cualquier alteración realizada por terceros.
+                                    A hacer buen uso del sitio, respetando la Ley Federal de Derechos de Autor, la Ley Federal de Protección a la Propiedad Intelectual y demás normatividad que resulte aplicable para la protección de las herramientas y componentes del MDA.
                                 </Typography>
                             </li>
                             <li>
                                 <Typography>
-                                    La Secretaría Ejecutiva del Sistema Nacional Anticorrupción ( SESNA) se deslinda de cualquier responsabilidad, perjuicio o daño que pueda generar el usuario por cualquier uso inadecuado del portal o la información contenida en plataformadigitalnacional.org.
+                                    Utilizar el sitio únicamente para fines lícitos.
+                                </Typography>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li className={classes.li}>
+                        <Typography style={{fontWeight: "bold"}}>
+                            Responsabilidades
+                        </Typography>
+
+                        <ul>
+                            <li>
+                                <Typography>
+                                    Este sitio contiene fuertes medidas de seguridad para proteger la información de cualquier alteración que pretendan realizarse.
                                 </Typography>
                             </li>
                             <li>
                                 <Typography>
-                                    El usuario se obliga a hacer buen uso del sitio, respetando la Ley General del Sistema Nacional Anticorrupción, la Ley Federal de Derechos de Autor y demás normatividad aplicable.
+                                    La Secretaría Ejecutiva del Sistema Nacional Anticorrupción (SESNA) se deslinda de cualquier responsabilidad, perjuicio o daño que pueda generar el usuario por cualquier uso inadecuado del portal o la información contenida en plataformadigitalnacional.org.
                                 </Typography>
                             </li>
                             <li>
                                 <Typography>
-                                    Debe contar con un equipo que cumpla con las características mínimas necesarias para navegar en el sitio, recomendando su navegación en las últimas versiones de los navegadores Google Chrome, Mozilla Firefox y Safari para obtener la mejor experiencia.
-                                </Typography>
-                            </li>
-                            <li>
-                                <Typography>
-                                    Se exime a la SESNA de toda responsabilidad por los daños que el uso del sitio le pudieran ocasionar en forma incidental o consecuente con su equipo, información, patrimonio o persona, así como ninguna responsabilidad por la alteración o manipulación de los datos una vez publicados en él.
-                                </Typography>
-                            </li>
-                            <li>
-                                <Typography>
-                                    Acepta y se obliga a utilizar el sitio para fines lícitos y con apego a las disposiciones legales aplicables.
+                                    Se exime a la SESNA de toda responsabilidad por los daños que el uso del sitio le pudieran ocasionar en forma incidental o consecuente con su equipo, información, patrimonio o persona, así como por la alteración o manipulación de los datos una vez publicados en él.
                                 </Typography>
                             </li>
                         </ul>
-
                     </li>
-                    <li>
+
+                    <li className={classes.li}>
                         <Typography style={{fontWeight:"bold"}}>
                             Sobre la incorporación de herramientas al MDA:
                         </Typography>
@@ -126,17 +153,12 @@ const Terms = props => {
                         <ul>
                             <li>
                                 <Typography>
-                                    Al incorporar cualquier herramienta o recurso al MDA, se compromete a enviar la información solicitada por la SESNA en el apartado de <b><i>"Preguntas frecuentes"</i></b> sección <b><i>"¿Cómo publico una herramienta o recurso en el Mercado Digital Anticorrupción?"</i></b>
+                                    Al desear incorporar cualquier herramienta o recurso al MDA, se compromete a enviar la información solicitada por la SESNA en el apartado de  <b><i>"Preguntas frecuentes"</i></b> sección <b><i>"¿Cómo publico una herramienta o recurso en el Mercado Digital Anticorrupción?"</i></b>
                                 </Typography>
                             </li>
                             <li>
                                 <Typography>
-                                    Al incorporar cualquier herramienta o recurso al MDA se está aceptando expresamente  su distribución bajo los <b>Términos de Libre Uso MX</b>, disponibles en la siguiente dirección web: https://datos.gob.mx/libreusomx
-                                </Typography>
-                            </li>
-                            <li>
-                                <Typography>
-                                    Una vez que se reciba el oficio de solicitud, el personal de la USTPDN verificará que la herramienta se encuentre disponible abiertamente, que cumpla con su descripción y que su funcionamiento sea el esperado.
+                                    Una vez que la SESNA reciba el oficio de solicitud, el personal de la USTPDN verificará que la herramienta se encuentre disponible abiertamente, que cumpla con su descripción y que su funcionamiento sea el esperado.
                                 </Typography>
                             </li>
                             <li>
@@ -146,57 +168,67 @@ const Terms = props => {
                             </li>
                             <li>
                                 <Typography>
-                                    La <b>SESNA podrá remover del MDA, sin previo aviso</b>, cualquier recurso que incumpla con los criterios y objetivos del mismo.
+                                    Al incorporar cualquier herramienta o recurso al MDA se está aceptando expresamente su distribución bajo los <b>Términos de Libre Uso MX</b>, disponibles en la siguiente dirección web: https://datos.gob.mx/libreusomx
+                                </Typography>
+                            </li>
+                            <li>
+                                <Typography>
+                                    La <b>SESNA podrá remover del MDA, sin previo aviso</b>, cualquier recurso que incumpla con los criterios y objetivos de este.
+                                </Typography>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li className={classes.li}>
+                        <Typography style={{fontWeight: "bold"}}>
+                            Propiedad intelectual
+                        </Typography>
+
+                        <ul>
+                            <li>
+                                <Typography>
+                                    Las herramientas del MDA son de uso libre, salvo excepción expresa que al efecto se indique, por lo que antes de reproducirla, el usuario deberá observar si tiene derechos reservados y respetarlos en términos de las normas relativas a derechos de autor y propiedad industrial.
+                                </Typography>
+                            </li>
+
+                            <li>
+                                <Typography>
+                                    Los enlaces, herramientas y recursos que son proporcionados y publicados en el MDA serán responsabilidad exclusiva de sus desarrolladores y de aquella persona responsable de solicitar su incorporación en el MDA, cuyos datos e información se encuentra en el apartado “datos de contacto” de cada herramienta. Los derechos morales y patrimoniales son del propio desarrollador y autor de esta.
+                                </Typography>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li className={classes.li}>
+                        <Typography style={{fontWeight: "bold"}}>
+                            Actualización de términos y condiciones
+                        </Typography>
+
+                        <ul>
+                            <li>
+                                <Typography>
+                                    La SESNA cuenta con la facultad de modificar los presentes Términos y Condiciones en cualquier momento a efecto de mejorar tu experiencia en la utilización del MDA y de la PDN.
+                                </Typography>
+                            </li>
+                            <li>
+                                <Typography>
+                                    En virtud de que los Términos y Condiciones pueden cambiar, te pedimos revisar constantemente nuestro portal.
+                                </Typography>
+                            </li>
+                            <li>
+                                <Typography>
+                                    El uso del portal plataformadigitalnacional.org o de cualquiera de sus componentes, implica la aceptación expresa de los presentes "Términos y Condiciones".
+                                </Typography>
+                            </li>
+                            <li>
+                                <Typography>
+                                    Al utilizar el MDA también se aceptan los "Términos y Condiciones" de la PDN, disponibles en: https://plataformadigitalnacional.org/terminos
                                 </Typography>
                             </li>
                         </ul>
                     </li>
                 </ol>
 
-                <Typography style={{fontWeight: "bold"}}>
-                    Propiedad intelectual
-                </Typography>
-
-                <ul>
-                    <li>
-                        <Typography>
-                            La información del portal plataformadigitalnacional.org es pública a menos que se indique lo contrario, en cuyo caso antes de reproducirla, deberás observar si tiene derechos reservados y respetarlos en términos de las normas relativas a derechos de autor y propiedad industrial.
-                        </Typography>
-                    </li>
-
-                    <li>
-                        <Typography>
-                            Los enlaces, herramientas y recursos que son proporcionados y publicados en el MDA serán responsabilidad exclusiva de sus desarrolladores y de aquella persona responsable de solicitar su incorporación en el MDA y  cuyos datos e información se encuentra en los datos de contacto de cada herramienta. La autoría y reconocimiento es responsabilidad del propio desarrollador y autor de la misma.
-                        </Typography>
-                    </li>
-
-                </ul>
-
-                <Typography style={{fontWeight: "bold"}}>
-                    Actualización de términos y condiciones
-                </Typography>
-                <ul>
-                    <li>
-                        <Typography>
-                            La SESNA cuenta con la facultad de modificar los presentes Términos y Condiciones en cualquier momento a efecto de mejorar tu experiencia en la utilización de la PDN.
-                        </Typography>
-                    </li>
-                    <li>
-                        <Typography>
-                            Al respecto, estos Términos y Condiciones pueden cambiar, por lo que te pedimos revisar constantemente nuestro portal.
-                        </Typography>
-                    </li>
-                    <li>
-                        <Typography>
-                            El uso del portal plataformadigitalnacional.org o de cualquiera de sus componentes, implica la aceptación expresa de los presentes "Términos y Condiciones".
-                        </Typography>
-                    </li>
-                    <li>
-                        <Typography>
-                            Al utilizar el MDA también se aceptan los "Términos y Condiciones" de la PDN, disponibles en: https://plataformadigitalnacional.org/terminos
-                        </Typography>
-                    </li>
-                </ul>
             </Grid>
         </Grid>
     </div>;
