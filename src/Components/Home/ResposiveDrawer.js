@@ -18,6 +18,7 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import MDA from '../../Assets/logo_mda.png';
 import DrawerContents from "./DrawerContents";
+import Link from "@material-ui/core/Link"
 
 import Home from "@material-ui/icons/Home";
 import MenuBook from "@material-ui/icons/MenuBook";
@@ -90,7 +91,7 @@ const useStyles = makeStyles((theme) => ({
     },
     pdnLogo:{
         maxWidth: 80
-    }
+    },
 }));
 
 function ResponsiveDrawer(props) {
@@ -207,7 +208,9 @@ function ResponsiveDrawer(props) {
             <AppBar position="fixed" className={classes.appBar}>
                 <Toolbar className={classes.toolbar1}>
                     <div style={{flexGrow: 1}}/>
-                    <img src={PDN} alt="PDN" className={classes.pdnLogo}/>
+                    <Link href="https://plataformadigitalnacional.org">
+                        <img src={PDN} alt="PDN" className={classes.pdnLogo}/>
+                    </Link>
                 </Toolbar>
                 <Toolbar className={classes.toolbar2}>
                     <IconButton
