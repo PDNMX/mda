@@ -157,24 +157,27 @@
   },
   {
     "id": "8",
-    "disabled": true,
+    "disabled": false,
     "resourceType": "sys",
     "maintainer": "PDN",
     "name": "Sistema de Declaración Patrimonial y de Intereses",
     "systems": [1],
-    "abstract": "Sistema de Información para recibir las Declaraciones Patrimoniales de los Servidores Públicos.",
-    "description": "Sistema de Información diseñado por el Equipo de la Plataforma Digital Nacional para la presentación de Declaraciones Patrimoniales y de Intereses. Desarrollado usando tecnologías y estándares abiertos que facilitan la interoperabilidad con la Plataforma Digital Nacional.",
+    "abstract": "Sistema de Información para recibir las Declaraciones Patrimoniales y de Intereses de los Servidores Públicos.",
+    "description": "Sistema de Información diseñado por el Equipo de la Plataforma Digital Nacional para la presentación de Declaraciones Patrimoniales y de Intereses de los Servidores Públicos. Desarrollado usando tecnologías y estándares abiertos que facilitan la interoperabilidad con la Plataforma Digital Nacional.",
     "cover": "https://raw.githubusercontent.com/PDNMX/assets/master/mda/default_pdn_cover.png",
     "screenshots": [
+      "https://github.com/PDNMX/assets/raw/master/mda/sistema_declaraciones/scr1.png",
+      "https://github.com/PDNMX/assets/raw/master/mda/sistema_declaraciones/scr2.png",
+      "https://github.com/PDNMX/assets/raw/master/mda/sistema_declaraciones/scr3.png"
     ],
-    "url": "#",
+    "url": "https://github.com/PDNMX/SistemaDeclaraciones",
     "contactPoint": {
       "organization": "PDN",
       "phone": "N/A",
       "email": "pdn@sesna.gob.mx"
     },
     "technologies": [
-      "NodeJS","AngularJS", "GraphQL"
+      "MongoDB", "NodeJS", "AngularJS", "GraphQL"
     ]
   }
 
