@@ -162,7 +162,7 @@
     "maintainer": "PDN",
     "name": "Sistema de Declaración Patrimonial y de Intereses",
     "systems": [1],
-    "abstract": "Sistema de Información para recibir las Declaraciones Patrimoniales y de Intereses de los Servidores Públicos.",
+    "abstract": "Código, manuales y otros recursos para que las instituciones pongan en marcha el sistema para capturar declaraciones patrimoniales y de intereses.",
     "description": "Sistema de Información diseñado por el Equipo de la Plataforma Digital Nacional para la presentación de Declaraciones Patrimoniales y de Intereses de los Servidores Públicos. Desarrollado usando tecnologías y estándares abiertos que facilitan la interoperabilidad con la Plataforma Digital Nacional.",
     "cover": "https://raw.githubusercontent.com/PDNMX/assets/master/mda/default_pdn_cover.png",
     "screenshots": [
