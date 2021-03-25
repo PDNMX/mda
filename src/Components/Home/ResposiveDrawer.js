@@ -86,7 +86,7 @@ const useStyles = makeStyles((theme) => ({
     },
     content: {
         flexGrow: 1,
-        paddingTop: theme.spacing(14), //appbar => 10
+        paddingTop: theme.spacing(16), //appbar => 10
         //padding: theme.spacing(3),
     },
     logoMDA:{
