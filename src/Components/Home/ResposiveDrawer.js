@@ -31,6 +31,7 @@ import PDN from "../../Assets/PDN.png";
 import Footer from "./Footer";
 import Help from "@material-ui/icons/Help";
 import CheckCircle from "@material-ui/icons/CheckCircle";
+import BarraFea from "./BarraFea";
 
 const drawerWidth = 240;
 
@@ -54,6 +55,9 @@ const useStyles = makeStyles((theme) => ({
         background: '#ffffff'
     },
     toolbar2:{
+        background: "#f6f6f6"
+    },
+    toolbar3:{
         background: '#34b3eb',
     },
     /*
@@ -82,7 +86,7 @@ const useStyles = makeStyles((theme) => ({
     },
     content: {
         flexGrow: 1,
-        paddingTop: theme.spacing(10), //appbar
+        paddingTop: theme.spacing(14), //appbar => 10
         //padding: theme.spacing(3),
     },
     logoMDA:{
@@ -213,6 +217,9 @@ function ResponsiveDrawer(props) {
                     </Link>
                 </Toolbar>
                 <Toolbar className={classes.toolbar2}>
+                    <BarraFea/>
+                </Toolbar>
+                <Toolbar className={classes.toolbar3}>
                     <IconButton
                         color="inherit"
                         aria-label="open drawer"
