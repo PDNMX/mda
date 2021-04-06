@@ -179,8 +179,31 @@
     "technologies": [
       "MongoDB", "NodeJS", "AngularJS", "GraphQL"
     ]
-  }
+  },
 
+  {
+    "id": "9",
+    "resourceType": "doc",
+    "maintainer": "PDN",
+    "name": "Taller de instalación y despliegue del Sistema de Declaraciones",
+    "systems": [6],
+    "abstract": "Video tutorial y presentación sobre el proceso de instalación y despliegue del Sistema de Declaraciones.",
+    "description": "El Sistema de Declaraciones es una herramienta que permite a los servidores públicos presentar su declaración patrimonial y de intereses cumpliendo con el Formato aprobado por el Comité Coordinador del Sistema Nacional Anticorrupción resguardando la información en modelos de datos compatibles con los estándares de datos de la Plataforma Digital Nacional.",
+    "cover": "https://raw.githubusercontent.com/PDNMX/assets/master/mda/default_pdn_cover.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/PDNMX/TallerSistemaDeclaraciones/main/screens/scr1.png",
+      "https://raw.githubusercontent.com/PDNMX/TallerSistemaDeclaraciones/main/screens/scr2.png"
+    ],
+    "url": "https://github.com/PDNMX/TallerSistemaDeclaraciones",
+    "contactPoint": {
+      "organization": "PDN",
+      "phone": "N/A",
+      "email": "pdn@sesna.gob.mx"
+    },
+    "technologies": [
+      "Docker","Linux", "NGINX"
+    ]
+  }
 ]
 
 
