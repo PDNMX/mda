@@ -186,7 +186,7 @@
     "resourceType": "doc",
     "maintainer": "PDN",
     "name": "Taller de instalación y despliegue del Sistema de Declaraciones",
-    "systems": [6],
+    "systems": [1],
     "abstract": "Video tutorial y presentación sobre el proceso de instalación y despliegue del Sistema de Declaraciones.",
     "description": "El Sistema de Declaraciones es una herramienta que permite a los servidores públicos presentar su declaración patrimonial y de intereses cumpliendo con el Formato aprobado por el Comité Coordinador del Sistema Nacional Anticorrupción resguardando la información en modelos de datos compatibles con los estándares de datos de la Plataforma Digital Nacional.",
     "cover": "https://raw.githubusercontent.com/PDNMX/assets/master/mda/default_pdn_cover.png",
