@@ -191,8 +191,8 @@
     "description": "El Sistema de Declaraciones es una herramienta que permite a los servidores públicos presentar su declaración patrimonial y de intereses cumpliendo con el Formato aprobado por el Comité Coordinador del Sistema Nacional Anticorrupción resguardando la información en modelos de datos compatibles con los estándares de datos de la Plataforma Digital Nacional.",
     "cover": "https://raw.githubusercontent.com/PDNMX/assets/master/mda/default_pdn_cover.png",
     "screenshots": [
-      "https://github.com/PDNMX/SistemaDeclaraciones/tree/master/taller_instalacion/screens/scr1.png",
-      "https://github.com/PDNMX/SistemaDeclaraciones/tree/master/taller_instalacion/screens/scr2.png"
+      "https://raw.githubusercontent.com/PDNMX/SistemaDeclaraciones/master/taller_instalacion/screens/scr1.png",
+      "https://raw.githubusercontent.com/PDNMX/SistemaDeclaraciones/master/taller_instalacion/screens/scr2.png"
     ],
     "url": "https://github.com/PDNMX/SistemaDeclaraciones/tree/master/taller_instalacion",
     "contactPoint": {
