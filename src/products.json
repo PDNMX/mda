@@ -180,7 +180,6 @@
       "MongoDB", "NodeJS", "AngularJS", "GraphQL"
     ]
   },
-
   {
     "id": "9",
     "resourceType": "doc",
@@ -202,6 +201,31 @@
     },
     "technologies": [
       "Docker","Linux", "NGINX"
+    ]
+  },
+  {
+    "id": "10",
+    "resourceType": "sys",
+    "maintainer": "SESAJ Jalisco",
+    "name": "SiDECLARA SESAJ",
+    "systems": [1],
+    "abstract": "Software desarrollado por la SESAJ para capturar la declaración patrimonial, de intereses y fiscal. Cumple con los formatos obligatorios en mayo/2021",
+    "description": "Es un sistema de información desarrollado por la Secretaría Ejecutiva del Sistema Anticorrupción de Jalisco, que permite la captura de la declaración de situación patrimonial, de intereses y constancia de presentación de la declración fiscal, para dar cumplimiento a lo establecido por la LGRA. Implementa los nuevos formatos de uso obligatorio a partir de mayo del 2021. El sistema es desarrollado con herramientas de software libre y basado en Linux para servidores, es intuitivo, de navegación sencilla, incluye ayudas, tips, y preguntas frecuentes, además es personalizable a la imagen institucional de cada ente público. El sistema también facilita la conexión e interoperabilidad con la PDN, al incluir el API correspondiente. Incluye un módulo de administración que distingue a los usuarios con los roles de Administrador y de Órgano Interno de Control.",
+    "cover": "https://www.seajal.org/static/img/PortadaSiDECLARAMDA.png",
+    "screenshots": [
+      "https://www.seajal.org/static/img/capturas/Captura1.JPG",
+      "https://www.seajal.org/static/img/capturas/Captura2.JPG",
+      "https://www.seajal.org/static/img/capturas/Captura3.JPG",
+      "https://www.seajal.org/static/img/capturas/Captura4.JPG"
+    ],
+    "url": "https://seajal.org/sideclaramda",
+    "contactPoint": {
+      "organization": "SESAJ Jalisco",
+      "phone": "3324726011 ext. 303",
+      "email": "andres.oviedo@sesaj.org"
+    },
+    "technologies": [
+      "Django","Python", "Docker"
     ]
   }
 ]
