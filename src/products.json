@@ -227,6 +227,31 @@
     "technologies": [
       "Django","Python", "Docker"
     ]
+  },
+  {
+    "id": "11",
+    "resourceType": "sys",
+    "maintainer": "SESAE Chiapas",
+    "name": "DeclaraFácil PI Portable",
+    "systems": [1],
+    "abstract": "Es una aplicación que permite integrar y generar la Declaración de Situación Patrimonial y Declaración de Intereses a los servidores públicos.",
+    "description": "Es una aplicación que permite la integración y generación de la Declaración de Situación Patrimonial y Declaración de Intereses, de los servidores públicos los entes públicos, compatible con los formatos aprobados por el Comité Coordinador del Sistema Nacional Anticorrupción, capaz de ejecutarse en un equipo de cómputo con requerimientos técnicos mínimos, que cuente con un navegador web y que no necesita una conexión a Internet.\n \nGenera un archivo en formato JSON codificados en base64, que contiene los datos capturados de la declaración patrimonial, y los formatos para imprimirlos y firmarlos autógrafamente para darles certeza jurídica; éstos cumplen con las especificaciones técnicas establecidas, para garantizar la interoperabilidad con la Plataforma Digital Nacional.\n \nEsta aplicación fue desarrollada para ser utilizada en aquellas localidades que no cuentan con acceso a Internet.",
+    "cover": "https://raw.githubusercontent.com/SESAECH/DeclaraFacilPI/main/docs/DeclaraF%C3%A1cilPi_logo_345x140%20banner%203.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/SESAECH/DeclaraFacilPI/main/docs/completa_simplificada.png",
+      "https://raw.githubusercontent.com/SESAECH/DeclaraFacilPI/main/docs/datosgenerales.png",
+      "https://raw.githubusercontent.com/SESAECH/DeclaraFacilPI/main/docs/intereses.png",
+      "https://raw.githubusercontent.com/SESAECH/DeclaraFacilPI/main/docs/muestra_pdf.png"
+    ],
+    "url": "https://github.com/SESAECH/DeclaraFacilPI",
+    "contactPoint": {
+      "organization": "Ing. Oscar Javier Meneses Martínez",
+      "phone": "961 691 2373, opción 3, extensión 69202",
+      "email": "omeneses@chiapas.gob.mx"
+    },
+    "technologies": [
+      "HTML","JavaScript", "jQuery", "CSS3", "JSON", "Bootstrap", "jsPDF", "SweetAlert", "Webpack", "npm"
+    ]
   }
 ]
 
