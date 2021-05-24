@@ -174,7 +174,8 @@
     "contactPoint": {
       "organization": "PDN",
       "phone": "N/A",
-      "email": "pdn@sesna.gob.mx"
+      "email": "pdn@sesna.gob.mx",
+      "directory_url": "https://docs.google.com/spreadsheets/d/16pmdC_gxw3-4SJpqoPpQUV4U0J_X-GADMFeG554xbGU"
     },
     "technologies": [
       "MongoDB", "NodeJS", "AngularJS", "GraphQL"

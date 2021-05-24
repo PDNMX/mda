@@ -72,26 +72,43 @@ const ProductDetails = props => {
                     Contacto
                 </Typography>
 
-                <Box display="flex" flexWrap="wrap" p={1}>
-                    <Business className={classes.icon}/>
-                    <Typography>
-                        {product.contactPoint.organization}
-                    </Typography>
-                </Box>
+                {product.contactPoint.directory_url?
+                    <Box paddingTop={1}>
+                        <Typography paragraph align="justify">
+                            Si tienes dudas sobre la instalación del Sistema de Declaración Patrimonial y de Intereses
+                            de la PDN comunicate con alguno de los miembros de la Red Nacional de Capacitadores (RNC).
+                        </Typography>
 
-                <Box display="flex" flexWrap="wrap" p={1}>
-                    <Call className={classes.icon}/>
-                    <Typography>
-                        {product.contactPoint.phone}
-                    </Typography>
-                </Box>
+                        <Button variant="contained"
+                                href={product.contactPoint.directory_url}
+                                target="_blank" className={classes.button}>
+                            Directorio RNC
+                        </Button>
+                    </Box>
+                    :
+                    <div>
+                        <Box display="flex" flexWrap="wrap" p={1}>
+                            <Business className={classes.icon}/>
+                            <Typography>
+                                {product.contactPoint.organization}
+                            </Typography>
+                        </Box>
 
-                <Box display="flex" flexWrap="wrap" p={1} paddingBottom={3}>
-                    <Email className={classes.icon}/>
-                    <Typography>
-                        {product.contactPoint.email}
-                    </Typography>
-                </Box>
+                        <Box display="flex" flexWrap="wrap" p={1}>
+                            <Call className={classes.icon}/>
+                            <Typography>
+                                {product.contactPoint.phone}
+                            </Typography>
+                        </Box>
+
+                        <Box display="flex" flexWrap="wrap" p={1} paddingBottom={3}>
+                            <Email className={classes.icon}/>
+                            <Typography>
+                                {product.contactPoint.email}
+                            </Typography>
+                        </Box>
+                    </div>
+                }
 
                 <Typography variant="h6" paragraph>
                     Tecnologías
