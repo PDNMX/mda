@@ -253,6 +253,27 @@
     "technologies": [
       "HTML","JavaScript", "jQuery", "CSS3", "JSON", "Bootstrap", "jsPDF", "SweetAlert", "Webpack", "npm"
     ]
+  },
+  {
+    "id": "12",
+    "resourceType": "doc",
+    "maintainer": "PDN",
+    "name": "Taller de inteligencia anticorrupción: cómo contar historias (con datos), día internacional contra la corrupción 2020",
+    "systems": [2,3],
+    "abstract": "Presentación y video del taller en el que se mostraron herramientas para usar datos de los sistemas 2 y 3.",
+    "description": "Con el motivo del día internacional contra la corrupción 2021, el equipo de la Plataforma Digital Nacional impartió al público general este taller. El contenido consiste en explicar y explorar la PDN; asimismo, se dio un breve y clara explicación sobre qué es el formato JSON. Por último, se mostraron algunas herramientas que facilitan a cualquier persona leer un archivo en este formato.",
+    "cover": "https://raw.githubusercontent.com/PDNMX/assets/master/mda/default_pdn_cover.png",
+    "screenshots": [
+    ],
+    "url": "https://github.com/PDNMX/taller-dicc",
+    "contactPoint": {
+      "organization": "PDN",
+      "phone": "N/A",
+      "email": "pdn@sesna.gob.mx"
+    },
+    "technologies": [
+      "JSON"
+    ]
   }
 ]
 
