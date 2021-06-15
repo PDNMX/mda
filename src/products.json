@@ -274,6 +274,31 @@
     "technologies": [
       "JSON"
     ]
+  },
+  {
+    "id": "13",
+    "resourceType": "sys",
+    "maintainer": "PDN",
+    "name": "Sistema de Carga de Datos (S2 y S3)",
+    "systems": [2,3],
+    "abstract": "Herramienta para carga o captura de datos de los Sistemas S2 y S3.",
+    "description": "Herramienta para la carga o captura de datos de los Sistemas S2 y S3 de la PDN. Diseñado para que las Secretarías Ejecutivas concentren la información de sus instituciones, quienes son las encargadas de administrar sus datos (carga masiva a través de archivos, capturar a través de formularios, editar, eliminar y consultar). En conjunto con las APIs disponibles de los respectivos sistemas, conforman el ecosistema completo de interconexión con la PDN para los sistemas antes mencionados.",
+    "cover": "https://github.com/PDNMX/SistemaCarga_S2S3/raw/cc3042af3440100260a0876471de908e305f41e2/assets/cover.png",
+    "screenshots": [
+      "https://github.com/PDNMX/SistemaCarga_S2S3/raw/195427a1f68883b6e9e8074f275348f0c1df51b9/assets/login.png",
+      "https://github.com/PDNMX/SistemaCarga_S2S3/raw/195427a1f68883b6e9e8074f275348f0c1df51b9/assets/datos.png",
+      "https://github.com/PDNMX/SistemaCarga_S2S3/raw/195427a1f68883b6e9e8074f275348f0c1df51b9/assets/captura.png",
+      "https://github.com/PDNMX/SistemaCarga_S2S3/raw/195427a1f68883b6e9e8074f275348f0c1df51b9/assets/usuarios.png"
+    ],
+    "url": "https://github.com/PDNMX/SistemaCarga_S2S3",
+    "contactPoint": {
+      "organization": "PDN",
+      "phone": "N/A",
+      "email": "pdn@sesna.gob.mx"
+    },
+    "technologies": [
+      "Node.js", "MongoDB", "React.js"
+    ]
   }
 ]
 
