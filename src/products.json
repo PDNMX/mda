@@ -93,7 +93,7 @@
     "resourceType": "api",
     "maintainer": "PDN",
     "name": "Módulo de autorización OAuth 2.0",
-    "systems": [2],
+    "systems": [2,3],
     "abstract": "Implementación del protocolo de autenticación OAuth 2.0",
     "description": "Esta implementación del protocolo de autenticación OAuth 2.0 forma parte de una solución que contempla las APIs del S2 y S3 en ambiente de desarrollo, para reproducirlo completamente se sugiere revisar la documentación",
     "cover": "https://raw.githubusercontent.com/PDNMX/assets/master/mda/pdn_piloto/auth2.png",
