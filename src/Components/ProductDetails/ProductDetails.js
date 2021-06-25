@@ -40,7 +40,11 @@ const styles = theme => ({
     chip: {
         borderRadius: "3px",
         marginRight: theme.spacing(1)
-    }
+    },
+    mediaBox: {
+        paddingTop: theme.spacing(2),
+        maxWidth: 800
+    },
 });
 
 const ProductDetails = props => {
@@ -124,6 +128,32 @@ const ProductDetails = props => {
                         />)
                     }
                 </Box>
+
+                {product.media && Array.isArray(product.media) && product.media.length > 0 &&
+                <div>
+                    <Box display="flex" flexWrap="wrap">
+                        {
+                            product.media.map((s, i) => {
+                                return <Box key={i} p={1} className={classes.mediaBox}>
+                                    <Typography variant="h6">
+                                        {product.media[i].title}
+                                    </Typography>
+
+                                    <iframe width="100%" height="450" src={product.media[i].url}
+                                            title="YouTube video player" frameBorder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowFullScreen/>
+
+                                    <Typography variant="body2" paragraph align="justify">
+                                        {product.media[i].caption}
+                                    </Typography>
+
+                                </Box>
+                            })
+                        }
+                    </Box>
+                </div>
+                }
 
                 {product.screenshots && Array.isArray(product.screenshots) && product.screenshots.length > 0 &&
                 <div>

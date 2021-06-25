@@ -42,7 +42,7 @@ const Landing = props => {
 
                 <div align="center">
                     <Box className={classes.videoBox}>
-                        <iframe width="100%" height="450" src="https://www.youtube.com/embed/JQNPwOOG4yw" frameBorder="0" title={'Video'}
+                        <iframe width="100%" height="450" src="https://www.youtube.com/embed/JQNPwOOG4yw?rel=0" frameBorder="0" title={'Video'}
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 allowFullScreen/>
 

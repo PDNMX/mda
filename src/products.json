@@ -298,6 +298,14 @@
     },
     "technologies": [
       "Node.js", "MongoDB", "React.js"
+    ],
+    "media": [
+      {
+        "type": "YouTube embedded video",
+        "title": "Sistema de Carga de Datos (S2 y S3)",
+        "caption": "Conoce el Sistema de Carga de Datos para el Sistema de los Servidores Públicos que Intervienen en Procesos de Contratación (S2) y el Sistema de los Servidores Públicos y Particulares Sancionados (S3) de la Plataforma Digital Nacional",
+        "url": "https://www.youtube.com/embed/0XhjQQYKWDY?rel=0"
+      }
     ]
   }
 ]
