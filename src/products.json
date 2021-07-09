@@ -307,6 +307,30 @@
         "url": "https://www.youtube.com/embed/0XhjQQYKWDY?rel=0"
       }
     ]
+  },
+  {
+    "id": "14",
+    "resourceType": "doc",
+    "maintainer": "PDN",
+    "name": "Tutorial de instalación del Sistema de Carga de Datos del S2 y S3",
+    "systems": [2,3],
+    "abstract": "Video tutorial sobre el proceso de instalación y despliegue del Sistema de Carga de Datos del S2 y S3.",
+    "description": "El Sistema de Carga de Datos del S2 y S3 es una herramienta que permite la captura y administración de los datos que cada uno de los sistemas contempla.",
+    "cover": "https://github.com/PDNMX/SistemaCarga_S2S3/raw/cc3042af3440100260a0876471de908e305f41e2/assets/cover.png",
+    "screenshots": [
+      "https://github.com/PDNMX/SistemaCarga_S2S3/raw/a1ed6bd295222aa47c4987637aa8f0fa71acb59f/assets/screenshot_SistemaCargaS2S3.png",
+      "https://github.com/PDNMX/SistemaCarga_S2S3/raw/69df8b10b3ffc647b0d1c2b03adf2d1d763394ea/assets/screenshot_SistemaCargaS2S3_1.png"
+    ],
+    "url": "https://www.youtube.com/watch?v=nPW2fGXQXN0",
+    "contactPoint": {
+      "organization": "PDN",
+      "phone": "N/A",
+      "email": "pdn@sesna.gob.mx"
+    },
+    "technologies": [
+      "Docker",
+      "Linux"
+    ]
   }
 ]
 
