@@ -360,7 +360,7 @@
     ]
   },
   {
-    "id": "15",
+    "id": "16",
     "resourceType": "api",
     "maintainer": "SESAEMM",
     "name": "API SPIC",
@@ -374,6 +374,33 @@
       "https://gitlab.com/sesaemm_pde/apispic/-/raw/master/Documentacion/capturas/3.resultado-spic.png"
     ],
     "url": "https://gitlab.com/sesaemm_pde/apispic.git",
+    "contactPoint": {
+      "organization": "Secretaría Ejecutiva del Sistema Anticorrupción del Estado de México y Municipios (SESAEMM)",
+      "phone": "(722) 9146034 ext. 4006",
+      "email": "cristian.luna@sesaemm.gob.mx"
+    },
+    "technologies": [
+      "Java Development Kit",
+      "Apache Tomcat",
+      "MongoDB Enterprise",
+      "Apache Maven"
+    ]
+  },
+  {
+    "id": "17",
+    "resourceType": "api",
+    "maintainer": "SESAEMM",
+    "name": "API SSANCIONADOS",
+    "systems": [3],
+    "abstract": "API de conexión con la Plataforma Digital Estatal y la Plataforma Digital Nacional para el Sistema III. Servidores públicos sancionados.",
+    "description": "API de conexión con la Plataforma Digital Estatal y la Plataforma Digital Nacional para el Sistema III. Servidores públicos sancionados que garantiza la interoperabilidad y el correcto funcionamiento con base en las especificaciones proporcionadas por la Secretaría Ejecutiva del Sistema Nacional Anticorrupción bajo el protocolo de seguridad OAuth 2.0. ",
+    "cover": "https://gitlab.com/sesaemm_pde/apissancionados/-/raw/master/Documentacion/banner/3_apiSsancionados.png",
+    "screenshots": [
+      "https://gitlab.com/sesaemm_pde/apissancionados/-/raw/master/Documentacion/capturas/1.oauth-sancionados.png",
+      "https://gitlab.com/sesaemm_pde/apissancionados/-/raw/master/Documentacion/capturas/2.filtros-sancionados.png",
+      "https://gitlab.com/sesaemm_pde/apissancionados/-/raw/master/Documentacion/capturas/3.resultado-sancionados.png"
+    ],
+    "url": "https://gitlab.com/sesaemm_pde/apissancionados.git",
     "contactPoint": {
       "organization": "Secretaría Ejecutiva del Sistema Anticorrupción del Estado de México y Municipios (SESAEMM)",
       "phone": "(722) 9146034 ext. 4006",
