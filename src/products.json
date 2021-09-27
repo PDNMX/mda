@@ -340,13 +340,40 @@
     "systems": [1],
     "abstract": "API de conexión con la Plataforma Digital Estatal y la Plataforma Digital Nacional para el Sistema I. Evolución patrimonial, declaración de intereses y constancia de presentación de declaración fiscal.",
     "description": "API de conexión con la Plataforma Digital Estatal y la Plataforma Digital Nacional para el Sistema I. Evolución patrimonial, declaración de intereses  y constancia de presentación de declaración fiscal que garantiza la interoperabilidad y el correcto funcionamiento con base en las especificaciones  proporcionadas por la Secretaría Ejecutiva del Sistema Nacional Anticorrupción bajo el protocolo de seguridad OAuth 2.0. ",
-    "cover": "https://gitlab.com/sesaemm_pde/apiDeclaraciones/-/raw/master/Documentacion/banner/1_apiDeclaraciones.png ",
+    "cover": "https://gitlab.com/sesaemm_pde/apiDeclaraciones/-/raw/master/Documentacion/banner/1_apiDeclaraciones.png",
     "screenshots": [
       "https://gitlab.com/sesaemm_pde/apiDeclaraciones/-/raw/ddfcc04a3e89dca12ca648a314fb11b1fc7bf895/Documentacion/capturas/1.oauth-declaraciones.png",
       "https://gitlab.com/sesaemm_pde/apiDeclaraciones/-/raw/ddfcc04a3e89dca12ca648a314fb11b1fc7bf895/Documentacion/capturas/2.filtros-declaraciones.png",
       "https://gitlab.com/sesaemm_pde/apiDeclaraciones/-/raw/ddfcc04a3e89dca12ca648a314fb11b1fc7bf895/Documentacion/capturas/3.resultado-declaraciones.png"
     ],
     "url": "https://gitlab.com/sesaemm_pde/apiDeclaraciones.git",
+    "contactPoint": {
+      "organization": "Secretaría Ejecutiva del Sistema Anticorrupción del Estado de México y Municipios (SESAEMM)",
+      "phone": "(722) 9146034 ext. 4006",
+      "email": "cristian.luna@sesaemm.gob.mx"
+    },
+    "technologies": [
+      "Java Development Kit",
+      "Apache Tomcat",
+      "MongoDB Enterprise",
+      "Apache Maven"
+    ]
+  },
+  {
+    "id": "15",
+    "resourceType": "api",
+    "maintainer": "SESAEMM",
+    "name": "API SPIC",
+    "systems": [2],
+    "abstract": "API de conexión con la Plataforma Digital Estatal y la Plataforma Digital Nacional para el Sistema II. Servidores públicos que intervengan en procedimientos de contrataciones públicas.",
+    "description": "API de conexión con la Plataforma Digital Estatal y la Plataforma Digital Nacional para el Sistema II. Servidores públicos que intervengan en procedimientos de contrataciones públicas que garantiza la interoperabilidad y el correcto funcionamiento con base en las especificaciones proporcionadas por la Secretaría Ejecutiva del Sistema Nacional Anticorrupción bajo el protocolo de seguridad OAuth 2.0.",
+    "cover": "https://gitlab.com/sesaemm_pde/apispic/-/raw/master/Documentacion/banner/2_apiSPIC.png",
+    "screenshots": [
+      "https://gitlab.com/sesaemm_pde/apispic/-/raw/master/Documentacion/capturas/1.oauth-spic.png",
+      "https://gitlab.com/sesaemm_pde/apispic/-/raw/master/Documentacion/capturas/2.filtros-spic.png",
+      "https://gitlab.com/sesaemm_pde/apispic/-/raw/master/Documentacion/capturas/3.resultado-spic.png"
+    ],
+    "url": "https://gitlab.com/sesaemm_pde/apispic.git",
     "contactPoint": {
       "organization": "Secretaría Ejecutiva del Sistema Anticorrupción del Estado de México y Municipios (SESAEMM)",
       "phone": "(722) 9146034 ext. 4006",
