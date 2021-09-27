@@ -412,7 +412,32 @@
       "MongoDB Enterprise",
       "Apache Maven"
     ]
+  },
+  {
+    "id": "18",
+    "resourceType": "api",
+    "maintainer": "SESAEMM",
+    "name": "API PSANCIONADOS",
+    "systems": [3],
+    "abstract": "API de conexión con la Plataforma Digital Estatal y la Plataforma Digital Nacional para el Sistema III. Particulares sancionados.",
+    "description": "API de conexión con la Plataforma Digital Estatal y la Plataforma Digital Nacional para el Sistema III. Particulares sancionados que garantiza la interoperabilidad y el correcto funcionamiento con base en las especificaciones proporcionadas por la Secretaría Ejecutiva del Sistema Nacional Anticorrupción bajo el protocolo de seguridad OAuth 2.0.",
+    "cover": "https://gitlab.com/sesaemm_pde/apipsancionados/-/raw/master/Documentacion/banner/4_apiPsancionados.png",
+    "screenshots": [
+      "https://gitlab.com/sesaemm_pde/apipsancionados/-/raw/master/Documentacion/capturas/1.oauth-%20particulares.png",
+      "https://gitlab.com/sesaemm_pde/apipsancionados/-/raw/master/Documentacion/capturas/2.filtros-particulares.png",
+      "https://gitlab.com/sesaemm_pde/apipsancionados/-/raw/master/Documentacion/capturas/3.resultado-particulares.png"
+    ],
+    "url": "https://gitlab.com/sesaemm_pde/apipsancionados.git",
+    "contactPoint": {
+      "organization": "Secretaría Ejecutiva del Sistema Anticorrupción del Estado de México y Municipios (SESAEMM)",
+      "phone": "(722) 9146034 ext. 4006",
+      "email": "cristian.luna@sesaemm.gob.mx"
+    },
+    "technologies": [
+      "Java Development Kit",
+      "Apache Tomcat",
+      "MongoDB Enterprise",
+      "Apache Maven"
+    ]
   }
 ]
-
-
