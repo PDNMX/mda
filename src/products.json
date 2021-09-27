@@ -503,7 +503,7 @@
     "systems": [3],
     "abstract": "Sistema de captura para el Sistema III. Particulares sancionados.",
     "description": "Sistema de captura para el Sistema III. Particulares sancionados que permite el registro e integración de la información relacionada con todos aquellos particulares sancionados, tomando como base el estándar de datos del  \nSistema III - Particulares sancionados de la Plataforma Digital Estatal y la Plataforma Digital Nacional.",
-    "cover": "",
+    "cover": "https://gitlab.com/sesaemm_pde/capturapsancionados/-/tree/master/Documentacion/banner/7_capturaPsancionados.png",
     "screenshots": [
       "https://gitlab.com/sesaemm_pde/capturapsancionados/-/raw/master/Documentacion/capturas/1.login-%20s3-particulares.png",
       "https://gitlab.com/sesaemm_pde/capturapsancionados/-/raw/master/Documentacion/capturas/2.listado-de-registros-particulares.png",
