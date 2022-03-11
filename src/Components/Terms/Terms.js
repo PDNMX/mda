@@ -1,5 +1,6 @@
 import React from "react";
-import {Typography, withStyles, Grid} from "@material-ui/core";
+import {Typography, Grid} from "@mui/material";
+import {withStyles} from "@mui/styles"
 
 const styles = theme => ({
     root: {

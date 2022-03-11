@@ -1,11 +1,11 @@
 import React from "react";
-import { withStyles } from "@material-ui/core/styles";
+import {withStyles} from "@mui/styles"
 import Blog from "../../Assets/iconos_barra/ico-blog.svg";
 import Calidad from "../../Assets/iconos_barra/ico-calidad_datos.svg";
 import Espe from "../../Assets/iconos_barra/ico-especificaciones.svg";
 import Mesa from "../../Assets/iconos_barra/ico-mesa_ayuda.svg";
 //import Plat from "../../Assets/iconos_barra/ico-plataformas_sistemas.svg";
-import {Link, Tooltip, Box} from "@material-ui/core";
+import {Link, Tooltip, Box} from "@mui/material";
 
 const styles = theme => ({
   root: {

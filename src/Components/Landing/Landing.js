@@ -1,5 +1,6 @@
 import React from "react";
-import {Grid, withStyles, Typography, Box} from "@material-ui/core";
+import {Grid, Typography, Box} from "@mui/material";
+import {withStyles} from "@mui/styles"
 const styles = theme => ({
     root: {
         padding: theme.spacing(1),

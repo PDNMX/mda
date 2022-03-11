@@ -1,11 +1,10 @@
 import React from "react";
-import {withStyles, Button, Typography, Grid, Fab, Box} from "@material-ui/core";
-import ArrowBack from "@material-ui/icons/ArrowBack";
-import Business from "@material-ui/icons/Business";
-import Email from "@material-ui/icons/Email";
-import Call from "@material-ui/icons/Call";
-import Chip from "@material-ui/core/Chip";
-
+import {Button, Typography, Grid, Fab, Box, Chip} from "@mui/material";
+import {withStyles} from "@mui/styles"
+import ArrowBack from "@mui/icons-material/ArrowBack";
+import Business from "@mui/icons-material/Business";
+import Email from "@mui/icons-material/Email";
+import Call from "@mui/icons-material/Call";
 
 const styles = theme => ({
    root: {

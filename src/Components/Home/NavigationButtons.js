@@ -1,9 +1,10 @@
 import React from "react";
-import {Box, Button, withStyles} from "@material-ui/core";
-import Settings from "@material-ui/icons/Settings";
-import Computer from "@material-ui/icons/Computer";
-import Description from "@material-ui/icons/Description";
-import ShoppingCart from "@material-ui/icons/ShoppingBasket";
+import {Box, Button} from "@mui/material";
+import {withStyles} from "@mui/styles"
+import Settings from "@mui/icons-material/Settings";
+import Computer from "@mui/icons-material/Computer";
+import Description from "@mui/icons-material/Description";
+import ShoppingCart from "@mui/icons-material/ShoppingBasket";
 
 const styles = theme => ({
     root:{

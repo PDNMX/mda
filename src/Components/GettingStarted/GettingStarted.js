@@ -1,5 +1,6 @@
 import React from "react";
-import {Typography, withStyles, Grid, Box} from "@material-ui/core";
+import {Typography, Grid, Box} from "@mui/material";
+import {withStyles} from "@mui/styles"
 import principal from "../../Assets/quick_start/screen1.png";
 import botones from "../../Assets/quick_start/screen2.png";
 import tarjeta from "../../Assets/quick_start/screen3.png";

@@ -2,16 +2,16 @@ import React from 'react';
 import Home from "./Components/Home/Home";
 import P404 from "./Components/P404";
 //import Product from "./Components/ProductDetails/ProductDetails"
-import {createMuiTheme, ThemeProvider} from "@material-ui/core/styles";
+import {createTheme, ThemeProvider} from "@mui/material/styles";
 import {
     BrowserRouter as Router,
     Switch,
     Route,
 } from "react-router-dom";
 
-const theme = createMuiTheme({
+const theme = createTheme({
     typography: {
-        fontFamily: ["Noto Sans SC", "sans-serif"].join(',')
+        fontFamily: ["Roboto", "sans-serif"].join(',')
     }
 });
 
