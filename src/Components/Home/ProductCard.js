@@ -11,12 +11,6 @@ const useStyles = makeStyles({
     media: {
         height: 140,
     },
-    chip:{
-        //background: '#ffe01b',
-        color: "#ffffff",
-        fontWeight: "bold",
-        borderRadius: "3px"
-    },
     cardContent: {
         height: 170
     }
@@ -61,9 +55,11 @@ export default function ProductCard(props) {
                 {product.systems.map( (s, i) => {
                     return <Chip key={i}
                         label={`Sistema ${s}`}
-                        className={classes.chip}
                         size="small"
                         style={{
+                            color: "#ffffff",
+                            fontWeight: "bold",
+                            borderRadius: "3px",
                             backgroundColor: colors[ s-1 ]
                         }}
                     />
