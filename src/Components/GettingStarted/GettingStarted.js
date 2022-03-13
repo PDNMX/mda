@@ -9,7 +9,8 @@ const styles = theme => ({
     root: {
         flexGrow: 1,
         padding: theme.spacing(1),
-        paddingTop: theme.spacing(4)
+        paddingTop: theme.spacing(4),
+        paddingBottom: theme.spacing(4),
     },
     /*item: {
         maxWidth: 1200 // No funciona
