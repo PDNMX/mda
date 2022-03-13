@@ -1,5 +1,5 @@
 import React from "react";
-import {Typography, Grid} from "@mui/material";
+import {Typography, Grid, Link} from "@mui/material";
 import {withStyles} from "@mui/styles"
 
 const styles = theme => ({
@@ -44,33 +44,33 @@ const Terms = props => {
                 <ul>
                     <li>
                         <Typography>
-                            <a href="http://www.diputados.gob.mx/LeyesBiblio/pdf/LGSNA.pdf" target="_blank" rel="noopener noreferrer">
+                            <Link href="http://www.diputados.gob.mx/LeyesBiblio/pdf/LGSNA.pdf" target="_blank" rel="noopener noreferrer">
                                 Ley General del Sistema Nacional Anticorrupción
-                            </a>,
+                            </Link>,
                             publicada en el Diario Oficial de la Federación el 18 de julio del 2016.
                         </Typography>
                     </li>
                     <li>
                         <Typography>
-                            <a href="http://www.diputados.gob.mx/LeyesBiblio/pdf/LGRA_130420.pdf" target="_blank" rel="noopener noreferrer">
+                            <Link href="http://www.diputados.gob.mx/LeyesBiblio/pdf/LGRA_130420.pdf" target="_blank" rel="noopener noreferrer">
                                 Ley General de Responsabilidades Administrativas
-                            </a>,
+                            </Link>,
                             publicada en el Diario Oficial de la Federación el 12 de abril del 2016.
                         </Typography>
                     </li>
                     <li>
                         <Typography>
-                            <a href="https://www.dof.gob.mx/nota_detalle.php?codigo=5541802&fecha=23/10/2018" target="_blank" rel="noopener noreferrer">
+                            <Link href="https://www.dof.gob.mx/nota_detalle.php?codigo=5541802&fecha=23/10/2018" target="_blank" rel="noopener noreferrer">
                                 Bases para el Funcionamiento de la Plataforma Digital Nacional
-                            </a>,
+                            </Link>,
                             publicadas en el Diario Oficial de la Federación el 23 de octubre del 2018.
                         </Typography>
                     </li>
                     <li>
                         <Typography>
-                            <a href="http://www.dof.gob.mx/nota_detalle.php?codigo=5491478&fecha=21/07/2017" target="_blank" rel="noopener noreferrer">
+                            <Link href="http://www.dof.gob.mx/nota_detalle.php?codigo=5491478&fecha=21/07/2017" target="_blank" rel="noopener noreferrer">
                                 Estatuto Orgánico de la Secretaría Ejecutiva del Sistema Nacional Anticorrupción
-                            </a>,
+                            </Link>,
                             publicado en el Diario Oficial de la Federación el 21 de julio de 2017.
                         </Typography>
                     </li>

@@ -1,16 +1,14 @@
 import React from "react";
 import {withStyles} from "@mui/styles"
 import Blog from "../../Assets/iconos_barra/ico-blog.svg";
-import Calidad from "../../Assets/iconos_barra/ico-calidad_datos.svg";
-import Espe from "../../Assets/iconos_barra/ico-especificaciones.svg";
-import Mesa from "../../Assets/iconos_barra/ico-mesa_ayuda.svg";
-//import Plat from "../../Assets/iconos_barra/ico-plataformas_sistemas.svg";
+import Espe from "../../Assets/iconos_barra/ico_especificaciones.svg";
+import Mesa from "../../Assets/iconos_barra/ico_mesa-ayuda.svg";
 import {Link, Tooltip, Box} from "@mui/material";
 
 const styles = theme => ({
   root: {
     flexGrow: 1,
-    backgroundColor: "#f6f6f6",
+    backgroundColor: theme.palette.secundario.dark,
     textAlign: "center"
   },
   icon: {
@@ -56,17 +54,6 @@ class BarraFea extends React.Component {
                       target="_blank"
                       className={classes.link}>
                   <img src={Blog} className={classes.icon} alt="Blog" />
-                </Link>
-              </Tooltip>
-            </Box>
-
-            <Box className={classes.item} flexGrow={1}>
-              <Tooltip title="Calidad de datos" arrow>
-                <Link href="https://plataformadigitalnacional.org/gaa/calidad"
-                      target="_blank"
-                      className={classes.link}>
-                  <img src={Calidad} className={classes.icon} alt="Calidad de datos"
-                  />
                 </Link>
               </Tooltip>
             </Box>

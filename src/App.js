@@ -8,10 +8,30 @@ import {
     Switch,
     Route,
 } from "react-router-dom";
+import ResposiveDrawer from "./Components/Home/ResposiveDrawer";
 
 const theme = createTheme({
     typography: {
         fontFamily: ["Roboto", "sans-serif"].join(',')
+    },
+    palette:{
+        primario: {
+            main: "#0d3b49",
+            light: "#3d6575",
+            dark: "#001621",
+            contrastText: "#ced8db"
+        },
+        secundario: {
+            main: "#3ab0e5",
+            light: "#79e2ff",
+            dark: "#0081b3",
+            contrastText: "#0d3b49"
+        },
+        text:{
+            main:"#ced8db",
+            greyColor: '#666666',
+            blueColor: '#3ab0e5'
+        },
     }
 });
 
@@ -22,6 +42,9 @@ function App() {
                 <Switch>
                     <Route exact path="/">
                         <Home/>
+                    </Route>
+                    <Route exact path="/v1">
+                        <ResposiveDrawer/>
                     </Route>
                     {/*<Route exact path="/product/:id">
                         <Product/>

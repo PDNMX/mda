@@ -8,8 +8,8 @@ import ShoppingCart from "@mui/icons-material/ShoppingBasket";
 
 const styles = theme => ({
     root:{
-      paddingTop: theme.spacing(2),
-      paddingBottom: theme.spacing(2)
+        paddingTop: theme.spacing(2),
+        paddingBottom: theme.spacing(2)
     },
     box: {
         display: "flex",
@@ -29,7 +29,7 @@ const styles = theme => ({
     },
     selectedButton:{
         margin : theme.spacing(1),
-        background: '#ffe01b',
+        color: '#ffe01b',
         "&:focus": {
             background: '#ffe01b',
             backgroundColor: '#ffe01b'
@@ -52,37 +52,44 @@ const NavigationButtons = props => {
 
     return <div className={classes.root}>
         <Box className={classes.box}>
-            <Button variant="contained"
-                    startIcon={<ShoppingCart/>}
-                    className={buttonClass( resourceType === "all" )}
-                    onClick={() => handleSetFilters("all")}
-            >
-                Todos los recursos
-            </Button>
-            <Button variant="contained"
-                    startIcon={<Settings/>}
-                    className={buttonClass( resourceType === "api")}
-                    onClick={() => handleSetFilters("api")}
-            >
-                APIs
-            </Button>
-            <Button variant="contained"
-                    className={buttonClass(resourceType === "sys")}
-                    startIcon={<Computer/>}
-                    onClick={() => handleSetFilters("sys")}
-            >
-                Sistemas
-            </Button>
-            <Button variant="contained"
-                    className={buttonClass(resourceType === "doc")}
-                    startIcon={<Description/>}
-                    onClick={() => handleSetFilters("doc")}
-            >
-                Documentación
-            </Button>
+            <Box p={1}>
+                <Button variant="contained"
+                        startIcon={<ShoppingCart/>}
+                        className={buttonClass( resourceType === "all" )}
+                        onClick={() => handleSetFilters("all")}
+                >
+                    Todos los recursos
+                </Button>
+            </Box>
+            <Box p={1}>
+                <Button variant="contained"
+                        startIcon={<Settings/>}
+                        className={buttonClass( resourceType === "api")}
+                        onClick={() => handleSetFilters("api")}
+                >
+                    APIs
+                </Button>
+            </Box>
+            <Box p={1}>
+                <Button variant="contained"
+                        className={buttonClass(resourceType === "sys")}
+                        startIcon={<Computer/>}
+                        onClick={() => handleSetFilters("sys")}
+                >
+                    Sistemas
+                </Button>
+            </Box>
+            <Box p={1}>
+                <Button variant="contained"
+                        className={buttonClass(resourceType === "doc")}
+                        startIcon={<Description/>}
+                        onClick={() => handleSetFilters("doc")}
+                >
+                    Documentación
+                </Button>
+            </Box>
         </Box>
     </div>
-
 };
 
 

@@ -1,107 +1,61 @@
-import React from 'react';
+import * as React from 'react';
 import PropTypes from 'prop-types';
 import AppBar from '@mui/material/AppBar';
+import Box from '@mui/material/Box';
 import CssBaseline from '@mui/material/CssBaseline';
 import Divider from '@mui/material/Divider';
 import Drawer from '@mui/material/Drawer';
-import Hidden from '@mui/material/Hidden';
 import IconButton from '@mui/material/IconButton';
-//import InboxIcon from '@mui/icons-material/MoveToInbox';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-//import MailIcon from '@mui/icons-material/Mail';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import { makeStyles, useTheme } from '@mui/styles';
-import MDA from '../../Assets/logo_mda.png';
-import DrawerContents from "./DrawerContents";
-import Link from "@mui/material/Link"
-
+import MDA from "../../Assets/logo_mda.svg";
 import Home from "@mui/icons-material/Home";
 import MenuBook from "@mui/icons-material/MenuBook";
+import Help from "@mui/icons-material/Help";
+import CheckCircle from "@mui/icons-material/CheckCircle";
+import Apps from "@mui/icons-material/Apps";
 import Filter1 from "@mui/icons-material/Filter1";
 import Filter2 from "@mui/icons-material/Filter2";
 import Filter3 from "@mui/icons-material/Filter3";
 import Filter6 from "@mui/icons-material/Filter6";
-import Apps from "@mui/icons-material/Apps";
-import PDN from "../../Assets/PDN.png";
-import Footer from "./Footer";
-import Help from "@mui/icons-material/Help";
-import CheckCircle from "@mui/icons-material/CheckCircle";
+import {withStyles} from "@mui/styles";
+import DrawerContents from "./DrawerContents";
 import BarraFea from "./BarraFea";
+import Link from "@mui/material/Link";
+import PDN from "../../Assets/PDN.png";
 
 const drawerWidth = 240;
 
-const useStyles = makeStyles((theme) => ({
-    root: {
-        display: 'flex',
-    },
-    drawer: {
-        [theme.breakpoints.up('sm')]: {
-            width: drawerWidth,
-            flexShrink: 0,
-        },
-    },
-    appBar: {
-        [theme.breakpoints.up('sm')]: {
-            width: `calc(100% - ${drawerWidth}px)`,
-            marginLeft: drawerWidth,
-        },
-    },
-    toolbar1:{
-        background: '#ffffff'
-    },
-    toolbar2:{
-        background: "#f6f6f6"
-    },
-    toolbar3:{
-        background: '#34b3eb',
-    },
-    /*
-    footer: {
-        [theme.breakpoints.up('sm')]: {
-            width: `calc(100% - ${drawerWidth}px)`,
-            marginLeft: drawerWidth,
-        },
-        top: "auto",
-        bottom: 0
-    },
-    footerToolbar1:{
-        background: "#666666",
-        minHeight: 150
-    },*/
-    menuButton: {
-        marginRight: theme.spacing(2),
-        [theme.breakpoints.up('sm')]: {
-            display: 'none',
-        },
-    },
-    // necessary for content to be below app bar
-    toolbar: theme.mixins.toolbar,
-    drawerPaper: {
-        width: drawerWidth,
-    },
-    content: {
-        flexGrow: 1,
-        paddingTop: theme.spacing(16), //appbar => 10
-        //padding: theme.spacing(3),
-    },
+const styles = theme => ({
     logoMDA:{
         paddingTop: theme.spacing(2),
+        margin: theme.spacing(1),
         maxWidth: 220
     },
     pdnLogo:{
         maxWidth: 80
+    },
+    icon : {
+        color:'#f2f2f2'
+    },
+    toolbar1:{
+        background: "#133f52"
+    },
+    toolbar2: {
+        background: theme.palette.secundario.dark
+    },
+    toolbar3: {
+        background: "#133f52"
     }
-}));
+});
 
 function ResponsiveDrawer(props) {
-    const { window } = props;
-    const classes = useStyles();
-    const theme = useTheme();
+    const { window, classes } = props;
     const [mobileOpen, setMobileOpen] = React.useState(false);
 
     const handleDrawerToggle = () => {
@@ -128,25 +82,25 @@ function ResponsiveDrawer(props) {
     const drawer = (
         <div>
             <img src={MDA} alt="Mercado Digital Anticorrupción" className={classes.logoMDA}/>
-            <Divider />
+            <Divider color={"#f2f2f2"}/>
             <List>
-                <ListItem button onClick={() => handleDrawerClick(0,0)} selected={ option === 0}>
+                <ListItem button onClick={() => handleDrawerClick(0,0)} selected={ option === 0} >
                     <ListItemIcon>
-                        <Home/>
+                        <Home className={classes.icon}/>
                     </ListItemIcon>
                     <ListItemText primary="Bienvenida"/>
                 </ListItem>
 
                 <ListItem button onClick={() => handleDrawerClick(0,1)} selected={ option === 1}>
                     <ListItemIcon>
-                        <MenuBook/>
+                        <MenuBook className={classes.icon}/>
                     </ListItemIcon>
                     <ListItemText primary="Inicio rápido" />
                 </ListItem>
 
                 <ListItem button onClick={() => handleDrawerClick(0,2)} selected={ option === 2}>
                     <ListItemIcon>
-                        <Help/>
+                        <Help className={classes.icon}/>
                     </ListItemIcon>
                     <ListItemText primary="Preguntas frecuentes" />
                 </ListItem>
@@ -154,49 +108,49 @@ function ResponsiveDrawer(props) {
 
                 <ListItem button onClick={() => handleDrawerClick(0,3)} selected={ option === 3}>
                     <ListItemIcon>
-                        <CheckCircle/>
+                        <CheckCircle className={classes.icon}/>
                     </ListItemIcon>
                     <ListItemText primary="Términos de uso" />
                 </ListItem>
 
             </List>
 
-            <Divider/>
+            <Divider color={"#f2f2f2"}/>
 
             <List>
                 <ListItem button onClick={() => handleDrawerClick(0, 4)} selected={ option === 4}>
                     <ListItemIcon>
-                        <Apps />
+                        <Apps className={classes.icon}/>
                     </ListItemIcon>
-                    <ListItemText primary="Todos los sistemas" secondary="Todas las herramientas"/>
+                    <ListItemText primary="Todos los sistemas" secondary={<Typography fontSize="small">Todas las herramientas</Typography>}/>
                 </ListItem>
 
                 <ListItem button onClick={() => handleDrawerClick(1, 5)} selected={ option === 5}>
                     <ListItemIcon>
-                        <Filter1 />
+                        <Filter1 className={classes.icon}/>
                     </ListItemIcon>
-                    <ListItemText primary="Sistema 1" secondary="Declaraciones"/>
+                    <ListItemText primary="Sistema 1" secondary={<Typography fontSize="small">Declaraciones</Typography>}/>
                 </ListItem>
 
                 <ListItem button onClick={() => handleDrawerClick(2, 6)} selected={ option === 6}>
                     <ListItemIcon>
-                        <Filter2 />
+                        <Filter2 className={classes.icon}/>
                     </ListItemIcon>
-                    <ListItemText primary="Sistema 2" secondary="S. P. en Contrataciones"/>
+                    <ListItemText primary="Sistema 2" secondary={<Typography fontSize="small">S. P. en Contrataciones</Typography>}/>
                 </ListItem>
 
                 <ListItem button onClick={() => handleDrawerClick(3, 7)} selected={ option === 7}>
                     <ListItemIcon>
-                        <Filter3 />
+                        <Filter3 className={classes.icon}/>
                     </ListItemIcon>
-                    <ListItemText primary="Sistema 3" secondary="Sancionados" />
+                    <ListItemText primary="Sistema 3" secondary={<Typography fontSize="small">Sancionados</Typography>} />
                 </ListItem>
 
                 <ListItem button onClick={() => handleDrawerClick(6, 8)} selected={ option === 8}>
                     <ListItemIcon>
-                        <Filter6 />
+                        <Filter6 className={classes.icon}/>
                     </ListItemIcon>
-                    <ListItemText primary="Sistema 6" secondary="Contrataciones" />
+                    <ListItemText primary="Sistema 6" secondary={<Typography fontSize="small">Contrataciones</Typography>}/>
                 </ListItem>
 
             </List>
@@ -206,10 +160,15 @@ function ResponsiveDrawer(props) {
     const container = window !== undefined ? () => window().document.body : undefined;
 
     return (
-        <div className={classes.root}>
+        <Box sx={{ display: 'flex'}}>
             <CssBaseline />
-            <AppBar />
-            <AppBar position="fixed" className={classes.appBar}>
+            <AppBar
+                position="fixed"
+                sx={{
+                    width: { sm: `calc(100% - ${drawerWidth}px)` },
+                    ml: { sm: `${drawerWidth}px` },
+                }}
+            >
                 <Toolbar className={classes.toolbar1}>
                     <div style={{flexGrow: 1}}/>
                     <Link href="https://plataformadigitalnacional.org">
@@ -225,54 +184,56 @@ function ResponsiveDrawer(props) {
                         aria-label="open drawer"
                         edge="start"
                         onClick={handleDrawerToggle}
-                        className={classes.menuButton}
+                        sx={{ mr: 2, display: { sm: 'none' } }}
                     >
                         <MenuIcon />
                     </IconButton>
-                    <Typography variant="h6" noWrap>
+                    <Typography variant="h6" noWrap component="div">
                         Mercado Digital Anticorrupción
                     </Typography>
                 </Toolbar>
             </AppBar>
-
-
-            <nav className={classes.drawer} aria-label="mailbox folders">
+            <Box
+                component="nav"
+                sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 }}}
+                aria-label="mailbox folders"
+            >
                 {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
-                {/* Mobile */}
-                <Hidden smUp implementation="css">
-                    <Drawer
-                        container={container}
-                        variant="temporary"
-                        anchor={theme.direction === 'rtl' ? 'right' : 'left'}
-                        open={mobileOpen}
-                        onClose={handleDrawerToggle}
-                        classes={{
-                            paper: classes.drawerPaper,
-                        }}
-                        ModalProps={{
-                            keepMounted: true, // Better open performance on mobile.
-                        }}
-                    >
-                        {drawer}
-                    </Drawer>
-                </Hidden>
-                {/* Desktop */}
-                <Hidden xsDown implementation="css">
-                    <Drawer
-                        classes={{
-                            paper: classes.drawerPaper,
-                        }}
-                        variant="permanent"
-                        open
-                    >
-                        {drawer}
-                    </Drawer>
-                </Hidden>
-            </nav>
+                <Drawer
+                    container={container}
+                    variant="temporary"
+                    open={mobileOpen}
+                    onClose={handleDrawerToggle}
+                    ModalProps={{
+                        keepMounted: true, // Better open performance on mobile.
+                    }}
+                    sx={{
+                        display: { xs: 'block', sm: 'none' },
+                        '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
+                    }}
+                >
+                    {drawer}
+                </Drawer>
+                <Drawer
+                    variant="permanent"
+                    sx={{
+                        display: { xs: 'none', sm: 'block' },
+                        '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth, color: '#f2f2f2', background: "#133f52" },
+                    }}
+                    open
+                >
+                    {drawer}
+                </Drawer>
+            </Box>
+            <Box
+                component="main"
+                sx={{
+                    flexGrow: 1, p:3, paddingTop: 15, width: { sm: `calc(100% - ${drawerWidth}px)` },
+                    color: '#f2f2f2'
+                }}
+            >
+                <Toolbar />
 
-            {/* CONTENTS */}
-            <main className={classes.content}>
-                <div className={classes.toolbar} />
                 <DrawerContents
                     option={option}
                     filters={filters}
@@ -280,19 +241,9 @@ function ResponsiveDrawer(props) {
                     selected={selected}
                     setSelected={setSelected}
                 />
-                <Footer/>
-            </main>
 
-            {/* Footer */}
-
-            {/*<Hidden mdDown implementation="css">
-                <AppBar position="fixed" className={classes.footer}>
-                    <Toolbar className={classes.footerToolbar1}>
-                        <Footer/>
-                    </Toolbar>
-                </AppBar>
-            </Hidden>*/}
-        </div>
+            </Box>
+        </Box>
     );
 }
 
@@ -304,4 +255,4 @@ ResponsiveDrawer.propTypes = {
     window: PropTypes.func,
 };
 
-export default ResponsiveDrawer;
+export default withStyles(styles)(ResponsiveDrawer);
