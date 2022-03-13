@@ -8,7 +8,6 @@ import {
     Switch,
     Route,
 } from "react-router-dom";
-import ResposiveDrawer from "./Components/Home/ResposiveDrawer";
 
 const theme = createTheme({
     typography: {
@@ -32,6 +31,12 @@ const theme = createTheme({
             greyColor: '#666666',
             blueColor: '#3ab0e5'
         },
+        background: {
+            default: "#0d3b49",
+            opaque:'#155065',
+            hoverBotton: '#56a3bf',
+            tableBody: "#f2f2f2"
+        }
     }
 });
 
@@ -42,9 +47,6 @@ function App() {
                 <Switch>
                     <Route exact path="/">
                         <Home/>
-                    </Route>
-                    <Route exact path="/v1">
-                        <ResposiveDrawer/>
                     </Route>
                     {/*<Route exact path="/product/:id">
                         <Product/>

@@ -31,47 +31,45 @@ const styles = theme => ({
   }
 });
 
-class BarraFea extends React.Component {
-  render() {
-    const { classes } = this.props;
-    return (
-        <div className={classes.root}>
-          <Box display="flex" flexWrap="wrap" justifyContent="center">
+const BarraFea = props => {
+  const { classes } = props;
+  return (
+      <div className={classes.root}>
+        <Box display="flex" flexWrap="wrap" justifyContent="center">
 
-            <Box className={classes.item} flexGrow={1}>
-              <Tooltip title="Mesa de ayuda">
-                <Link href="https://plataformadigitalnacional.org/mesa-de-ayuda"
-                      target="_blank"
-                      className={classes.link}>
-                  <img src={Mesa} className={classes.icon} alt="Mesa de ayuda"/>
-                </Link>
-              </Tooltip>
-            </Box>
-
-            <Box className={classes.item} flexGrow={1}>
-              <Tooltip title="Blog" arrow>
-                <Link href="https://plataformadigitalnacional.org/blog"
-                      target="_blank"
-                      className={classes.link}>
-                  <img src={Blog} className={classes.icon} alt="Blog" />
-                </Link>
-              </Tooltip>
-            </Box>
-
-            <Box className={classes.item} flexGrow={1}>
-              <Tooltip title="Especificaciones técnicas" arrow>
-                <Link href="https://plataformadigitalnacional.org/especificaciones"
-                      target="_blank"
-                      className={classes.link}>
-                  <img src={Espe} className={classes.icon} alt="Especificaciones técnicas"
-                  />
-                </Link>
-              </Tooltip>
-            </Box>
+          <Box className={classes.item} flexGrow={1}>
+            <Tooltip title="Mesa de ayuda">
+              <Link href="https://plataformadigitalnacional.org/mesa-de-ayuda"
+                    target="_blank"
+                    className={classes.link}>
+                <img src={Mesa} className={classes.icon} alt="Mesa de ayuda"/>
+              </Link>
+            </Tooltip>
           </Box>
-        </div>
-    );
-  }
+
+          <Box className={classes.item} flexGrow={1}>
+            <Tooltip title="Blog" arrow>
+              <Link href="https://plataformadigitalnacional.org/blog"
+                    target="_blank"
+                    className={classes.link}>
+                <img src={Blog} className={classes.icon} alt="Blog" />
+              </Link>
+            </Tooltip>
+          </Box>
+
+          <Box className={classes.item} flexGrow={1}>
+            <Tooltip title="Especificaciones técnicas" arrow>
+              <Link href="https://plataformadigitalnacional.org/especificaciones"
+                    target="_blank"
+                    className={classes.link}>
+                <img src={Espe} className={classes.icon} alt="Especificaciones técnicas"
+                />
+              </Link>
+            </Tooltip>
+          </Box>
+        </Box>
+      </div>
+  );
 }
 
 export default withStyles(styles)(BarraFea);
