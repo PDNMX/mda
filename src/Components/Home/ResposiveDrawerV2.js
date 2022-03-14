@@ -228,7 +228,7 @@ function ResponsiveDrawer(props) {
             <Box
                 component="main"
                 sx={{
-                    flexGrow: 1, p:3, paddingTop: 15, width: { sm: `calc(100% - ${drawerWidth}px)` },
+                    flexGrow: 1, p:3, paddingTop: 17, width: { sm: `calc(100% - ${drawerWidth}px)` },
                     color: '#f2f2f2'
                 }}
             >
