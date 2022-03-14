@@ -13,10 +13,10 @@ const styles = theme => ({
   },
   icon: {
     width: 45,
-    //margin: theme.spacing(4),
+    //margin: theme.spacing(1),
     //padding: theme.spacing(2),
     "&:hover": {
-      backgroundColor: "#c5c5c5",
+      backgroundColor: theme.palette.background.hoverBotton,
       borderRadius: 50
     },
   },

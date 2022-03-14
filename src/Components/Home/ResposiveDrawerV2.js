@@ -44,13 +44,13 @@ const styles = theme => ({
         color:'#f2f2f2'
     },
     toolbar1:{
-        background: "#133f52"
+        background: theme.palette.background.opaque
     },
     toolbar2: {
         background: theme.palette.secundario.dark
     },
     toolbar3: {
-        background: "#133f52"
+        background: theme.palette.background.opaque
     }
 });
 
@@ -218,7 +218,7 @@ function ResponsiveDrawer(props) {
                     variant="permanent"
                     sx={{
                         display: { xs: 'none', sm: 'block' },
-                        '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth, color: '#f2f2f2', background: "#133f52" },
+                        '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth, color: '#f2f2f2', background: "#155065" },
                     }}
                     open
                 >

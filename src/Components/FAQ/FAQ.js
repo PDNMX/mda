@@ -11,9 +11,6 @@ const styles = theme => ({
     /*item: {
         maxWidth: 1200 // no funciona
     },*/
-    question:{
-        fontWeight: "bold"
-    },
     ol: {
         fontWeight: "bold",
         fontFamily: "Noto Sans SC",
@@ -47,7 +44,7 @@ const FAQ = props =>{
                             Preguntas frecuentes
                         </Typography>
 
-                        <Typography className={classes.question}>
+                        <Typography sx={{fontWeight: 'bold'}}>
                             ¿Se necesita firmar algún convenio para comenzar a utilizar las herramientas del MDA?
                         </Typography>
 
@@ -58,7 +55,7 @@ const FAQ = props =>{
                         </Typography>
 
 
-                        <Typography className={classes.question}>
+                        <Typography sx={{fontWeight: 'bold'}}>
                             ¿Quién es el responsable del mantenimiento de las herramientas que se difunden en el MDA?
                         </Typography>
 
@@ -71,7 +68,7 @@ const FAQ = props =>{
                         </Typography>
 
 
-                        <Typography className={classes.question}>
+                        <Typography sx={{fontWeight: 'bold'}}>
                             ¿Dónde consigo ayuda para instalar o configurar una herramienta?
                         </Typography>
 
@@ -79,7 +76,7 @@ const FAQ = props =>{
                             Puedes solicitar ayuda a través de los datos contacto que aparecen en la sección de cada herramienta.
                         </Typography>
 
-                        <Typography className={classes.question}>
+                        <Typography sx={{fontWeight: 'bold'}}>
                             ¿A quien debo reportar fallas o defectos en las herramientas?
                         </Typography>
 
@@ -88,7 +85,7 @@ const FAQ = props =>{
                             En caso de registrar alguna falla o defecto es muy importante que contactes a la persona que aparece como contacto de la herramienta.
                         </Typography>
 
-                        <Typography className={classes.question}>
+                        <Typography sx={{fontWeight: 'bold'}}>
                             ¿Qué tipo de infraestructura de cómputo o licencias de software necesito para instalar las herramientas?
                         </Typography>
 
@@ -96,7 +93,7 @@ const FAQ = props =>{
                             Si tienes dudas sobre la instalación o puesta en marcha de las herramientas publicadas en el MDA puedes obtener ayuda a través de los datos de contacto que aparecen en la sección de cada herramienta.
                         </Typography>
 
-                        <Typography className={classes.question}>
+                        <Typography sx={{fontWeight: 'bold'}}>
                             ¿Qué hago si no cuento con la infraestructura para instalar, alojar o usar las herramientas?
                         </Typography>
 
@@ -108,7 +105,7 @@ const FAQ = props =>{
                             Puedes obtener ayuda a través de los datos de contacto que aparecen en la sección de cada herramienta. Es posible que se requiera establecer algún convenio de colaboración.
                         </Typography>
 
-                        <Typography className={classes.question}>
+                        <Typography sx={{fontWeight: 'bold'}}>
                             ¿Qué tipo de herramientas o recursos se pueden publicar en el MDA?
                         </Typography>
 
