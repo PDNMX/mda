@@ -17,11 +17,11 @@ const styles = theme => ({
     /*item: {
         maxWidth: 1200
     },*/
-    button:{
+   /* button:{
         marginTop : theme.spacing(1),
         marginBottom : theme.spacing(3),
         background: '#ffe01b'
-    },
+    },*/
     /*fab: {
         marginTop: theme.spacing(1),
         marginBottom: theme.spacing(3),
@@ -92,7 +92,10 @@ const ProductDetails = props => {
                             {product.description}
                         </Typography>
 
-                        <Button variant="contained" href={product.url} target="_blank" className={classes.button}>
+                        <Button variant="contained" href={product.url} target="_blank" color="secundario" sx={{
+                            marginTop : 1,
+                            marginBottom : 3,
+                        }}>
                             Conoce más
                         </Button>
 
@@ -109,7 +112,10 @@ const ProductDetails = props => {
 
                                 <Button variant="contained"
                                         href={product.contactPoint.directory_url}
-                                        target="_blank" className={classes.button}>
+                                        target="_blank"  color="secundario" sx={{
+                                        marginTop : 1,
+                                        marginBottom : 3,
+                                }}>
                                     Directorio RNC
                                 </Button>
                             </Box>
