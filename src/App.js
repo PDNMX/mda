@@ -45,7 +45,7 @@ function App() {
         <ThemeProvider theme={theme}>
             <Router>
                 <Switch>
-                    <Route exact path="/">
+                    <Route basename={process.env.PUBLIC_URL}>
                         <Home/>
                     </Route>
                     {/*<Route exact path="/product/:id">
