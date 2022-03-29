@@ -212,7 +212,7 @@ const FAQ = props =>{
                         </Typography>
 
                         <Box display="flex" paddingBottom={2}>
-                            <Link href="https://datos.gob.mx/libreusomx">
+                            <Link href="https://datos.gob.mx/libreusomx" target="_blank">
                                 https://datos.gob.mx/libreusomx
                             </Link>
                         </Box>

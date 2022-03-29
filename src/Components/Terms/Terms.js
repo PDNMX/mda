@@ -60,7 +60,7 @@ const Terms = props => {
                         <ul>
                             <li>
                                 <Typography>
-                                    <Link href="http://www.diputados.gob.mx/LeyesBiblio/pdf/LGSNA.pdf" target="_blank" rel="noopener noreferrer">
+                                    <Link href="http://www.dof.gob.mx/nota_detalle.php?codigo=5445048&fecha=18/07/2016" target="_blank" rel="noopener noreferrer">
                                         Ley General del Sistema Nacional Anticorrupción
                                     </Link>,
                                     publicada en el Diario Oficial de la Federación el 18 de julio del 2016.
@@ -68,7 +68,7 @@ const Terms = props => {
                             </li>
                             <li>
                                 <Typography>
-                                    <Link href="http://www.diputados.gob.mx/LeyesBiblio/pdf/LGRA_130420.pdf" target="_blank" rel="noopener noreferrer">
+                                    <Link href="https://www.diputados.gob.mx/LeyesBiblio/pdf/LGRA.pdf" target="_blank" rel="noopener noreferrer">
                                         Ley General de Responsabilidades Administrativas
                                     </Link>,
                                     publicada en el Diario Oficial de la Federación el 12 de abril del 2016.
@@ -239,7 +239,7 @@ const Terms = props => {
                                     </li>
                                     <li>
                                         <Typography>
-                                            Al utilizar el MDA también se aceptan los "Términos y Condiciones" de la PDN, disponibles en: https://plataformadigitalnacional.org/terminos
+                                            Al utilizar el MDA también se aceptan los "Términos y Condiciones" de la PDN, disponibles en: <Link href="https://plataformadigitalnacional.org/terminos" target="_blank">https://plataformadigitalnacional.org/terminos</Link>
                                         </Typography>
                                     </li>
                                 </ul>
