@@ -13,7 +13,7 @@ const styles = theme => ({
     },*/
     ol: {
         fontWeight: "bold",
-        fontFamily: "Noto Sans SC",
+        //fontFamily: "Noto Sans SC",
         fontSize: 16
     },
     paper: {
