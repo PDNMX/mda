@@ -33,25 +33,23 @@ const drawerWidth = 240;
 
 const styles = theme => ({
     logoMDA:{
-        paddingTop: theme.spacing(2),
+        paddingTop: theme.spacing(1),
         margin: theme.spacing(1),
-        maxWidth: 220
+        maxHeight: 80
     },
     pdnLogo:{
-        maxWidth: 80
+        maxWidth: 100
     },
     icon : {
         color:'#f2f2f2'
     },
     toolbar1:{
-        background: theme.palette.background.opaque
+        background: theme.palette.background.opaque,
+        height: 102
     },
-    toolbar2: {
-        background: theme.palette.secundario.dark
-    },
-    toolbar3: {
+    /*toolbar3: {
         background: theme.palette.background.opaque
-    }
+    }*/
 });
 
 function ResponsiveDrawer(props) {
@@ -169,16 +167,30 @@ function ResponsiveDrawer(props) {
                     ml: { sm: `${drawerWidth}px` },
                 }}
             >
+                {/* Mostrar en desktop */}
                 <Toolbar className={classes.toolbar1}>
-                    <div style={{flexGrow: 1}}/>
+                    {/*<div style={{flexGrow: 1}}/>*/}
+
+                    <IconButton
+                        color="inherit"
+                        aria-label="open drawer"
+                        edge="start"
+                        onClick={handleDrawerToggle}
+                        sx={{ mr: 2, display: { sm: 'none' } }}
+                    >
+                        <MenuIcon />
+                    </IconButton>
+
+                    <BarraFea/>
+
                     <Link href="https://plataformadigitalnacional.org">
                         <img src={PDN} alt="PDN" className={classes.pdnLogo}/>
                     </Link>
                 </Toolbar>
-                <Toolbar className={classes.toolbar2}>
-                    <BarraFea/>
-                </Toolbar>
-                <Toolbar className={classes.toolbar3}>
+
+                {/* Mostrar en movil */}
+                {/*
+                <Toolbar className={classes.toolbar3} sx={{display: { sm:'none'}}}>
                     <IconButton
                         color="inherit"
                         aria-label="open drawer"
@@ -191,7 +203,7 @@ function ResponsiveDrawer(props) {
                     <Typography variant="h6" noWrap component="div">
                         Mercado Digital Anticorrupción
                     </Typography>
-                </Toolbar>
+                </Toolbar>*/}
             </AppBar>
             <Box
                 component="nav"
@@ -228,7 +240,7 @@ function ResponsiveDrawer(props) {
             <Box
                 component="main"
                 sx={{
-                    flexGrow: 1, p:3, paddingTop: 17, width: { sm: `calc(100% - ${drawerWidth}px)` },
+                    flexGrow: 1, p:3, paddingTop: 5, width: { sm: `calc(100% - ${drawerWidth}px)` },
                     color: '#f2f2f2'
                 }}
             >

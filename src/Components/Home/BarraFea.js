@@ -1,6 +1,6 @@
 import React from "react";
 import {withStyles} from "@mui/styles"
-import Blog from "../../Assets/iconos_barra/ico-blog.svg";
+//import Blog from "../../Assets/iconos_barra/ico-blog.svg";
 import Espe from "../../Assets/iconos_barra/ico_especificaciones.svg";
 import Mesa from "../../Assets/iconos_barra/ico_mesa-ayuda.svg";
 import {Link, Tooltip, Box} from "@mui/material";
@@ -8,11 +8,11 @@ import {Link, Tooltip, Box} from "@mui/material";
 const styles = theme => ({
   root: {
     flexGrow: 1,
-    backgroundColor: theme.palette.secundario.dark,
+    //backgroundColor: theme.palette.secundario.dark,
     textAlign: "center"
   },
   icon: {
-    width: 45,
+    width: 50,
     //margin: theme.spacing(1),
     //padding: theme.spacing(2),
     "&:hover": {
@@ -47,7 +47,7 @@ const BarraFea = props => {
             </Tooltip>
           </Box>
 
-          <Box className={classes.item} flexGrow={1}>
+          {/*<Box className={classes.item} flexGrow={1}>
             <Tooltip title="Blog" arrow>
               <Link href="https://plataformadigitalnacional.org/blog"
                     target="_blank"
@@ -55,7 +55,7 @@ const BarraFea = props => {
                 <img src={Blog} className={classes.icon} alt="Blog" />
               </Link>
             </Tooltip>
-          </Box>
+          </Box>*/}
 
           <Box className={classes.item} flexGrow={1}>
             <Tooltip title="Especificaciones técnicas" arrow>
