@@ -1,13 +1,12 @@
 import React from 'react';
-import {withStyles} from '@material-ui/core/styles';
-import Grid from '@material-ui/core/Grid';
+import {withStyles} from '@mui/styles';
 import LogoSesna from '../../Assets/Logo-SESNA.png';
 import LibreUso from '../../Assets/libre-uso.png';
-import {Link, Typography} from "@material-ui/core"
+import {Link, Typography, Grid} from "@mui/material"
 import LogoPDN from '../../Assets/PDN-sintexto-blue.png';
-import YouTube from "@material-ui/icons/YouTube"
-import Twitter from "@material-ui/icons/Twitter"
-import Facebook from "@material-ui/icons/Facebook"
+import YouTube from "@mui/icons-material/YouTube"
+import Twitter from "@mui/icons-material/Twitter"
+import Facebook from "@mui/icons-material/Facebook"
 
 const styles = theme => ({
     root: {

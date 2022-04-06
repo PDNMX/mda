@@ -1,12 +1,7 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
+import { makeStyles } from '@mui/styles';
+import {Card, CardActions, CardContent, CardMedia, Chip, Typography} from '@mui/material';
 //import CardActionArea from '@material-ui/core/CardActionArea';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import Chip from "@material-ui/core/Chip";
-import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles({
     root: {
@@ -15,12 +10,6 @@ const useStyles = makeStyles({
     },
     media: {
         height: 140,
-    },
-    chip:{
-        //background: '#ffe01b',
-        color: "#ffffff",
-        fontWeight: "bold",
-        borderRadius: "3px"
     },
     cardContent: {
         height: 170
@@ -79,9 +68,11 @@ export default function DisabledCard(props) {
                 {product.systems.map( (s, i) => {
                     return <Chip key={i}
                         label={`Sistema ${s}`}
-                        className={classes.chip}
                         size="small"
                         style={{
+                            color: "#ffffff",
+                            fontWeight: "bold",
+                            borderRadius: "3px",
                             backgroundColor: colors[ s-1 ]
                         }}
                     />

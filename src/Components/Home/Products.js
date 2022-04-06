@@ -1,5 +1,6 @@
 import React from "react";
-import {withStyles, Box} from "@material-ui/core";
+import {Box} from "@mui/material";
+import {withStyles} from "@mui/styles"
 import NavigationButtons from "./NavigationButtons";
 import ProductCard from "./ProductCard";
 import DisabledCard from "./DisabledCard";
