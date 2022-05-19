@@ -1,5 +1,5 @@
 import React from "react";
-import {Grid, Typography, /*Paper,*/ Box} from "@mui/material";
+import {Grid, Typography, /*Paper,*/ Box, Button} from "@mui/material";
 import {withStyles} from "@mui/styles"
 const styles = theme => ({
     root: {
@@ -10,6 +10,7 @@ const styles = theme => ({
     },
     videoBox: {
         paddingTop: theme.spacing(2),
+        paddingBottom: theme.spacing(2),
         maxWidth: 800
     },
     /*item: {
@@ -66,6 +67,33 @@ const Landing = props => {
 
                             </Box>
                         </div>
+
+                        <Typography variant='h5' paragraph>
+                            Manual de usuario
+                        </Typography>
+
+                        <Typography paragraph>
+                            Conoce a detalle las secciones y funcionalidades del MDA a través del Manual de usuario.
+                        </Typography>
+
+                        <Button
+                            sx={{
+                                color: 'black',
+                                'margin': '5px',
+                                'background': '#9eb1b6',
+                                'borderRadius': '50px',
+                                'fontWeight': 'bold',
+                                'fontStyle': 'italic',
+                                '&:hover': {
+                                    backgroundColor: '#56a3bf'
+                                }
+                            }}
+                            variant='contained'
+                            href='https://drive.google.com/file/d/10kQkEb8YLQpitT7dSKZnXYFdRhcCetVm/view?usp=sharing' target='_blank'>
+                            Manual de usuario
+                        </Button>
+
+
                     </Box>
                 </div>
             </Grid>
