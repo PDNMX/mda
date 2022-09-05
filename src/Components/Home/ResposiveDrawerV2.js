@@ -7,7 +7,7 @@ import Divider from '@mui/material/Divider';
 import Drawer from '@mui/material/Drawer';
 import IconButton from '@mui/material/IconButton';
 import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
+import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import MenuIcon from '@mui/icons-material/Menu';
@@ -82,74 +82,74 @@ function ResponsiveDrawer(props) {
             <img src={MDA} alt="Mercado Digital Anticorrupción" className={classes.logoMDA}/>
             <Divider color={"#f2f2f2"}/>
             <List>
-                <ListItem button onClick={() => handleDrawerClick(0,0)} selected={ option === 0} >
+                <ListItemButton  onClick={() => handleDrawerClick(0,0)} selected={ option === 0} >
                     <ListItemIcon>
                         <Home className={classes.icon}/>
                     </ListItemIcon>
                     <ListItemText primary="Bienvenida"/>
-                </ListItem>
+                </ListItemButton>
 
-                <ListItem button onClick={() => handleDrawerClick(0,1)} selected={ option === 1}>
+                <ListItemButton onClick={() => handleDrawerClick(0,1)} selected={ option === 1}>
                     <ListItemIcon>
                         <MenuBook className={classes.icon}/>
                     </ListItemIcon>
                     <ListItemText primary="Inicio rápido" />
-                </ListItem>
+                </ListItemButton>
 
-                <ListItem button onClick={() => handleDrawerClick(0,2)} selected={ option === 2}>
+                <ListItemButton  onClick={() => handleDrawerClick(0,2)} selected={ option === 2}>
                     <ListItemIcon>
                         <Help className={classes.icon}/>
                     </ListItemIcon>
                     <ListItemText primary="Preguntas frecuentes" />
-                </ListItem>
+                </ListItemButton>
 
 
-                <ListItem button onClick={() => handleDrawerClick(0,3)} selected={ option === 3}>
+                <ListItemButton onClick={() => handleDrawerClick(0,3)} selected={ option === 3}>
                     <ListItemIcon>
                         <CheckCircle className={classes.icon}/>
                     </ListItemIcon>
                     <ListItemText primary="Términos de uso" />
-                </ListItem>
+                </ListItemButton>
 
             </List>
 
             <Divider color={"#f2f2f2"}/>
 
             <List>
-                <ListItem button onClick={() => handleDrawerClick(0, 4)} selected={ option === 4}>
+                <ListItemButton onClick={() => handleDrawerClick(0, 4)} selected={ option === 4}>
                     <ListItemIcon>
                         <Apps className={classes.icon}/>
                     </ListItemIcon>
                     <ListItemText primary="Todos los sistemas" secondary={<Typography fontSize="small">Todas las herramientas</Typography>}/>
-                </ListItem>
+                </ListItemButton>
 
-                <ListItem button onClick={() => handleDrawerClick(1, 5)} selected={ option === 5}>
+                <ListItemButton  onClick={() => handleDrawerClick(1, 5)} selected={ option === 5}>
                     <ListItemIcon>
                         <Filter1 className={classes.icon}/>
                     </ListItemIcon>
                     <ListItemText primary="Sistema 1" secondary={<Typography fontSize="small">Declaraciones</Typography>}/>
-                </ListItem>
+                </ListItemButton>
 
-                <ListItem button onClick={() => handleDrawerClick(2, 6)} selected={ option === 6}>
+                <ListItemButton  onClick={() => handleDrawerClick(2, 6)} selected={ option === 6}>
                     <ListItemIcon>
                         <Filter2 className={classes.icon}/>
                     </ListItemIcon>
                     <ListItemText primary="Sistema 2" secondary={<Typography fontSize="small">S. P. en Contrataciones</Typography>}/>
-                </ListItem>
+                </ListItemButton>
 
-                <ListItem button onClick={() => handleDrawerClick(3, 7)} selected={ option === 7}>
+                <ListItemButton onClick={() => handleDrawerClick(3, 7)} selected={ option === 7}>
                     <ListItemIcon>
                         <Filter3 className={classes.icon}/>
                     </ListItemIcon>
                     <ListItemText primary="Sistema 3" secondary={<Typography fontSize="small">Sancionados</Typography>} />
-                </ListItem>
+                </ListItemButton>
 
-                <ListItem button onClick={() => handleDrawerClick(6, 8)} selected={ option === 8}>
+                <ListItemButton onClick={() => handleDrawerClick(6, 8)} selected={ option === 8}>
                     <ListItemIcon>
                         <Filter6 className={classes.icon}/>
                     </ListItemIcon>
                     <ListItemText primary="Sistema 6" secondary={<Typography fontSize="small">Contrataciones</Typography>}/>
-                </ListItem>
+                </ListItemButton>
 
             </List>
         </div>
