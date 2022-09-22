@@ -4,10 +4,11 @@ import P404 from "./Components/P404";
 //import Product from "./Components/ProductDetails/ProductDetails"
 import {createTheme, ThemeProvider} from "@mui/material/styles";
 import {
-    BrowserRouter as Router,
-    Switch,
     Route,
+    Routes,
+    BrowserRouter,
 } from "react-router-dom";
+import {ProductDetails} from "./Components/ProductDetails/ProductDetails";
 
 const theme = createTheme({
     typography: {
@@ -43,19 +44,12 @@ const theme = createTheme({
 function App() {
     return (
         <ThemeProvider theme={theme}>
-            <Router>
-                <Switch>
-                    <Route basename={process.env.PUBLIC_URL}>
-                        <Home/>
-                    </Route>
-                    {/*<Route exact path="/product/:id">
-                        <Product/>
-                    </Route>*/}
-                    <Route path="*">
-                        <P404/>
-                    </Route>
-                </Switch>
-            </Router>
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/" basename={process.env.PUBLIC_URL} element={<Home />}  />
+                    <Route path="*" element={<P404 />} />
+                </Routes>
+            </BrowserRouter>
         </ThemeProvider>
     );
 }
