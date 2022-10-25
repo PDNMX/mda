@@ -4,11 +4,13 @@ import P404 from "./Components/P404";
 //import Product from "./Components/ProductDetails/ProductDetails"
 import {createTheme, ThemeProvider} from "@mui/material/styles";
 import {
-    Route,
-    Routes,
-    BrowserRouter,
+    createBrowserRouter,
+    RouterProvider,
 } from "react-router-dom";
-import {ProductDetails} from "./Components/ProductDetails/ProductDetails";
+import Landing from "./Components/Landing/Landing";
+import FAQ from "./Components/FAQ/FAQ";
+import ResponsiveDrawer from "./Components/Home/ResposiveDrawerV2";
+
 
 const theme = createTheme({
     typography: {
@@ -41,16 +43,16 @@ const theme = createTheme({
     }
 });
 
+
+
 function App() {
     return (
-        <ThemeProvider theme={theme}>
-            <BrowserRouter>
-                <Routes>
-                    <Route path="/" basename={process.env.PUBLIC_URL} element={<Home />}  />
-                    <Route path="*" element={<P404 />} />
-                </Routes>
-            </BrowserRouter>
-        </ThemeProvider>
+
+            <React.StrictMode>
+                <ThemeProvider theme={theme}>
+                   < Home />
+                </ThemeProvider>
+            </React.StrictMode>
     );
 }
 

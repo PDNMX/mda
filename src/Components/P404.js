@@ -3,7 +3,7 @@ import {Typography} from "@mui/material";
 const P404 = props => {
     //const {classes} = props;
     return <div>
-        <Typography>No encontramos lo que buscabas.</Typography>
+        <h1 align={"center"}>No encontramos lo que buscabas</h1>
     </div>
 }
 

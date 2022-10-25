@@ -18,8 +18,10 @@ const styles = theme => ({
     }
 });
 
-const Products = props => {
+export const Products = props => {
     const {classes, filters, setFilters, selected, setSelected} = props;
+
+
 
     let prods = products.filter(p => {
         if (filters.system === 0){
@@ -39,10 +41,11 @@ const Products = props => {
         return <ProductDetails product={selected} setSelected={setSelected}/>
     }
 
-    return <div className={classes.root}>
+    return <div >
         <NavigationButtons filters={filters} setFilters={setFilters}/>
-        <Box className={classes.box}>
+        <Box >
             {
+
                 prods.map((p, i) => {
                     return <Box key={i} m={2}>
                         {

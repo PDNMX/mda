@@ -1,6 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@mui/styles';
 import {Card, CardActionArea, CardActions, CardContent, CardMedia, Chip, Typography} from '@mui/material';
+import {NavLink} from "react-router-dom";
 
 
 const useStyles = makeStyles({
@@ -31,8 +32,9 @@ export default function ProductCard(props) {
     const {product, setSelected} = props;
 
     return (
-        <Card className={classes.root} elevation={3} onClick={() => setSelected(product) }>
-            <CardActionArea>
+        <Card className={classes.root} elevation={3} /*onClick={() => setSelected(product)} */>
+            <NavLink to={`/producto/${product.id}`}  className={classes.root}>
+            <CardActionArea >
                 <CardMedia
                     className={classes.media}
                     image={product.cover}
@@ -50,6 +52,7 @@ export default function ProductCard(props) {
                     </Typography>
                 </CardContent>
             </CardActionArea>
+            </NavLink>
             <CardActions>
 
                 {product.systems.map( (s, i) => {

@@ -1,10 +1,13 @@
-import React from "react";
+import React, {useState} from "react";
 import {Button, Typography, Grid, Fab, Box, Chip} from "@mui/material";
 import {withStyles} from "@mui/styles"
 import ArrowBack from "@mui/icons-material/ArrowBack";
 import Business from "@mui/icons-material/Business";
 import Email from "@mui/icons-material/Email";
 import Call from "@mui/icons-material/Call";
+import {getProductById} from "../helpers/getProductById";
+import {Navigate, useNavigate, useParams} from "react-router-dom";
+import Landing from "../Landing/Landing";
 
 const styles = theme => ({
     root: {
@@ -63,22 +66,35 @@ const styles = theme => ({
     }
 });
 
-const ProductDetails = props => {
-    const {classes, product, setSelected} = props;
+export const ProductDetails = props => {
+    const { id } = useParams();
 
-    return <div className={classes.root}>
+    console.log(id)
+    const product = getProductById(id);
+
+    const {classes,} = props;
+
+    console.log(product);
+
+    const navigate = useNavigate();
+
+    const onBack = () => {
+        navigate(-1)
+    }
+
+    return( <div >
         <Grid container justifyContent="center">
             <Grid item xs={12} style={{maxWidth: 1200}}>
 
-                <div className={classes.paper}>
-                    <Box className={classes.box}>
+                <div >
+                    <Box >
 
-                        <Fab onClick={ () => setSelected(null)} size="medium" style={{
+                        <Fab  size="medium" style={{
                             marginTop: 5,
                             marginBottom: 20,
                             background: '#ffe01b'
                         }}>
-                            <ArrowBack/>
+                            <ArrowBack onClick={onBack()}/>
                         </Fab>
 
                         <Typography variant="h5">
@@ -122,21 +138,21 @@ const ProductDetails = props => {
                             :
                             <div>
                                 <Box display="flex" flexWrap="wrap" p={1}>
-                                    <Business className={classes.icon}/>
+                                    <Business />
                                     <Typography>
                                         {product.contactPoint.organization}
                                     </Typography>
                                 </Box>
 
                                 <Box display="flex" flexWrap="wrap" p={1}>
-                                    <Call className={classes.icon}/>
+                                    <Call />
                                     <Typography>
                                         {product.contactPoint.phone}
                                     </Typography>
                                 </Box>
 
                                 <Box display="flex" flexWrap="wrap" p={1} paddingBottom={3}>
-                                    <Email className={classes.icon}/>
+                                    <Email />
                                     <Typography>
                                         {product.contactPoint.email}
                                     </Typography>
@@ -169,7 +185,7 @@ const ProductDetails = props => {
                                 <Box display="flex" flexWrap="wrap">
                                     {
                                         product.media.map((s, i) => {
-                                            return <Box key={i} p={1} className={classes.mediaBox}>
+                                            return <Box key={i} p={1} >
                                                 <Typography variant="h6">
                                                     {product.media[i].title}
                                                 </Typography>
@@ -199,7 +215,7 @@ const ProductDetails = props => {
                                     {
                                         product.screenshots.map((s, i) => {
                                             return <Box key={i} p={1}>
-                                                <img src={product.screenshots[i]} alt="Screenshot" className={classes.screenshot}/>
+                                                <img src={product.screenshots[i]} alt="Screenshot" />
                                             </Box>
                                         })
                                     }
@@ -213,7 +229,7 @@ const ProductDetails = props => {
             </Grid>
         </Grid>
 
-    </div>
+    </div>)
 }
 
 export default withStyles(styles)(ProductDetails);
