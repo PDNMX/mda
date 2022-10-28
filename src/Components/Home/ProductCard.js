@@ -32,9 +32,8 @@ export default function ProductCard(props) {
     const {product, setSelected} = props;
 
     return (
-        <Card className={classes.root} elevation={3} /*onClick={() => setSelected(product)} */>
-            <NavLink to={`/producto/${product.id}`}  className={classes.root}>
-            <CardActionArea >
+        <Card className={classes.root} elevation={3} onClick={() => setSelected(product) }  >
+            <CardActionArea component={NavLink} to={`/producto/${product.id}`}  >
                 <CardMedia
                     className={classes.media}
                     image={product.cover}
@@ -52,7 +51,6 @@ export default function ProductCard(props) {
                     </Typography>
                 </CardContent>
             </CardActionArea>
-            </NavLink>
             <CardActions>
 
                 {product.systems.map( (s, i) => {

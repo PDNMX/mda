@@ -20,11 +20,11 @@ const styles = theme => ({
     /*item: {
         maxWidth: 1200
     },*/
-   /* button:{
-        marginTop : theme.spacing(1),
-        marginBottom : theme.spacing(3),
-        background: '#ffe01b'
-    },*/
+    /* button:{
+         marginTop : theme.spacing(1),
+         marginBottom : theme.spacing(3),
+         background: '#ffe01b'
+     },*/
     /*fab: {
         marginTop: theme.spacing(1),
         marginBottom: theme.spacing(3),
@@ -68,19 +68,9 @@ const styles = theme => ({
 
 export const ProductDetails = props => {
     const { id } = useParams();
-
-    console.log(id)
     const product = getProductById(id);
-
     const {classes,} = props;
-
-    console.log(product);
-
     const navigate = useNavigate();
-
-    const onBack = () => {
-        navigate(-1)
-    }
 
     return( <div >
         <Grid container justifyContent="center">
@@ -94,7 +84,7 @@ export const ProductDetails = props => {
                             marginBottom: 20,
                             background: '#ffe01b'
                         }}>
-                            <ArrowBack onClick={onBack()}/>
+                            <ArrowBack />
                         </Fab>
 
                         <Typography variant="h5">
@@ -129,8 +119,8 @@ export const ProductDetails = props => {
                                 <Button variant="contained"
                                         href={product.contactPoint.directory_url}
                                         target="_blank"  color="secundario" sx={{
-                                        marginTop : 1,
-                                        marginBottom : 3,
+                                    marginTop : 1,
+                                    marginBottom : 3,
                                 }}>
                                     Directorio RNC
                                 </Button>

@@ -5,6 +5,7 @@ import Settings from "@mui/icons-material/Settings";
 import Computer from "@mui/icons-material/Computer";
 import Description from "@mui/icons-material/Description";
 import ShoppingCart from "@mui/icons-material/ShoppingBasket";
+import {NavLink} from "react-router-dom";
 
 const styles = theme => ({
     root:{
@@ -34,7 +35,7 @@ const styles = theme => ({
             background: '#ffe01b',
             backgroundColor: '#ffe01b'
         },
-        "&:hover": {
+        "&:hover": {api
             background: '#ffe01b',
             backgroundColor: '#ffe01b'
         }
@@ -56,6 +57,8 @@ const NavigationButtons = props => {
                         startIcon={<ShoppingCart/>}
                         //className={buttonClass( resourceType === "all" )}
                         onClick={() => handleSetFilters("all")}
+                        component={NavLink} to={"/all/"}
+
                 >
                     Todos los recursos
                 </Button>
@@ -66,6 +69,7 @@ const NavigationButtons = props => {
                         startIcon={<Settings/>}
                         //className={buttonClass( resourceType === "api")}
                         onClick={() => handleSetFilters("api")}
+                        component={NavLink} to={"api/"}
                 >
                     APIs
                 </Button>
@@ -76,6 +80,7 @@ const NavigationButtons = props => {
                         //className={buttonClass(resourceType === "sys")}
                         startIcon={<Computer/>}
                         onClick={() => handleSetFilters("sys")}
+                        component={NavLink} to={"sys"}
                 >
                     Sistemas
                 </Button>
@@ -86,6 +91,7 @@ const NavigationButtons = props => {
                         //className={buttonClass(resourceType === "doc")}
                         startIcon={<Description/>}
                         onClick={() => handleSetFilters("doc")}
+                        component={NavLink} to={"doc"}
                 >
                     Documentación
                 </Button>
