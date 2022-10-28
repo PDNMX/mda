@@ -72,6 +72,7 @@ export const ProductDetails = props => {
     const {classes,} = props;
     const navigate = useNavigate();
 
+
     return( <div >
         <Grid container justifyContent="center">
             <Grid item xs={12} style={{maxWidth: 1200}}>
@@ -83,7 +84,9 @@ export const ProductDetails = props => {
                             marginTop: 5,
                             marginBottom: 20,
                             background: '#ffe01b'
-                        }}>
+                        }}
+                              onClick={()=> navigate(-1)}
+                        >
                             <ArrowBack />
                         </Fab>
 

@@ -24,13 +24,12 @@ import Filter2 from "@mui/icons-material/Filter2";
 import Filter3 from "@mui/icons-material/Filter3";
 import Filter6 from "@mui/icons-material/Filter6";
 import {withStyles} from "@mui/styles";
-import DrawerContents from "./DrawerContents";
 import BarraFea from "./BarraFea";
 import Link from "@mui/material/Link";
 import PDN from "../../Assets/PDN.png";
 import {NavLink, Outlet} from "react-router-dom";
-import {useSyncExternalStore} from "react";
-import {Products} from "./Products";
+
+
 
 const drawerWidth = 240;
 
@@ -85,14 +84,16 @@ function ResponsiveDrawer(props) {
             <img src={MDA} alt="Mercado Digital Anticorrupción" className={classes.logoMDA}/>
             <Divider color={"#f2f2f2"}/>
             <List>
-                <ListItemButton onClick={() => handleDrawerClick(0,0)} selected={ option === 0}  component={NavLink} to={"/bienvenida"}>
+                <ListItemButton onClick={() => handleDrawerClick(0, 0)} selected={option === 0} component={NavLink}
+                                to={"/bienvenida"}>
                     <ListItemIcon>
                         <Home className={classes.icon}/>
                     </ListItemIcon>
                     <ListItemText primary="Bienvenida"/>
                 </ListItemButton>
 
-                <ListItemButton onClick={() => handleDrawerClick(0,1)} selected={ option === 1} component={NavLink} to={"inicio"}>
+                <ListItemButton onClick={() => handleDrawerClick(0, 1)} selected={option === 1} component={NavLink}
+                                to={"inicio"}>
                     <ListItemIcon>
                         <MenuBook className={classes.icon}/>
                     </ListItemIcon>
@@ -100,7 +101,8 @@ function ResponsiveDrawer(props) {
                 </ListItemButton>
 
 
-                <ListItemButton onClick={() => handleDrawerClick(0,2)} selected={ option === 2} component={NavLink} to={"FAQ"}>
+                <ListItemButton onClick={() => handleDrawerClick(0, 2)} selected={option === 2} component={NavLink}
+                                to={"FAQ"}>
                     <ListItemIcon>
                         <Help className={classes.icon}/>
                     </ListItemIcon>
@@ -108,7 +110,8 @@ function ResponsiveDrawer(props) {
                 </ListItemButton>
 
 
-                <ListItemButton onClick={() => handleDrawerClick(0,3)} selected={ option === 3} component={NavLink} to={"terminos"}>
+                <ListItemButton onClick={() => handleDrawerClick(0, 3)} selected={option === 3} component={NavLink}
+                                to={"terminos"}>
                     <ListItemIcon>
                         <CheckCircle className={classes.icon}/>
                     </ListItemIcon>
@@ -116,45 +119,54 @@ function ResponsiveDrawer(props) {
                 </ListItemButton>
 
 
-
             </List>
 
             <Divider color={"#f2f2f2"}/>
 
             <List>
-                <ListItemButton onClick={() => handleDrawerClick(0, 4)} selected={ option === 4}  component={NavLink} to={"all/"}>
+                <ListItemButton onClick={() => handleDrawerClick(0, 4)} selected={option === 4} component={NavLink}
+                                to={"all/"}>
                     <ListItemIcon>
                         <Apps className={classes.icon}/>
                     </ListItemIcon>
-                    <ListItemText primary="Todos los sistemas" secondary={<Typography fontSize="small">Todas las herramientas</Typography>}/>
+                    <ListItemText primary="Todos los sistemas"
+                                  secondary={<Typography fontSize="small">Todas las herramientas</Typography>}/>
                 </ListItemButton>
 
-                <ListItemButton onClick={() => handleDrawerClick(1, 5)} selected={ option === 5} component={NavLink} to={"S1"}>
+                <ListItemButton onClick={() => handleDrawerClick(1, 5)} selected={option === 5} component={NavLink}
+                                to={"S1"}>
                     <ListItemIcon>
                         <Filter1 className={classes.icon}/>
                     </ListItemIcon>
-                    <ListItemText primary="Sistema 1" secondary={<Typography fontSize="small">Declaraciones</Typography>}/>
+                    <ListItemText primary="Sistema 1"
+                                  secondary={<Typography fontSize="small">Declaraciones</Typography>}/>
                 </ListItemButton>
 
-                <ListItemButton onClick={() => handleDrawerClick(2, 6)} selected={ option === 6} component={NavLink} to={"S2"}>
+                <ListItemButton onClick={() => handleDrawerClick(2, 6)} selected={option === 6} component={NavLink}
+                                to={"S2"}>
                     <ListItemIcon>
                         <Filter2 className={classes.icon}/>
                     </ListItemIcon>
-                    <ListItemText primary="Sistema 2" secondary={<Typography fontSize="small">S. P. en Contrataciones</Typography>}/>
+                    <ListItemText primary="Sistema 2"
+                                  secondary={<Typography fontSize="small">S. P. en Contrataciones</Typography>}/>
                 </ListItemButton>
 
-                <ListItemButton onClick={() => handleDrawerClick(3, 7)} selected={ option === 7} component={NavLink} to={"S3"}>
+                <ListItemButton onClick={() => handleDrawerClick(3, 7)} selected={option === 7} component={NavLink}
+                                to={"S3"}>
                     <ListItemIcon>
                         <Filter3 className={classes.icon}/>
                     </ListItemIcon>
-                    <ListItemText primary="Sistema 3" secondary={<Typography fontSize="small">Sancionados</Typography>} />
+                    <ListItemText primary="Sistema 3"
+                                  secondary={<Typography fontSize="small">Sancionados</Typography>}/>
                 </ListItemButton>
 
-                <ListItemButton onClick={() => handleDrawerClick(6, 8)} selected={ option === 8} component={NavLink} to={"S6"} >
+                <ListItemButton onClick={() => handleDrawerClick(6, 8)} selected={option === 8} component={NavLink}
+                                to={"S6"}>
                     <ListItemIcon>
                         <Filter6 className={classes.icon}/>
                     </ListItemIcon>
-                    <ListItemText primary="Sistema 6" secondary={<Typography fontSize="small">Contrataciones</Typography>} />
+                    <ListItemText primary="Sistema 6"
+                                  secondary={<Typography fontSize="small">Contrataciones</Typography>}/>
                 </ListItemButton>
 
             </List>

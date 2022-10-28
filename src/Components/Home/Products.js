@@ -1,7 +1,6 @@
 import React from "react";
 import {Box} from "@mui/material";
 import {withStyles} from "@mui/styles"
-import NavigationButtons from "./NavigationButtons";
 import ProductCard from "./ProductCard";
 import DisabledCard from "./DisabledCard";
 import products from "../../products.json";
@@ -18,7 +17,7 @@ const styles = theme => ({
     }
 });
 
-const Products = props => {
+export const Products = props => {
     const {classes, filters, setFilters, selected, setSelected} = props;
 
     let prods = products.filter(p => {
@@ -40,7 +39,7 @@ const Products = props => {
     }
 
     return <div className={classes.root}>
-        <NavigationButtons filters={filters} setFilters={setFilters}/>
+       {/* <NavigationButtons filters={filters} setFilters={setFilters}/>*/}
         <Box className={classes.box}>
             {
                 prods.map((p, i) => {

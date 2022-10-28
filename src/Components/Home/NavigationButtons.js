@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import {Box, Button} from "@mui/material";
 import {withStyles} from "@mui/styles"
 import Settings from "@mui/icons-material/Settings";
@@ -43,11 +43,10 @@ const styles = theme => ({
 });
 
 const NavigationButtons = props => {
-    const {classes, filters, setFilters} = props;
-    const {resourceType} = filters ? filters: "";
-    //const buttonClass = selected => selected ? classes.selectedButton : classes.button;
-    const handleSetFilters = rt => setFilters({...filters, resourceType: rt});
+    const {classes} = props;
     const btColor = active => active ? "secundario": "primario";
+
+    const [resourceType,setResourceType] = useState('all');
 
     return <div className={classes.root}>
         <Box className={classes.box}>
@@ -55,9 +54,8 @@ const NavigationButtons = props => {
                 <Button variant="contained"
                         color={btColor(resourceType === 'all')}
                         startIcon={<ShoppingCart/>}
-                        //className={buttonClass( resourceType === "all" )}
-                        onClick={() => handleSetFilters("all")}
-                        component={NavLink} to={"/all/"}
+                        onClick={() => setResourceType("all")}
+                        component={NavLink} to={"all"}
 
                 >
                     Todos los recursos
@@ -67,9 +65,8 @@ const NavigationButtons = props => {
                 <Button variant="contained"
                         color={btColor(resourceType === 'api')}
                         startIcon={<Settings/>}
-                        //className={buttonClass( resourceType === "api")}
-                        onClick={() => handleSetFilters("api")}
-                        component={NavLink} to={"api/"}
+                        onClick={() => setResourceType("api")}
+                        component={NavLink} to={"api"}
                 >
                     APIs
                 </Button>
@@ -77,9 +74,8 @@ const NavigationButtons = props => {
             <Box p={1}>
                 <Button variant="contained"
                         color={btColor(resourceType === 'sys')}
-                        //className={buttonClass(resourceType === "sys")}
                         startIcon={<Computer/>}
-                        onClick={() => handleSetFilters("sys")}
+                        onClick={() => setResourceType("sys")}
                         component={NavLink} to={"sys"}
                 >
                     Sistemas
@@ -88,9 +84,8 @@ const NavigationButtons = props => {
             <Box p={1}>
                 <Button variant="contained"
                         color={btColor(resourceType === 'doc')}
-                        //className={buttonClass(resourceType === "doc")}
                         startIcon={<Description/>}
-                        onClick={() => handleSetFilters("doc")}
+                        onClick={() => setResourceType("doc")}
                         component={NavLink} to={"doc"}
                 >
                     Documentación
