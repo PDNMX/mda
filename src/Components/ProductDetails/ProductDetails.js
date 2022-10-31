@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import {Button, Typography, Grid, Fab, Box, Chip} from "@mui/material";
 import {withStyles} from "@mui/styles"
 import ArrowBack from "@mui/icons-material/ArrowBack";
@@ -6,8 +6,9 @@ import Business from "@mui/icons-material/Business";
 import Email from "@mui/icons-material/Email";
 import Call from "@mui/icons-material/Call";
 import {getProductById} from "../helpers/getProductById";
-import {Navigate, useNavigate, useParams} from "react-router-dom";
-import Landing from "../Landing/Landing";
+import {useNavigate, useParams} from "react-router-dom";
+import P404 from "../P404";
+
 
 const styles = theme => ({
     root: {
@@ -69,16 +70,18 @@ const styles = theme => ({
 export const ProductDetails = props => {
     const { id } = useParams();
     const product = getProductById(id);
-    const {classes,} = props;
+    const {classes} = props;
     const navigate = useNavigate();
 
+    if (!product)
+        return <P404/>
 
-    return( <div >
+    return <div className={classes.root}>
         <Grid container justifyContent="center">
             <Grid item xs={12} style={{maxWidth: 1200}}>
 
-                <div >
-                    <Box >
+                <div className={classes.paper}>
+                    <Box className={classes.box}>
 
                         <Fab  size="medium" style={{
                             marginTop: 5,
@@ -122,8 +125,8 @@ export const ProductDetails = props => {
                                 <Button variant="contained"
                                         href={product.contactPoint.directory_url}
                                         target="_blank"  color="secundario" sx={{
-                                    marginTop : 1,
-                                    marginBottom : 3,
+                                        marginTop : 1,
+                                        marginBottom : 3,
                                 }}>
                                     Directorio RNC
                                 </Button>
@@ -131,21 +134,21 @@ export const ProductDetails = props => {
                             :
                             <div>
                                 <Box display="flex" flexWrap="wrap" p={1}>
-                                    <Business />
+                                    <Business className={classes.icon}/>
                                     <Typography>
                                         {product.contactPoint.organization}
                                     </Typography>
                                 </Box>
 
                                 <Box display="flex" flexWrap="wrap" p={1}>
-                                    <Call />
+                                    <Call className={classes.icon}/>
                                     <Typography>
                                         {product.contactPoint.phone}
                                     </Typography>
                                 </Box>
 
                                 <Box display="flex" flexWrap="wrap" p={1} paddingBottom={3}>
-                                    <Email />
+                                    <Email className={classes.icon}/>
                                     <Typography>
                                         {product.contactPoint.email}
                                     </Typography>
@@ -178,7 +181,7 @@ export const ProductDetails = props => {
                                 <Box display="flex" flexWrap="wrap">
                                     {
                                         product.media.map((s, i) => {
-                                            return <Box key={i} p={1} >
+                                            return <Box key={i} p={1} className={classes.mediaBox}>
                                                 <Typography variant="h6">
                                                     {product.media[i].title}
                                                 </Typography>
@@ -208,7 +211,7 @@ export const ProductDetails = props => {
                                     {
                                         product.screenshots.map((s, i) => {
                                             return <Box key={i} p={1}>
-                                                <img src={product.screenshots[i]} alt="Screenshot" />
+                                                <img src={product.screenshots[i]} alt="Screenshot" className={classes.screenshot}/>
                                             </Box>
                                         })
                                     }
@@ -222,7 +225,7 @@ export const ProductDetails = props => {
             </Grid>
         </Grid>
 
-    </div>)
+    </div>
 }
 
 export default withStyles(styles)(ProductDetails);
