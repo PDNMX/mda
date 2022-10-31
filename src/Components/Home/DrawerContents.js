@@ -8,6 +8,8 @@ import Terms from "../Terms/Terms";
 const WrappedComponent = props => {
     const {option} = props;
 
+    console.log("pasa por el Wrapped ")
+
     switch (option){
         case 0:
             return <Landing {...props}/>;

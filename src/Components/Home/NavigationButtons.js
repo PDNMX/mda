@@ -1,10 +1,11 @@
-import React from "react";
+import React, {useState} from "react";
 import {Box, Button} from "@mui/material";
 import {withStyles} from "@mui/styles"
 import Settings from "@mui/icons-material/Settings";
 import Computer from "@mui/icons-material/Computer";
 import Description from "@mui/icons-material/Description";
 import ShoppingCart from "@mui/icons-material/ShoppingBasket";
+import {NavLink, useLocation} from "react-router-dom";
 
 const styles = theme => ({
     root:{
@@ -34,7 +35,7 @@ const styles = theme => ({
             background: '#ffe01b',
             backgroundColor: '#ffe01b'
         },
-        "&:hover": {
+        "&:hover": {api
             background: '#ffe01b',
             backgroundColor: '#ffe01b'
         }
@@ -42,50 +43,58 @@ const styles = theme => ({
 });
 
 const NavigationButtons = props => {
-    const {classes, filters, setFilters} = props;
-    const {resourceType} = filters ? filters: "";
-    //const buttonClass = selected => selected ? classes.selectedButton : classes.button;
-    const handleSetFilters = rt => setFilters({...filters, resourceType: rt});
+    const {classes} = props;
     const btColor = active => active ? "secundario": "primario";
+
+    const[setResourceType] = useState('all');
+
+    const location = useLocation();
+
+    let path = location.pathname.split("/")[2];
+
+    if(!path){
+        path ='all';
+    }
 
     return <div className={classes.root}>
         <Box className={classes.box}>
             <Box p={1}>
                 <Button variant="contained"
-                        color={btColor(resourceType === 'all')}
+                        color={btColor( path.includes('all'))}
                         startIcon={<ShoppingCart/>}
-                        //className={buttonClass( resourceType === "all" )}
-                        onClick={() => handleSetFilters("all")}
+                        onClick={() => setResourceType("all")}
+                        component={NavLink} to={"all"}
+
                 >
                     Todos los recursos
                 </Button>
             </Box>
             <Box p={1}>
                 <Button variant="contained"
-                        color={btColor(resourceType === 'api')}
+                        color={btColor(path.includes('api'))}
                         startIcon={<Settings/>}
-                        //className={buttonClass( resourceType === "api")}
-                        onClick={() => handleSetFilters("api")}
+                        onClick={() => setResourceType("api")}
+                        component={NavLink} to={"api"}
                 >
                     APIs
                 </Button>
             </Box>
             <Box p={1}>
                 <Button variant="contained"
-                        color={btColor(resourceType === 'sys')}
-                        //className={buttonClass(resourceType === "sys")}
+                        color={btColor(path.includes('sys'))}
                         startIcon={<Computer/>}
-                        onClick={() => handleSetFilters("sys")}
+                        onClick={() => setResourceType("sys")}
+                        component={NavLink} to={"sys"}
                 >
                     Sistemas
                 </Button>
             </Box>
             <Box p={1}>
                 <Button variant="contained"
-                        color={btColor(resourceType === 'doc')}
-                        //className={buttonClass(resourceType === "doc")}
+                        color={btColor(path.includes( 'doc'))}
                         startIcon={<Description/>}
-                        onClick={() => handleSetFilters("doc")}
+                        onClick={() => setResourceType("doc")}
+                        component={NavLink} to={"doc"}
                 >
                     Documentación
                 </Button>

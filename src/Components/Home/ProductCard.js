@@ -1,6 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@mui/styles';
 import {Card, CardActionArea, CardActions, CardContent, CardMedia, Chip, Typography} from '@mui/material';
+import {NavLink} from "react-router-dom";
 
 
 const useStyles = makeStyles({
@@ -28,11 +29,11 @@ const colors = [
 export default function ProductCard(props) {
     const classes = useStyles();
 
-    const {product, setSelected} = props;
+    const {product} = props;
 
     return (
-        <Card className={classes.root} elevation={3} onClick={() => setSelected(product) }>
-            <CardActionArea>
+        <Card className={classes.root} elevation={3} /*onClick={() => setSelected(product) }*/  >
+            <CardActionArea component={NavLink} to={`/producto/${product.id}`}  >
                 <CardMedia
                     className={classes.media}
                     image={product.cover}

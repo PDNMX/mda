@@ -1,6 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@mui/styles';
 import {Card, CardActions, CardContent, CardMedia, Chip, Typography} from '@mui/material';
+import {Link} from "react-router-dom";
 //import CardActionArea from '@material-ui/core/CardActionArea';
 
 const useStyles = makeStyles({

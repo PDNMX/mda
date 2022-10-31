@@ -5,6 +5,10 @@ import ArrowBack from "@mui/icons-material/ArrowBack";
 import Business from "@mui/icons-material/Business";
 import Email from "@mui/icons-material/Email";
 import Call from "@mui/icons-material/Call";
+import {getProductById} from "../helpers/getProductById";
+import {useNavigate, useParams} from "react-router-dom";
+import P404 from "../P404";
+
 
 const styles = theme => ({
     root: {
@@ -17,11 +21,11 @@ const styles = theme => ({
     /*item: {
         maxWidth: 1200
     },*/
-   /* button:{
-        marginTop : theme.spacing(1),
-        marginBottom : theme.spacing(3),
-        background: '#ffe01b'
-    },*/
+    /* button:{
+         marginTop : theme.spacing(1),
+         marginBottom : theme.spacing(3),
+         background: '#ffe01b'
+     },*/
     /*fab: {
         marginTop: theme.spacing(1),
         marginBottom: theme.spacing(3),
@@ -63,8 +67,14 @@ const styles = theme => ({
     }
 });
 
-const ProductDetails = props => {
-    const {classes, product, setSelected} = props;
+export const ProductDetails = props => {
+    const { id } = useParams();
+    const product = getProductById(id);
+    const {classes} = props;
+    const navigate = useNavigate();
+
+    if (!product)
+        return <P404/>
 
     return <div className={classes.root}>
         <Grid container justifyContent="center">
@@ -73,12 +83,14 @@ const ProductDetails = props => {
                 <div className={classes.paper}>
                     <Box className={classes.box}>
 
-                        <Fab onClick={ () => setSelected(null)} size="medium" style={{
+                        <Fab  size="medium" style={{
                             marginTop: 5,
                             marginBottom: 20,
                             background: '#ffe01b'
-                        }}>
-                            <ArrowBack/>
+                        }}
+                              onClick={()=> navigate(-1)}
+                        >
+                            <ArrowBack />
                         </Fab>
 
                         <Typography variant="h5">

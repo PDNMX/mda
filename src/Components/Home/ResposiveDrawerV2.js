@@ -7,7 +7,7 @@ import Divider from '@mui/material/Divider';
 import Drawer from '@mui/material/Drawer';
 import IconButton from '@mui/material/IconButton';
 import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
+import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import MenuIcon from '@mui/icons-material/Menu';
@@ -24,26 +24,28 @@ import Filter2 from "@mui/icons-material/Filter2";
 import Filter3 from "@mui/icons-material/Filter3";
 import Filter6 from "@mui/icons-material/Filter6";
 import {withStyles} from "@mui/styles";
-import DrawerContents from "./DrawerContents";
 import BarraFea from "./BarraFea";
 import Link from "@mui/material/Link";
 import PDN from "../../Assets/PDN.png";
+import {NavLink, Outlet} from "react-router-dom";
+
+
 
 const drawerWidth = 240;
 
 const styles = theme => ({
-    logoMDA:{
+    logoMDA: {
         paddingTop: theme.spacing(1),
         margin: theme.spacing(1),
         maxHeight: 80
     },
-    pdnLogo:{
+    pdnLogo: {
         maxWidth: 100
     },
-    icon : {
-        color:'#f2f2f2'
+    icon: {
+        color: '#f2f2f2'
     },
-    toolbar1:{
+    toolbar1: {
         background: theme.palette.background.opaque,
         height: 102
     },
@@ -53,7 +55,7 @@ const styles = theme => ({
 });
 
 function ResponsiveDrawer(props) {
-    const { window, classes } = props;
+    const {window, classes} = props;
     const [mobileOpen, setMobileOpen] = React.useState(false);
 
     const handleDrawerToggle = () => {
@@ -82,74 +84,90 @@ function ResponsiveDrawer(props) {
             <img src={MDA} alt="Mercado Digital Anticorrupción" className={classes.logoMDA}/>
             <Divider color={"#f2f2f2"}/>
             <List>
-                <ListItem button onClick={() => handleDrawerClick(0,0)} selected={ option === 0} >
+                <ListItemButton onClick={() => handleDrawerClick(0, 0)} selected={option === 0} component={NavLink}
+                                to={"/bienvenida"}>
                     <ListItemIcon>
                         <Home className={classes.icon}/>
                     </ListItemIcon>
                     <ListItemText primary="Bienvenida"/>
-                </ListItem>
+                </ListItemButton>
 
-                <ListItem button onClick={() => handleDrawerClick(0,1)} selected={ option === 1}>
+                <ListItemButton onClick={() => handleDrawerClick(0, 1)} selected={option === 1} component={NavLink}
+                                to={"inicio"}>
                     <ListItemIcon>
                         <MenuBook className={classes.icon}/>
                     </ListItemIcon>
-                    <ListItemText primary="Inicio rápido" />
-                </ListItem>
+                    <ListItemText primary="Inicio rápido"/>
+                </ListItemButton>
 
-                <ListItem button onClick={() => handleDrawerClick(0,2)} selected={ option === 2}>
+
+                <ListItemButton onClick={() => handleDrawerClick(0, 2)} selected={option === 2} component={NavLink}
+                                to={"FAQ"}>
                     <ListItemIcon>
                         <Help className={classes.icon}/>
                     </ListItemIcon>
-                    <ListItemText primary="Preguntas frecuentes" />
-                </ListItem>
+                    <ListItemText primary="Preguntas frecuentes"/>
+                </ListItemButton>
 
 
-                <ListItem button onClick={() => handleDrawerClick(0,3)} selected={ option === 3}>
+                <ListItemButton onClick={() => handleDrawerClick(0, 3)} selected={option === 3} component={NavLink}
+                                to={"terminos"}>
                     <ListItemIcon>
                         <CheckCircle className={classes.icon}/>
                     </ListItemIcon>
-                    <ListItemText primary="Términos de uso" />
-                </ListItem>
+                    <ListItemText primary="Términos de uso"/>
+                </ListItemButton>
+
 
             </List>
 
             <Divider color={"#f2f2f2"}/>
 
             <List>
-                <ListItem button onClick={() => handleDrawerClick(0, 4)} selected={ option === 4}>
+                <ListItemButton onClick={() => handleDrawerClick(0, 4)} selected={option === 4} component={NavLink}
+                                to={"all/"}>
                     <ListItemIcon>
                         <Apps className={classes.icon}/>
                     </ListItemIcon>
-                    <ListItemText primary="Todos los sistemas" secondary={<Typography fontSize="small">Todas las herramientas</Typography>}/>
-                </ListItem>
+                    <ListItemText primary="Todos los sistemas"
+                                  secondary={<Typography fontSize="small">Todas las herramientas</Typography>}/>
+                </ListItemButton>
 
-                <ListItem button onClick={() => handleDrawerClick(1, 5)} selected={ option === 5}>
+                <ListItemButton onClick={() => handleDrawerClick(1, 5)} selected={option === 5} component={NavLink}
+                                to={"S1"}>
                     <ListItemIcon>
                         <Filter1 className={classes.icon}/>
                     </ListItemIcon>
-                    <ListItemText primary="Sistema 1" secondary={<Typography fontSize="small">Declaraciones</Typography>}/>
-                </ListItem>
+                    <ListItemText primary="Sistema 1"
+                                  secondary={<Typography fontSize="small">Declaraciones</Typography>}/>
+                </ListItemButton>
 
-                <ListItem button onClick={() => handleDrawerClick(2, 6)} selected={ option === 6}>
+                <ListItemButton onClick={() => handleDrawerClick(2, 6)} selected={option === 6} component={NavLink}
+                                to={"S2"}>
                     <ListItemIcon>
                         <Filter2 className={classes.icon}/>
                     </ListItemIcon>
-                    <ListItemText primary="Sistema 2" secondary={<Typography fontSize="small">S. P. en Contrataciones</Typography>}/>
-                </ListItem>
+                    <ListItemText primary="Sistema 2"
+                                  secondary={<Typography fontSize="small">S. P. en Contrataciones</Typography>}/>
+                </ListItemButton>
 
-                <ListItem button onClick={() => handleDrawerClick(3, 7)} selected={ option === 7}>
+                <ListItemButton onClick={() => handleDrawerClick(3, 7)} selected={option === 7} component={NavLink}
+                                to={"S3"}>
                     <ListItemIcon>
                         <Filter3 className={classes.icon}/>
                     </ListItemIcon>
-                    <ListItemText primary="Sistema 3" secondary={<Typography fontSize="small">Sancionados</Typography>} />
-                </ListItem>
+                    <ListItemText primary="Sistema 3"
+                                  secondary={<Typography fontSize="small">Sancionados</Typography>}/>
+                </ListItemButton>
 
-                <ListItem button onClick={() => handleDrawerClick(6, 8)} selected={ option === 8}>
+                <ListItemButton onClick={() => handleDrawerClick(6, 8)} selected={option === 8} component={NavLink}
+                                to={"S6"}>
                     <ListItemIcon>
                         <Filter6 className={classes.icon}/>
                     </ListItemIcon>
-                    <ListItemText primary="Sistema 6" secondary={<Typography fontSize="small">Contrataciones</Typography>}/>
-                </ListItem>
+                    <ListItemText primary="Sistema 6"
+                                  secondary={<Typography fontSize="small">Contrataciones</Typography>}/>
+                </ListItemButton>
 
             </List>
         </div>
@@ -158,13 +176,13 @@ function ResponsiveDrawer(props) {
     const container = window !== undefined ? () => window().document.body : undefined;
 
     return (
-        <Box sx={{ display: 'flex'}}>
-            <CssBaseline />
+        <Box sx={{display: 'flex'}}>
+            <CssBaseline/>
             <AppBar
                 position="fixed"
                 sx={{
-                    width: { sm: `calc(100% - ${drawerWidth}px)` },
-                    ml: { sm: `${drawerWidth}px` },
+                    width: {sm: `calc(100% - ${drawerWidth}px)`},
+                    ml: {sm: `${drawerWidth}px`},
                 }}
             >
                 {/* Mostrar en desktop */}
@@ -176,9 +194,9 @@ function ResponsiveDrawer(props) {
                         aria-label="open drawer"
                         edge="start"
                         onClick={handleDrawerToggle}
-                        sx={{ mr: 2, display: { sm: 'none' } }}
+                        sx={{mr: 2, display: {sm: 'none'}}}
                     >
-                        <MenuIcon />
+                        <MenuIcon/>
                     </IconButton>
 
                     <BarraFea/>
@@ -207,7 +225,7 @@ function ResponsiveDrawer(props) {
             </AppBar>
             <Box
                 component="nav"
-                sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 }}}
+                sx={{width: {sm: drawerWidth}, flexShrink: {sm: 0}}}
                 aria-label="mailbox folders"
             >
                 {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
@@ -220,8 +238,13 @@ function ResponsiveDrawer(props) {
                         keepMounted: true, // Better open performance on mobile.
                     }}
                     sx={{
-                        display: { xs: 'block', sm: 'none' },
-                        '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth, color: '#f2f2f2', background: "#155065" },
+                        display: {xs: 'block', sm: 'none'},
+                        '& .MuiDrawer-paper': {
+                            boxSizing: 'border-box',
+                            width: drawerWidth,
+                            color: '#f2f2f2',
+                            background: "#155065"
+                        },
                     }}
                 >
                     {drawer}
@@ -229,32 +252,43 @@ function ResponsiveDrawer(props) {
                 <Drawer
                     variant="permanent"
                     sx={{
-                        display: { xs: 'none', sm: 'block' },
-                        '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth, color: '#f2f2f2', background: "#155065" },
+                        display: {xs: 'none', sm: 'block'},
+                        '& .MuiDrawer-paper': {
+                            boxSizing: 'border-box',
+                            width: drawerWidth,
+                            color: '#f2f2f2',
+                            background: "#155065"
+                        },
                     }}
                     open
                 >
                     {drawer}
                 </Drawer>
             </Box>
+
             <Box
                 component="main"
                 sx={{
-                    flexGrow: 1, p:3, paddingTop: 5, width: { sm: `calc(100% - ${drawerWidth}px)` },
+                    flexGrow: 1, p: 3, paddingTop: 5, width: {sm: `calc(100% - ${drawerWidth}px)`},
                     color: '#f2f2f2'
                 }}
             >
-                <Toolbar />
+                <Toolbar/>
 
-                <DrawerContents
-                    option={option}
-                    filters={filters}
-                    setFilters={setFilters}
-                    selected={selected}
-                    setSelected={setSelected}
-                />
+
+                <Outlet>
+
+                    {/*<DrawerContents
+                        option={option}
+                        filters={filters}
+                        setFilters={setFilters}
+                        selected={selected}
+                        setSelected={setSelected}
+                    />*/}
+                </Outlet>
 
             </Box>
+
         </Box>
     );
 }
