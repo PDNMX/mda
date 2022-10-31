@@ -46,13 +46,11 @@ const NavigationButtons = props => {
     const {classes} = props;
     const btColor = active => active ? "secundario": "primario";
 
-    const [resourceType,setResourceType] = useState('all');
+    const[setResourceType] = useState('all');
 
     const location = useLocation();
 
     let path = location.pathname.split("/")[2];
-
-    console.log(path)
 
     if(!path){
         path ='all';
