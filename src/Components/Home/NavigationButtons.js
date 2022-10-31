@@ -52,8 +52,10 @@ const NavigationButtons = props => {
 
     let path = location.pathname.split("/")[2];
 
+    console.log(path)
+
     if(!path){
-        path =resourceType;
+        path ='all';
     }
 
     return <div className={classes.root}>
