@@ -6,8 +6,9 @@ import Business from "@mui/icons-material/Business";
 import Email from "@mui/icons-material/Email";
 import Call from "@mui/icons-material/Call";
 import {getProductById} from "../helpers/getProductById";
-import {useNavigate, useParams} from "react-router-dom";
+import {useLocation, useNavigate, useParams} from "react-router-dom";
 import P404 from "../P404";
+import ShareBar from "../Utils/ShareBar";
 
 
 const styles = theme => ({
@@ -72,9 +73,12 @@ export const ProductDetails = props => {
     const product = getProductById(id);
     const {classes} = props;
     const navigate = useNavigate();
+    let location = useLocation();
 
     if (!product)
         return <P404/>
+
+
 
     return <div className={classes.root}>
         <Grid container justifyContent="center">
@@ -110,6 +114,8 @@ export const ProductDetails = props => {
                         }}>
                             Conoce más
                         </Button>
+
+                        <ShareBar product={product} url={location.pathname}/>
 
                         <Typography variant="h6">
                             Contacto
@@ -219,7 +225,9 @@ export const ProductDetails = props => {
                             </div>
                         }
 
+
                     </Box>
+
                 </div>
 
             </Grid>
