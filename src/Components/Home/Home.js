@@ -146,7 +146,7 @@ const router = createBrowserRouter([
                 element: <FilterPage />,
                 children: [{
                     path: "",
-                    element: <Products props={{option: 7,}} filters={{system: 3, resourceType: 'all'}}/>
+                    element: <Products props={{option: 8,}} filters={{system: 6, resourceType: 'all'}}/>
                 },{
                     path: "all",
                     element: <Products props={{option: 8,}} filters={{system: 6, resourceType: 'all'}}/>
