@@ -1,17 +1,16 @@
-
 [
   {
     "id": "1",
     "resourceType": "api",
     "maintainer": "PDN",
     "name": "API S2 (Servidores Públicos que Intervienen en Contrataciones) ",
-    "systems": [2],
+    "systems": [
+      2
+    ],
     "abstract": "Módulo de API para incorporar datos al Sistema 2 de la PDN. Compatible con el Estándar de Datos correspondiente.",
     "description": "Esta API forma parte de una solución de software que consta de las APIs para incorporar datos a los Sistemas 2 y 3 de la Plataforma Digital Nacional. La documentación contiene los detalles necesarios para la instalación y puesta en marcha del software.",
     "cover": "https://raw.githubusercontent.com/PDNMX/assets/master/mda/pdn_piloto/APIs2.png",
-    "screenshots": [
-
-    ],
+    "screenshots": [],
     "url": "https://github.com/PDNMX/piloto_s2",
     "contactPoint": {
       "organization": "PDN",
@@ -19,7 +18,9 @@
       "email": "pdn@sesna.gob.mx"
     },
     "technologies": [
-      "NodeJS", "MongoDB", "Docker"
+      "NodeJS",
+      "MongoDB",
+      "Docker"
     ]
   },
   {
@@ -27,13 +28,13 @@
     "resourceType": "api",
     "maintainer": "PDN",
     "name": "API S3S (Servidores públicos sancionados)",
-    "systems": [3],
+    "systems": [
+      3
+    ],
     "abstract": "API para el S3 Servidores públicos sancionados apegado al estándar de datos correspondiente.",
     "description": "Esta API forma parte de una solución que contempla las APIs del S2 y S3 en ambiente de desarrollo, para reproducirlo completamente se sugiere revisar la documentación",
     "cover": "https://raw.githubusercontent.com/PDNMX/assets/master/mda/pdn_piloto/APIs3s.png",
-    "screenshots": [
-
-    ],
+    "screenshots": [],
     "url": "https://github.com/PDNMX/piloto_s3s",
     "contactPoint": {
       "organization": "PDN",
@@ -41,7 +42,9 @@
       "email": "pdn@sesna.gob.mx"
     },
     "technologies": [
-      "NodeJS", "MongoDB", "Docker"
+      "NodeJS",
+      "MongoDB",
+      "Docker"
     ]
   },
   {
@@ -49,13 +52,13 @@
     "resourceType": "api",
     "maintainer": "PDN",
     "name": "API S3P (Particulares sancionados)",
-    "systems": [3],
+    "systems": [
+      3
+    ],
     "abstract": "API para el S3 Particulares sancionados apegado al estándar de datos correspondiente.",
     "description": "Esta API forma parte de una solución que contempla las APIs del S2 y S3 en ambiente de desarrollo, para reproducirlo completamente se sugiere revisar la documentación",
     "cover": "https://raw.githubusercontent.com/PDNMX/assets/master/mda/pdn_piloto/APIs3p.png",
-    "screenshots": [
-
-    ],
+    "screenshots": [],
     "url": "https://github.com/PDNMX/piloto_s3p",
     "contactPoint": {
       "organization": "PDN",
@@ -63,7 +66,9 @@
       "email": "pdn@sesna.gob.mx"
     },
     "technologies": [
-      "NodeJS", "MongoDB", "Docker"
+      "NodeJS",
+      "MongoDB",
+      "Docker"
     ]
   },
   {
@@ -71,13 +76,14 @@
     "resourceType": "tool",
     "maintainer": "PDN",
     "name": "Generador de datos sintéticos",
-    "systems": [2,3],
+    "systems": [
+      2,
+      3
+    ],
     "abstract": "Generador de datos sintéticos para el Sistema 2 y Sistema 3 de la PDN.",
     "description": "Generador de datos sintéticos para los Sistemas de Servidores que intervienen en procedimientos de contratación, Servidores públicos sancionados y Particulares sancionados.",
     "cover": "https://raw.githubusercontent.com/PDNMX/assets/master/mda/pdn_piloto/generador-datos.png",
-    "screenshots": [
-
-    ],
+    "screenshots": [],
     "url": "https://github.com/PDNMX/piloto_generador",
     "contactPoint": {
       "organization": "PDN",
@@ -85,7 +91,8 @@
       "email": "pdn@sesna.gob.mx"
     },
     "technologies": [
-      "NodeJS", "MongoDB"
+      "NodeJS",
+      "MongoDB"
     ]
   },
   {
@@ -93,13 +100,14 @@
     "resourceType": "api",
     "maintainer": "PDN",
     "name": "Módulo de autorización OAuth 2.0",
-    "systems": [2,3],
+    "systems": [
+      2,
+      3
+    ],
     "abstract": "Implementación del protocolo de autenticación OAuth 2.0",
     "description": "Esta implementación del protocolo de autenticación OAuth 2.0 forma parte de una solución que contempla las APIs del S2 y S3 en ambiente de desarrollo, para reproducirlo completamente se sugiere revisar la documentación",
     "cover": "https://raw.githubusercontent.com/PDNMX/assets/master/mda/pdn_piloto/auth2.png",
-    "screenshots": [
-
-    ],
+    "screenshots": [],
     "url": "https://github.com/PDNMX/piloto_oauth2.0",
     "contactPoint": {
       "organization": "PDN",
@@ -107,7 +115,10 @@
       "email": "pdn@sesna.gob.mx"
     },
     "technologies": [
-      "NodeJS", "MongoDB", "Docker", "JWT"
+      "NodeJS",
+      "MongoDB",
+      "Docker",
+      "JWT"
     ]
   },
   {
@@ -115,7 +126,9 @@
     "resourceType": "doc",
     "maintainer": "PDN",
     "name": "Tutorial EDCA",
-    "systems": [6],
+    "systems": [
+      6
+    ],
     "abstract": "Video tutorial y presentación sobre el Estandar de Datos de Contrataciones Abiertas.",
     "description": "Video tutorial y presentación de introducción al Estandar de Datos de Contrataciones Abiertas y procesamiento básico de archivos en formato JSON.",
     "cover": "https://raw.githubusercontent.com/PDNMX/tutorial_edca/main/screens/cover.png",
@@ -131,7 +144,9 @@
       "email": "pdn@sesna.gob.mx"
     },
     "technologies": [
-      "EDCA","JSON", "OCDS"
+      "EDCA",
+      "JSON",
+      "OCDS"
     ]
   },
   {
@@ -139,12 +154,13 @@
     "resourceType": "doc",
     "maintainer": "PDN",
     "name": "Guía del Sistema 1 (declaraciones)",
-    "systems": [1],
+    "systems": [
+      1
+    ],
     "abstract": "Documento con información relevante para los equipos encargados de desarrollar la interconexión con el Sistema 1 de la PDN.",
     "description": "Documento que tiene la finalidad de brindar información relevante para los equipos encargados de desarrollar la interconexión de su sistema de declaraciones con la Plataforma Digital Nacional.",
     "cover": "https://raw.githubusercontent.com/PDNMX/assets/master/mda/default_pdn_cover.png",
-    "screenshots": [
-    ],
+    "screenshots": [],
     "url": "https://drive.google.com/file/d/1wHQpaFdP5An8V4Vhnjj1a4GBbYIREMHo/view",
     "contactPoint": {
       "organization": "PDN",
@@ -152,7 +168,9 @@
       "email": "pdn@sesna.gob.mx"
     },
     "technologies": [
-      "REST","OAS", "OAuth 2.0"
+      "REST",
+      "OAS",
+      "OAuth 2.0"
     ]
   },
   {
@@ -161,7 +179,9 @@
     "resourceType": "sys",
     "maintainer": "PDN",
     "name": "Sistema de Declaración Patrimonial y de Intereses",
-    "systems": [1],
+    "systems": [
+      1
+    ],
     "abstract": "Código, manuales y otros recursos para que las instituciones pongan en marcha el sistema para capturar declaraciones patrimoniales y de intereses.",
     "description": "Sistema de Información diseñado por el Equipo de la Plataforma Digital Nacional para la presentación de Declaraciones Patrimoniales y de Intereses de los Servidores Públicos. Desarrollado usando tecnologías y estándares abiertos que facilitan la interoperabilidad con la Plataforma Digital Nacional.",
     "cover": "https://raw.githubusercontent.com/PDNMX/assets/master/mda/default_pdn_cover.png",
@@ -178,7 +198,10 @@
       "directory_url": "https://docs.google.com/spreadsheets/d/16pmdC_gxw3-4SJpqoPpQUV4U0J_X-GADMFeG554xbGU"
     },
     "technologies": [
-      "MongoDB", "NodeJS", "AngularJS", "GraphQL"
+      "MongoDB",
+      "NodeJS",
+      "AngularJS",
+      "GraphQL"
     ]
   },
   {
@@ -186,7 +209,9 @@
     "resourceType": "doc",
     "maintainer": "PDN",
     "name": "Taller de instalación y despliegue del Sistema de Declaraciones",
-    "systems": [1],
+    "systems": [
+      1
+    ],
     "abstract": "Video tutorial y presentación sobre el proceso de instalación y despliegue del Sistema de Declaraciones.",
     "description": "El Sistema de Declaraciones es una herramienta que permite a los servidores públicos presentar su declaración patrimonial y de intereses cumpliendo con el Formato aprobado por el Comité Coordinador del Sistema Nacional Anticorrupción resguardando la información en modelos de datos compatibles con los estándares de datos de la Plataforma Digital Nacional.",
     "cover": "https://raw.githubusercontent.com/PDNMX/assets/master/mda/default_pdn_cover.png",
@@ -201,7 +226,9 @@
       "email": "pdn@sesna.gob.mx"
     },
     "technologies": [
-      "Docker","Linux", "NGINX"
+      "Docker",
+      "Linux",
+      "NGINX"
     ]
   },
   {
@@ -209,7 +236,9 @@
     "resourceType": "sys",
     "maintainer": "SESAJ Jalisco",
     "name": "SiDECLARA SESAJ",
-    "systems": [1],
+    "systems": [
+      1
+    ],
     "abstract": "Software desarrollado por la SESAJ para capturar la declaración patrimonial, de intereses y fiscal. Cumple con los formatos obligatorios en mayo/2021",
     "description": "Es un sistema de información desarrollado por la Secretaría Ejecutiva del Sistema Anticorrupción de Jalisco, que permite la captura de la declaración de situación patrimonial, de intereses y constancia de presentación de la declración fiscal, para dar cumplimiento a lo establecido por la LGRA. Implementa los nuevos formatos de uso obligatorio a partir de mayo del 2021. El sistema es desarrollado con herramientas de software libre y basado en Linux para servidores, es intuitivo, de navegación sencilla, incluye ayudas, tips, y preguntas frecuentes, además es personalizable a la imagen institucional de cada ente público. El sistema también facilita la conexión e interoperabilidad con la PDN, al incluir el API correspondiente. Incluye un módulo de administración que distingue a los usuarios con los roles de Administrador y de Órgano Interno de Control.",
     "cover": "https://www.seajal.org/static/img/PortadaSiDECLARAMDA.png",
@@ -226,7 +255,9 @@
       "email": "andres.oviedo@sesaj.org"
     },
     "technologies": [
-      "Django","Python", "Docker"
+      "Django",
+      "Python",
+      "Docker"
     ]
   },
   {
@@ -234,7 +265,9 @@
     "resourceType": "sys",
     "maintainer": "SESAE Chiapas",
     "name": "DeclaraFácil PI Portable",
-    "systems": [1],
+    "systems": [
+      1
+    ],
     "abstract": "Es una aplicación que permite integrar y generar la Declaración de Situación Patrimonial y Declaración de Intereses a los servidores públicos.",
     "description": "Es una aplicación que permite la integración y generación de la Declaración de Situación Patrimonial y Declaración de Intereses, de los servidores públicos los entes públicos, compatible con los formatos aprobados por el Comité Coordinador del Sistema Nacional Anticorrupción, capaz de ejecutarse en un equipo de cómputo con requerimientos técnicos mínimos, que cuente con un navegador web y que no necesita una conexión a Internet.\n \nGenera un archivo en formato JSON codificados en base64, que contiene los datos capturados de la declaración patrimonial, y los formatos para imprimirlos y firmarlos autógrafamente para darles certeza jurídica; éstos cumplen con las especificaciones técnicas establecidas, para garantizar la interoperabilidad con la Plataforma Digital Nacional.\n \nEsta aplicación fue desarrollada para ser utilizada en aquellas localidades que no cuentan con acceso a Internet.",
     "cover": "https://raw.githubusercontent.com/SESAECH/DeclaraFacilPI/main/docs/DeclaraF%C3%A1cilPi_logo_345x140%20banner%203.png",
@@ -251,7 +284,16 @@
       "email": "omeneses@chiapas.gob.mx"
     },
     "technologies": [
-      "HTML","JavaScript", "jQuery", "CSS3", "JSON", "Bootstrap", "jsPDF", "SweetAlert", "Webpack", "npm"
+      "HTML",
+      "JavaScript",
+      "jQuery",
+      "CSS3",
+      "JSON",
+      "Bootstrap",
+      "jsPDF",
+      "SweetAlert",
+      "Webpack",
+      "npm"
     ]
   },
   {
@@ -259,12 +301,14 @@
     "resourceType": "doc",
     "maintainer": "PDN",
     "name": "Taller de inteligencia anticorrupción: cómo contar historias (con datos), día internacional contra la corrupción 2020",
-    "systems": [2,3],
+    "systems": [
+      2,
+      3
+    ],
     "abstract": "Presentación y video del taller en el que se mostraron herramientas para usar datos de los sistemas 2 y 3.",
     "description": "Con el motivo del día internacional contra la corrupción 2021, el equipo de la Plataforma Digital Nacional impartió al público general este taller. El contenido consiste en explicar y explorar la PDN; asimismo, se dio un breve y clara explicación sobre qué es el formato JSON. Por último, se mostraron algunas herramientas que facilitan a cualquier persona leer un archivo en este formato.",
     "cover": "https://raw.githubusercontent.com/PDNMX/assets/master/mda/default_pdn_cover.png",
-    "screenshots": [
-    ],
+    "screenshots": [],
     "url": "https://github.com/PDNMX/taller-dicc",
     "contactPoint": {
       "organization": "PDN",
@@ -280,7 +324,10 @@
     "resourceType": "sys",
     "maintainer": "PDN",
     "name": "Sistema de Carga de Datos (S2 y S3)",
-    "systems": [2,3],
+    "systems": [
+      2,
+      3
+    ],
     "abstract": "Herramienta para carga o captura de datos de los Sistemas S2 y S3.",
     "description": "Herramienta para la carga o captura de datos de los Sistemas S2 y S3 de la PDN. Diseñado para que las Secretarías Ejecutivas concentren la información de sus instituciones, quienes son las encargadas de administrar sus datos (carga masiva a través de archivos, capturar a través de formularios, editar, eliminar y consultar). En conjunto con las APIs disponibles de los respectivos sistemas, conforman el ecosistema completo de interconexión con la PDN para los sistemas antes mencionados.",
     "cover": "https://github.com/PDNMX/SistemaCarga_S2S3/raw/cc3042af3440100260a0876471de908e305f41e2/assets/cover.png",
@@ -297,7 +344,9 @@
       "email": "pdn@sesna.gob.mx"
     },
     "technologies": [
-      "Node.js", "MongoDB", "React.js"
+      "Node.js",
+      "MongoDB",
+      "React.js"
     ],
     "media": [
       {
@@ -313,7 +362,10 @@
     "resourceType": "doc",
     "maintainer": "PDN",
     "name": "Tutorial de instalación del Sistema de Carga de Datos del S2 y S3",
-    "systems": [2,3],
+    "systems": [
+      2,
+      3
+    ],
     "abstract": "Video tutorial sobre el proceso de instalación y despliegue del Sistema de Carga de Datos del S2 y S3.",
     "description": "El Sistema de Carga de Datos del S2 y S3 es una herramienta que permite la captura y administración de los datos que cada uno de los sistemas contempla.",
     "cover": "https://github.com/PDNMX/SistemaCarga_S2S3/raw/cc3042af3440100260a0876471de908e305f41e2/assets/cover.png",
@@ -337,7 +389,9 @@
     "resourceType": "api",
     "maintainer": "SESAEMM",
     "name": "API DECLARACIONES",
-    "systems": [1],
+    "systems": [
+      1
+    ],
     "abstract": "API de conexión con la Plataforma Digital Estatal y la Plataforma Digital Nacional para el Sistema I. Evolución patrimonial, declaración de intereses y constancia de presentación de declaración fiscal.",
     "description": "API de conexión con la Plataforma Digital Estatal y la Plataforma Digital Nacional para el Sistema I. Evolución patrimonial, declaración de intereses  y constancia de presentación de declaración fiscal que garantiza la interoperabilidad y el correcto funcionamiento con base en las especificaciones  proporcionadas por la Secretaría Ejecutiva del Sistema Nacional Anticorrupción bajo el protocolo de seguridad OAuth 2.0. ",
     "cover": "https://gitlab.com/sesaemm_pde/apiDeclaraciones/-/raw/master/Documentacion/banner/1_apiDeclaraciones.png",
@@ -349,8 +403,8 @@
     "url": "https://gitlab.com/sesaemm_pde/apiDeclaraciones.git",
     "contactPoint": {
       "organization": "Secretaría Ejecutiva del Sistema Anticorrupción del Estado de México y Municipios (SESAEMM)",
-      "phone": "(722) 9146034 ext. 4006",
-      "email": "cristian.luna@sesaemm.gob.mx"
+      "phone": "722 9146034 ext. 4011",
+      "email": "ismael.ortiz@sesaemm.org.mx"
     },
     "technologies": [
       "Java Development Kit",
@@ -364,7 +418,9 @@
     "resourceType": "api",
     "maintainer": "SESAEMM",
     "name": "API SPIC",
-    "systems": [2],
+    "systems": [
+      2
+    ],
     "abstract": "API de conexión con la Plataforma Digital Estatal y la Plataforma Digital Nacional para el Sistema II. Servidores públicos que intervengan en procedimientos de contrataciones públicas.",
     "description": "API de conexión con la Plataforma Digital Estatal y la Plataforma Digital Nacional para el Sistema II. Servidores públicos que intervengan en procedimientos de contrataciones públicas que garantiza la interoperabilidad y el correcto funcionamiento con base en las especificaciones proporcionadas por la Secretaría Ejecutiva del Sistema Nacional Anticorrupción bajo el protocolo de seguridad OAuth 2.0.",
     "cover": "https://gitlab.com/sesaemm_pde/apispic/-/raw/master/Documentacion/banner/2_apiSPIC.png",
@@ -376,8 +432,8 @@
     "url": "https://gitlab.com/sesaemm_pde/apispic.git",
     "contactPoint": {
       "organization": "Secretaría Ejecutiva del Sistema Anticorrupción del Estado de México y Municipios (SESAEMM)",
-      "phone": "(722) 9146034 ext. 4006",
-      "email": "cristian.luna@sesaemm.gob.mx"
+      "phone": "722 9146034 ext. 4011",
+      "email": "ismael.ortiz@sesaemm.gob.mx"
     },
     "technologies": [
       "Java Development Kit",
@@ -391,7 +447,9 @@
     "resourceType": "api",
     "maintainer": "SESAEMM",
     "name": "API SSANCIONADOS",
-    "systems": [3],
+    "systems": [
+      3
+    ],
     "abstract": "API de conexión con la Plataforma Digital Estatal y la Plataforma Digital Nacional para el Sistema III. Servidores públicos sancionados.",
     "description": "API de conexión con la Plataforma Digital Estatal y la Plataforma Digital Nacional para el Sistema III. Servidores públicos sancionados que garantiza la interoperabilidad y el correcto funcionamiento con base en las especificaciones proporcionadas por la Secretaría Ejecutiva del Sistema Nacional Anticorrupción bajo el protocolo de seguridad OAuth 2.0. ",
     "cover": "https://gitlab.com/sesaemm_pde/apissancionados/-/raw/master/Documentacion/banner/3_apiSsancionados.png",
@@ -403,8 +461,8 @@
     "url": "https://gitlab.com/sesaemm_pde/apissancionados.git",
     "contactPoint": {
       "organization": "Secretaría Ejecutiva del Sistema Anticorrupción del Estado de México y Municipios (SESAEMM)",
-      "phone": "(722) 9146034 ext. 4006",
-      "email": "cristian.luna@sesaemm.gob.mx"
+      "phone": "722 9146034 ext. 4011",
+      "email": "ismael.ortiz@sesaemm.gob.mx"
     },
     "technologies": [
       "Java Development Kit",
@@ -418,7 +476,9 @@
     "resourceType": "api",
     "maintainer": "SESAEMM",
     "name": "API PSANCIONADOS",
-    "systems": [3],
+    "systems": [
+      3
+    ],
     "abstract": "API de conexión con la Plataforma Digital Estatal y la Plataforma Digital Nacional para el Sistema III. Particulares sancionados.",
     "description": "API de conexión con la Plataforma Digital Estatal y la Plataforma Digital Nacional para el Sistema III. Particulares sancionados que garantiza la interoperabilidad y el correcto funcionamiento con base en las especificaciones proporcionadas por la Secretaría Ejecutiva del Sistema Nacional Anticorrupción bajo el protocolo de seguridad OAuth 2.0.",
     "cover": "https://gitlab.com/sesaemm_pde/apipsancionados/-/raw/master/Documentacion/banner/4_apiPsancionados.png",
@@ -430,8 +490,8 @@
     "url": "https://gitlab.com/sesaemm_pde/apipsancionados.git",
     "contactPoint": {
       "organization": "Secretaría Ejecutiva del Sistema Anticorrupción del Estado de México y Municipios (SESAEMM)",
-      "phone": "(722) 9146034 ext. 4006",
-      "email": "cristian.luna@sesaemm.gob.mx"
+      "phone": "722 9146034 ext. 4011",
+      "email": "ismael.ortiz@sesaemm.gob.mx"
     },
     "technologies": [
       "Java Development Kit",
@@ -445,7 +505,9 @@
     "resourceType": "sys",
     "maintainer": "SESAEMM",
     "name": "CAPTURA SPIC",
-    "systems": [2],
+    "systems": [
+      2
+    ],
     "abstract": "Sistema de captura para el Sistema II. Servidores públicos que intervengan en procedimientos de contrataciones públicas.",
     "description": "Sistema de captura para el Sistema II. Servidores públicos que intervengan en procedimientos de contrataciones públicas que permite el registro e integración de la información relacionada de todos aquellos servidores públicos que intervengan en procedimientos de contrataciones públicas, tomando como base el estándar de datos del Sistema II de la Plataforma Digital Estatal y la Plataforma Digital Nacional.",
     "cover": "https://gitlab.com/sesaemm_pde/capturaspic/-/raw/master/Documentacion/banner/5_capturaSPIC.png",
@@ -457,8 +519,8 @@
     "url": "https://gitlab.com/sesaemm_pde/capturaspic.git",
     "contactPoint": {
       "organization": "Secretaría Ejecutiva del Sistema Anticorrupción del Estado de México y Municipios (SESAEMM)",
-      "phone": "(722) 9146034 ext. 4006",
-      "email": "cristian.luna@sesaemm.gob.mx"
+      "phone": "722 9146034 ext. 4011",
+      "email": "ismael.ortiz@sesaemm.gob.mx"
     },
     "technologies": [
       "Java Development Kit",
@@ -472,7 +534,9 @@
     "resourceType": "sys",
     "maintainer": "SESAEMM",
     "name": "CAPTURA SSANCIONADOS",
-    "systems": [3],
+    "systems": [
+      3
+    ],
     "abstract": "Sistema de captura para el Sistema III. Servidores públicos sancionados.",
     "description": "Sistema de captura para el Sistema III. Servidores públicos sancionados que permite el registro e integración de la información relacionada de todos aquellos servidores públicos sancionados, tomando como base el estándar de datos del Sistema III - Servidores públicos sancionados de la Plataforma Digital Estatal y la Plataforma Digital Nacional. ",
     "cover": "https://gitlab.com/sesaemm_pde/capturassancionados/-/raw/master/Documentacion/banner/6_capturaSsancionados.png",
@@ -485,8 +549,8 @@
     "url": "https://gitlab.com/sesaemm_pde/capturassancionados.git",
     "contactPoint": {
       "organization": "Secretaría Ejecutiva del Sistema Anticorrupción del Estado de México y Municipios (SESAEMM)",
-      "phone": "(722) 9146034 ext. 4006",
-      "email": "cristian.luna@sesaemm.gob.mx"
+      "phone": "722 9146034 ext. 4011",
+      "email": "ismael.ortiz@sesaemm.gob.mx"
     },
     "technologies": [
       "Java Development Kit",
@@ -500,7 +564,9 @@
     "resourceType": "sys",
     "maintainer": "SESAEMM",
     "name": "CAPTURA PSANCIONADOS ",
-    "systems": [3],
+    "systems": [
+      3
+    ],
     "abstract": "Sistema de captura para el Sistema III. Particulares sancionados.",
     "description": "Sistema de captura para el Sistema III. Particulares sancionados que permite el registro e integración de la información relacionada con todos aquellos particulares sancionados, tomando como base el estándar de datos del  Sistema III - Particulares sancionados de la Plataforma Digital Estatal y la Plataforma Digital Nacional.",
     "cover": "https://gitlab.com/sesaemm_pde/capturapsancionados/-/raw/master/Documentacion/banner/7_capturaPsancionados.png",
@@ -514,8 +580,8 @@
     "url": "https://gitlab.com/sesaemm_pde/capturapsancionados.git",
     "contactPoint": {
       "organization": "Secretaría Ejecutiva del Sistema Anticorrupción del Estado de México y Municipios (SESAEMM)",
-      "phone": "(722) 9146034 ext. 4006",
-      "email": "cristian.luna@sesaemm.gob.mx"
+      "phone": "722 9146034 ext. 4011",
+      "email": "ismael.ortiz@sesaemm.gob.mx"
     },
     "technologies": [
       "Java Development Kit",
@@ -529,7 +595,9 @@
     "resourceType": "sys",
     "maintainer": "INAI",
     "name": "Contrataciones Abiertas",
-    "systems": [6],
+    "systems": [
+      6
+    ],
     "abstract": "Permite la captura y visualización de información de los procedimientos de contratación conforme al Estándar de Datos de Contrataciones Abiertas",
     "description": "Contrataciones Abiertas se compone de dos módulos principales: 1) la vista pública o dashboard, que visualiza los datos registrados a través de gráficos interactivos y permite la descarga de todos los datos en formato JSON; y 2) el sistema de captura, que permite a los usuarios registrar datos y documentos de todas las etapas de los procedimientos de contratación mediante formularios sencillos correspondientes a las etapas de planeación, licitación, adjudicación, contrato y ejecución, en donde es posible capturar cada uno de los atributos contemplados en el Estándar de Datos para las Contrataciones Abiertas (OCDS por sus siglas en inglés). Además, cuenta con formularios secundarios que posibilitan el registro desglosado del presupuesto, documentos, ítems (incluye un mapa para seleccionar la ubicación donde se llevará a cabo la entrega del bien, servicio o ejecución de la obra), hitos, transacciones, entre otros.",
     "cover": "https://raw.githubusercontent.com/datosabiertosmx/contrataciones-abiertas-infraestructura/master/Im%C3%A1genes/ContratacionesAbiertas.png",
