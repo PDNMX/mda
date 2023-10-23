@@ -619,5 +619,32 @@
       "PostgreSQL",
       "MongoDB"
     ]
+  },
+  {
+    "id": "23",
+    "resourceType": "api",
+    "maintainer": "PDN",
+    "name": "API Genérica del Sistema 1.",
+    "systems": [
+      1
+    ],
+    "abstract": "Módulo API para incorporar datos al Sistema 1 de la PDN. Compatible con el estándar de Datos correspondiente.",
+    "description": "Esta API permite incorporar datos al Sistema 1 de la PDN, requiere que los datos se encuentren estandarizados. En la documentación se detalla el proceso de implementación.",
+    "cover": "/product-23/APIs1.png",
+    "screenshots": [
+      "/product-23/Screenshot-1.png",
+      "/product-23/Screenshot-2.png"
+    ],
+    "url": "https://docs.google.com/document/d/1UcxxT2zg526MQ0ozF71n6h5v35nxM7hLOGjAnvM-o6Y/edit?usp=sharing",
+    "contactPoint": {
+      "organization": "PDN",
+      "phone": "N/A",
+      "email": "pdn@sesna.gob.mx"
+    },
+    "technologies": [
+      "NodeJS",
+      "Express",
+      "MongoDB"
+    ]
   }
 ]
