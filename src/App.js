@@ -18,25 +18,25 @@ const theme = createTheme({
     },
     palette:{
         primario: {
-            main: "#0d3b49",
+            main: "#f4f9f9",
             light: "#3d6575",
             dark: "#001621",
-            contrastText: "#ced8db"
+            contrastText: "#57585A"
         },
         secundario: {
-            main: "#3ab0e5",
+            main: "#57585A",
             light: "#79e2ff",
             dark: "#0081b3",
-            contrastText: "#0d3b49"
+            contrastText: "#f4f9f9"
         },
         text:{
             main:"#ced8db",
             greyColor: '#666666',
-            blueColor: '#3ab0e5'
+            blueColor: '#57585A'
         },
         background: {
-            default: "#0d3b49",
-            opaque:'#155065',
+            default: "#f4f9f9",
+            opaque:'transparent linear-gradient(230deg, #1C7CBF 0%, #1C7CBF 4%, #9F58E2 49%, #6D4061 100%) 0% 0% no-repeat padding-box',
             hoverBotton: '#56a3bf',
             tableBody: "#f2f2f2"
         }

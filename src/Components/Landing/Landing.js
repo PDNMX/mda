@@ -79,9 +79,9 @@ const Landing = props => {
 
                         <Button
                             sx={{
-                                color: 'black',
+                                color: 'white',
                                 'margin': '5px',
-                                'background': '#9eb1b6',
+                                'background': '#6D4061',
                                 'borderRadius': '50px',
                                 'fontWeight': 'bold',
                                 'fontStyle': 'italic',

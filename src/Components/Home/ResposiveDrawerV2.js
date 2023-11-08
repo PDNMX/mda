@@ -43,7 +43,7 @@ const styles = theme => ({
         maxWidth: 100
     },
     icon: {
-        color: '#f2f2f2'
+        color: '#6D4061'
     },
     toolbar1: {
         background: theme.palette.background.opaque,
@@ -82,7 +82,7 @@ function ResponsiveDrawer(props) {
     const drawer = (
         <div>
             <img src={MDA} alt="Mercado Digital Anticorrupción" className={classes.logoMDA}/>
-            <Divider color={"#f2f2f2"}/>
+            <Divider color={"#1C7CBF"}/>
             <List>
                 <ListItemButton onClick={() => handleDrawerClick(0, 0)} selected={option === 0} component={NavLink}
                                 to={"/bienvenida"}>
@@ -121,7 +121,7 @@ function ResponsiveDrawer(props) {
 
             </List>
 
-            <Divider color={"#f2f2f2"}/>
+            <Divider color={"#57585A"}/>
 
             <List>
                 <ListItemButton onClick={() => handleDrawerClick(0, 4)} selected={option === 4} component={NavLink}
@@ -210,7 +210,7 @@ function ResponsiveDrawer(props) {
                 {/*
                 <Toolbar className={classes.toolbar3} sx={{display: { sm:'none'}}}>
                     <IconButton
-                        color="inherit"
+                        color="inherit"f
                         aria-label="open drawer"
                         edge="start"
                         onClick={handleDrawerToggle}
@@ -242,8 +242,8 @@ function ResponsiveDrawer(props) {
                         '& .MuiDrawer-paper': {
                             boxSizing: 'border-box',
                             width: drawerWidth,
-                            color: '#f2f2f2',
-                            background: "#155065"
+                            color: '#57585A',
+                            background: "#f1e9f2"
                         },
                     }}
                 >
@@ -256,8 +256,8 @@ function ResponsiveDrawer(props) {
                         '& .MuiDrawer-paper': {
                             boxSizing: 'border-box',
                             width: drawerWidth,
-                            color: '#f2f2f2',
-                            background: "#155065"
+                            color: '#57585A',
+                            background: "#f1e9f2"
                         },
                     }}
                     open
