@@ -127,7 +127,6 @@ function ResponsiveDrawer(props) {
 
     const drawer = (
         <div>
-            <img src={MDA} alt="Mercado Digital Anticorrupción" className={classes.logoMDA}/>
             <Divider />
             <List>
                 <ListItem button onClick={() => handleDrawerClick(0,0)} selected={ option === 0}>

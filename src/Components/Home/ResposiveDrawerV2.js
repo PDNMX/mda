@@ -13,7 +13,6 @@ import ListItemText from '@mui/material/ListItemText';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import MDA from "../../Assets/logo_mda.svg";
 import Home from "@mui/icons-material/Home";
 import MenuBook from "@mui/icons-material/MenuBook";
 import Help from "@mui/icons-material/Help";
@@ -34,11 +33,6 @@ import {NavLink, Outlet} from "react-router-dom";
 const drawerWidth = 240;
 
 const styles = theme => ({
-    logoMDA: {
-        paddingTop: theme.spacing(1),
-        margin: theme.spacing(1),
-        maxHeight: 80
-    },
     pdnLogo: {
         maxWidth: 100
     },
@@ -81,8 +75,7 @@ function ResponsiveDrawer(props) {
 
     const drawer = (
         <div>
-            <img src={MDA} alt="Mercado Digital Anticorrupción" className={classes.logoMDA}/>
-            <Divider color={"#1C7CBF"}/>
+            <Divider />
             <List>
                 <ListItemButton onClick={() => handleDrawerClick(0, 0)} selected={option === 0} component={NavLink}
                                 to={"/bienvenida"}>
@@ -181,8 +174,7 @@ function ResponsiveDrawer(props) {
             <AppBar
                 position="fixed"
                 sx={{
-                    width: {sm: `calc(100% - ${drawerWidth}px)`},
-                    ml: {sm: `${drawerWidth}px`},
+                    width: `100%`,
                 }}
             >
                 {/* Mostrar en desktop */}
@@ -257,7 +249,8 @@ function ResponsiveDrawer(props) {
                             boxSizing: 'border-box',
                             width: drawerWidth,
                             color: '#57585A',
-                            background: "#f1e9f2"
+                            background: "#f1e9f2", 
+                            marginTop: '102px'
                         },
                     }}
                     open

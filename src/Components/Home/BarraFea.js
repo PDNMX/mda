@@ -4,8 +4,14 @@ import {withStyles} from "@mui/styles"
 import Espe from "../../Assets/iconos_barra/ico_especificaciones.svg";
 import Mesa from "../../Assets/iconos_barra/ico_mesa-ayuda.svg";
 import {Link, Tooltip, Box} from "@mui/material";
+import MDA from "../../Assets/logo_mda.svg";
 
 const styles = theme => ({
+  logoMDA: {
+        paddingTop: theme.spacing(1),
+        margin: theme.spacing(1),
+        maxHeight: 80
+  },
   root: {
     flexGrow: 1,
     //backgroundColor: theme.palette.secundario.dark,
@@ -37,6 +43,12 @@ const BarraFea = props => {
       <div className={classes.root}>
         <Box display="flex" flexWrap="wrap" justifyContent="center">
 
+        <Box className={classes.item} flexGrow={1}>
+            <Tooltip title="Mercado Digital Anticorrupción">
+            <img src={MDA} alt="Mercado Digital Anticorrupción" className={classes.logoMDA}/>
+            </Tooltip>
+          </Box>
+
           <Box className={classes.item} flexGrow={1}>
             <Tooltip title="Mesa de ayuda">
               <Link href="https://plataformadigitalnacional.org/mesa-de-ayuda"
@@ -46,16 +58,6 @@ const BarraFea = props => {
               </Link>
             </Tooltip>
           </Box>
-
-          {/*<Box className={classes.item} flexGrow={1}>
-            <Tooltip title="Blog" arrow>
-              <Link href="https://plataformadigitalnacional.org/blog"
-                    target="_blank"
-                    className={classes.link}>
-                <img src={Blog} className={classes.icon} alt="Blog" />
-              </Link>
-            </Tooltip>
-          </Box>*/}
 
           <Box className={classes.item} flexGrow={1}>
             <Tooltip title="Especificaciones técnicas" arrow>
