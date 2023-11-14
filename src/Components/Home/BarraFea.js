@@ -8,9 +8,11 @@ import MDA from "../../Assets/logo_mda.svg";
 
 const styles = theme => ({
   logoMDA: {
-        paddingTop: theme.spacing(1),
-        margin: theme.spacing(1),
-        maxHeight: 80
+        paddingTop: theme.spacing(0),
+        margin: theme.spacing(0),
+        maxHeight: 65, 
+        marginTop: '-10px',
+        marginLeft: '-20px' 
   },
   root: {
     flexGrow: 1,
@@ -43,7 +45,7 @@ const BarraFea = props => {
       <div className={classes.root}>
         <Box display="flex" flexWrap="wrap" justifyContent="center">
 
-        <Box className={classes.item} flexGrow={1}>
+        <Box className={classes.item} flexGrow={1} display="flex" alignItems="start" justifyContent="start">
             <Tooltip title="Mercado Digital Anticorrupción">
             <img src={MDA} alt="Mercado Digital Anticorrupción" className={classes.logoMDA}/>
             </Tooltip>
