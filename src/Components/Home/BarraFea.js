@@ -11,7 +11,6 @@ const styles = theme => ({
         paddingTop: theme.spacing(0),
         margin: theme.spacing(0),
         maxHeight: 65, 
-        marginTop: '-10px',
         marginLeft: '-20px' 
   },
   root: {
@@ -32,10 +31,30 @@ const styles = theme => ({
     textDecoration: "none",
     color: theme.palette.text.primary
   },
+  borderContainer: {
+    border: '1px solid #fff',
+    background: 'white',
+    margin: '10px auto',
+    borderRadius: '75px',
+    padding: '0px 50px',
+    display: 'flex',
+    justifyContent: 'center',
+    flexWrap: 'wrap',
+    width: '50%',
+    marginRight: '250px',
+  },
   item: {
     paddingLeft: theme.spacing(2),
     paddingRight: theme.spacing(2),
-
+    flexGrow: 1,
+    display: 'flex', // Añadir flexbox
+    alignItems: 'center', // Alinear verticalmente
+  },
+  itemText: {
+    color: '#57585A', 
+    marginLeft: theme.spacing(2),
+    fontWeight: 'bold', 
+    fontSize: '0.875rem',
   }
 });
 
@@ -51,6 +70,8 @@ const BarraFea = props => {
             </Tooltip>
           </Box>
 
+          <Box className={classes.borderContainer}>
+
           <Box className={classes.item} flexGrow={1}>
             <Tooltip title="Mesa de ayuda">
               <Link href="https://plataformadigitalnacional.org/mesa-de-ayuda"
@@ -59,6 +80,7 @@ const BarraFea = props => {
                 <img src={Mesa} className={classes.icon} alt="Mesa de ayuda"/>
               </Link>
             </Tooltip>
+            <span className={classes.itemText}>Mesa de Ayuda</span>
           </Box>
 
           <Box className={classes.item} flexGrow={1}>
@@ -70,6 +92,9 @@ const BarraFea = props => {
                 />
               </Link>
             </Tooltip>
+            <span className={classes.itemText}>Especificaciones</span>
+          </Box>
+
           </Box>
         </Box>
       </div>
