@@ -10,12 +10,19 @@ import {NavLink, useLocation} from "react-router-dom";
 const styles = theme => ({
     root:{
         paddingTop: theme.spacing(2),
-        paddingBottom: theme.spacing(2)
+        paddingBottom: theme.spacing(2), 
     },
     box: {
         display: "flex",
         flexWrap: "wrap",
-        justifyContent: "center"
+        justifyContent: "center", 
+    },
+    Buttons: {
+        backgroundColor: '#815474 !important', // Amarillo con mayor especificidad
+        color: '#f2f0f2 !important', // Azul con mayor especificidad
+        '&:hover': {
+            backgroundColor: '#b25fac !important', // Amarillo más oscuro al pasar el mouse
+        },
     },
 });
 
@@ -36,8 +43,8 @@ const NavigationButtons = props => {
     return <div className={classes.root}>
         <Box className={classes.box}>
             <Box p={1}>
-                <Button variant="contained"
-                        color={btColor( path.includes('all'))}
+                <Button className={classes.Buttons}
+                        variant="contained"
                         startIcon={<ShoppingCart/>}
                         onClick={() => setResourceType("all")}
                         component={NavLink} to={"all"}
@@ -47,7 +54,8 @@ const NavigationButtons = props => {
                 </Button>
             </Box>
             <Box p={1}>
-                <Button variant="contained"
+                <Button className={classes.Buttons}
+                        variant="contained"
                         color={btColor(path.includes('api'))}
                         startIcon={<Settings/>}
                         onClick={() => setResourceType("api")}
@@ -57,7 +65,8 @@ const NavigationButtons = props => {
                 </Button>
             </Box>
             <Box p={1}>
-                <Button variant="contained"
+                <Button className={classes.Buttons}
+                        variant="contained"
                         color={btColor(path.includes('sys'))}
                         startIcon={<Computer/>}
                         onClick={() => setResourceType("sys")}
@@ -67,7 +76,8 @@ const NavigationButtons = props => {
                 </Button>
             </Box>
             <Box p={1}>
-                <Button variant="contained"
+                <Button className={classes.Buttons}
+                        variant="contained"
                         color={btColor(path.includes( 'doc'))}
                         startIcon={<Description/>}
                         onClick={() => setResourceType("doc")}

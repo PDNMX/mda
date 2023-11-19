@@ -61,9 +61,9 @@ const styles = theme => ({
         display: 'flex',
         justifyContent: "center"
     },
-    box: {
+    box: { // Esto afecta al inico rápido
         maxWidth: '900px', paddingTop: '50px', paddingBottom: '50px', 
-        backgroundColor: '#b25fac'
+        backgroundColor: '#f4f9f9',
     }
 });
 

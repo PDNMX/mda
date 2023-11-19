@@ -9,15 +9,15 @@ const theme = createTheme({
     },
     palette:{
         primario: {
-            main: "#815474",
-            light: "#b25fac",
-            dark: "#b25fac",
-            contrastText: "#f2f0f2"
+            main: "#f2f0f2",
+            light: "#f2f0f2",
+            dark: "#f2f0f2",
+            contrastText: "#55575a"
         },
         secundario: {
-            main: "#b25fac",
-            light: "#815474",
-            dark: "#815474",
+            main: "#55575a", // Influye el borde
+            light: "#f2f0f2",
+            dark: "#f2f0f2",
             contrastText: "#f2f0f2"
         },
         text:{
