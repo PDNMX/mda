@@ -1,15 +1,6 @@
 import React from 'react';
 import Home from "./Components/Home/Home";
-import P404 from "./Components/P404";
-//import Product from "./Components/ProductDetails/ProductDetails"
 import {createTheme, ThemeProvider} from "@mui/material/styles";
-import {
-    createBrowserRouter,
-    RouterProvider,
-} from "react-router-dom";
-import Landing from "./Components/Landing/Landing";
-import FAQ from "./Components/FAQ/FAQ";
-import ResponsiveDrawer from "./Components/Home/ResposiveDrawerV2";
 
 
 const theme = createTheme({
@@ -18,16 +9,16 @@ const theme = createTheme({
     },
     palette:{
         primario: {
-            main: "#f4f9f9",
-            light: "#3d6575",
-            dark: "#001621",
-            contrastText: "#57585A"
+            main: "#815474",
+            light: "#b25fac",
+            dark: "#b25fac",
+            contrastText: "#f2f0f2"
         },
         secundario: {
-            main: "#57585A",
-            light: "#79e2ff",
-            dark: "#0081b3",
-            contrastText: "#f4f9f9"
+            main: "#b25fac",
+            light: "#815474",
+            dark: "#815474",
+            contrastText: "#f2f0f2"
         },
         text:{
             main:"#ced8db",
@@ -42,8 +33,6 @@ const theme = createTheme({
         }
     }
 });
-
-
 
 function App() {
     return (

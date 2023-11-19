@@ -1,7 +1,6 @@
 import React from "react";
 import {Grid, Typography, /*Paper,*/ Box, Button} from "@mui/material";
 import {withStyles} from "@mui/styles"
-import {NavLink} from "react-router-dom";
 const styles = theme => ({
     root: {
         flexGrow: 1,
@@ -68,10 +67,6 @@ const Landing = props => {
 
                             </Box>
                         </div>
-
-                        <Typography variant='h5' paragraph>
-                            Manual de usuario
-                        </Typography>
 
                         <Typography paragraph>
                             Conoce a detalle las secciones y funcionalidades del MDA a través del Manual de usuario.

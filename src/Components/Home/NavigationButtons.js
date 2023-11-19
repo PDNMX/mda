@@ -17,29 +17,6 @@ const styles = theme => ({
         flexWrap: "wrap",
         justifyContent: "center"
     },
-    /*button: {
-        margin : theme.spacing(1),
-        "&:focus": {
-            background: '#ffe01b',
-            backgroundColor: '#ffe01b'
-        },
-        "&:hover": {
-            background: '#ffe01b',
-            backgroundColor: '#ffe01b'
-        }
-    },
-    selectedButton:{
-        margin : theme.spacing(1),
-        //color: '#ffe01b',
-        "&:focus": {
-            background: '#ffe01b',
-            backgroundColor: '#ffe01b'
-        },
-        "&:hover": {api
-            background: '#ffe01b',
-            backgroundColor: '#ffe01b'
-        }
-    }*/
 });
 
 const NavigationButtons = props => {

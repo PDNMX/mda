@@ -25,27 +25,27 @@ import Filter6 from "@mui/icons-material/Filter6";
 import {withStyles} from "@mui/styles";
 import BarraFea from "./BarraFea";
 import Link from "@mui/material/Link";
-import PDN from "../../Assets/PDN.png";
+import PDN from "../../Assets/logo_pdn.svg";
 import {NavLink, Outlet} from "react-router-dom";
-
-
 
 const drawerWidth = 240;
 
 const styles = theme => ({
+    divider: {
+        margin: `${theme.spacing(1)}px 0`, // Margen vertical reducido
+        // ...otros estilos que puedas necesitar...
+      },
     pdnLogo: {
         maxWidth: 100
     },
     icon: {
-        color: '#6D4061'
+        color: '#6D4061',
+        fontSize: '1.2rem', // Reduce el tamaño de los iconos
     },
     toolbar1: {
         background: theme.palette.background.opaque,
         height: 102
-    },
-    /*toolbar3: {
-        background: theme.palette.background.opaque
-    }*/
+    }
 });
 
 function ResponsiveDrawer(props) {
@@ -62,7 +62,7 @@ function ResponsiveDrawer(props) {
         resourceType: "all"
     });
 
-    const [selected, setSelected] = React.useState(null);
+    const [setSelected] = React.useState(null);
 
     const handleDrawerClick = (system, option) => {
         setOption(option);
@@ -175,6 +175,7 @@ function ResponsiveDrawer(props) {
                 position="fixed"
                 sx={{
                     width: `100%`,
+                    height: '80px',
                 }}
             >
                 {/* Mostrar en desktop */}
@@ -250,7 +251,8 @@ function ResponsiveDrawer(props) {
                             width: drawerWidth,
                             color: '#57585A',
                             background: "#f1e9f2", 
-                            marginTop: '102px'
+                            marginTop: '80px',
+                            height: `calc(100% - 80px)`, // Ajusta la altura considerando el marginTop
                         },
                     }}
                     open

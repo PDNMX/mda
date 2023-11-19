@@ -17,7 +17,7 @@ const styles = theme => ({
         fontSize: 16
     },
     paper: {
-        background: theme.palette.background.opaque,
+        background: '#f4f9f9',
         padding: theme.spacing(2),
         color: theme.palette.primario.contrastText,
         borderStyle: 'solid',

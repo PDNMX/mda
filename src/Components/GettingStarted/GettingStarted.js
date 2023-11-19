@@ -12,9 +12,6 @@ const styles = theme => ({
         paddingTop: theme.spacing(4),
         paddingBottom: theme.spacing(4),
     },
-    /*item: {
-        maxWidth: 1200 // No funciona
-    },*/
     imgBox: {
         paddingTop: theme.spacing(1),
         paddingBottom: theme.spacing(2),
@@ -53,8 +50,8 @@ const styles = theme => ({
         fontWeight: "bold"
     },
     paper: {
-        background: theme.palette.background.opaque,
-        backgroundColor: theme.palette.background.opaque,
+        background: '#f4f9f9',
+        backgroundColor: '#f4f9f9',
         padding: theme.spacing(2),
         color: theme.palette.primario.contrastText,
         borderStyle: 'solid',
@@ -65,7 +62,8 @@ const styles = theme => ({
         justifyContent: "center"
     },
     box: {
-        maxWidth: '900px', paddingTop: '50px', paddingBottom: '50px'
+        maxWidth: '900px', paddingTop: '50px', paddingBottom: '50px', 
+        backgroundColor: '#b25fac'
     }
 });
 

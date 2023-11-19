@@ -1,6 +1,5 @@
 import React from "react";
 import {withStyles} from "@mui/styles"
-//import Blog from "../../Assets/iconos_barra/ico-blog.svg";
 import Espe from "../../Assets/iconos_barra/ico_especificaciones.svg";
 import Mesa from "../../Assets/iconos_barra/ico_mesa-ayuda.svg";
 import {Link, Tooltip, Box} from "@mui/material";
@@ -10,25 +9,23 @@ const styles = theme => ({
   logoMDA: {
         paddingTop: theme.spacing(0),
         margin: theme.spacing(0),
-        maxHeight: 65, 
-        marginLeft: '-20px' 
+        maxHeight: 55, 
+        marginLeft: '-20px',
+        marginTop: '7px' 
   },
   root: {
     flexGrow: 1,
-    //backgroundColor: theme.palette.secundario.dark,
     textAlign: "center"
   },
   icon: {
     width: 50,
-    //margin: theme.spacing(1),
-    //padding: theme.spacing(2),
     "&:hover": {
       backgroundColor: theme.palette.background.hoverBotton,
       borderRadius: 50
     },
   },
   link: {
-    textDecoration: "none",
+    textDecoration: 'none', // Elimina el subrayado
     color: theme.palette.text.primary
   },
   borderContainer: {
@@ -52,9 +49,12 @@ const styles = theme => ({
   },
   itemText: {
     color: '#57585A', 
-    marginLeft: theme.spacing(2),
+    marginLeft: theme.spacing(1),
     fontWeight: 'bold', 
     fontSize: '0.875rem',
+    verticalAlign: 'middle', // Ajusta la alineación vertical
+    position: 'relative',
+    top: '-15px', // Mueve el texto hacia arriba
   }
 });
 
@@ -78,9 +78,9 @@ const BarraFea = props => {
                     target="_blank"
                     className={classes.link}>
                 <img src={Mesa} className={classes.icon} alt="Mesa de ayuda"/>
+                <span className={classes.itemText}>Mesa de Ayuda</span>
               </Link>
             </Tooltip>
-            <span className={classes.itemText}>Mesa de Ayuda</span>
           </Box>
 
           <Box className={classes.item} flexGrow={1}>
@@ -88,13 +88,11 @@ const BarraFea = props => {
               <Link href="https://plataformadigitalnacional.org/especificaciones"
                     target="_blank"
                     className={classes.link}>
-                <img src={Espe} className={classes.icon} alt="Especificaciones técnicas"
-                />
+                <img src={Espe} className={classes.icon} alt="Especificaciones técnicas"/>
+                <span className={classes.itemText}>Especificaciones</span>
               </Link>
             </Tooltip>
-            <span className={classes.itemText}>Especificaciones</span>
           </Box>
-
           </Box>
         </Box>
       </div>
