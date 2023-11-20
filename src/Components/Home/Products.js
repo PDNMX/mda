@@ -18,7 +18,7 @@ const styles = theme => ({
 });
 
 export const Products = props => {
-    const {classes, filters, setFilters, selected, setSelected} = props;
+    const {classes, filters, selected, setSelected} = props;
 
     let prods = products.filter(p => {
         if (filters.system === 0){
@@ -39,11 +39,10 @@ export const Products = props => {
     }
 
     return <div className={classes.root}>
-       {/* <NavigationButtons filters={filters} setFilters={setFilters}/>*/}
         <Box className={classes.box}>
             {
                 prods.map((p, i) => {
-                    return <Box key={i} m={2}>
+                    return <Box key={i} m={100}>
                         {
                             p.disabled ?
                             <DisabledCard product={p} key={i}/>:
