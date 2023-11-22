@@ -15,7 +15,7 @@ const useStyles = makeStyles({
     },
     bandita:{
         position: "absolute",
-        background: '#ffe01b',
+        background: '#ffe0',
         padding: 4,
         borderTopLeftRadius: 3,
         borderBottomRightRadius: 3

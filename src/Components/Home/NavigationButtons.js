@@ -18,10 +18,10 @@ const styles = theme => ({
         justifyContent: "center", 
     },
     Buttons: {
-        backgroundColor: '#815474 !important', // Amarillo con mayor especificidad
-        color: '#f2f0f2 !important', // Azul con mayor especificidad
+        backgroundColor: '#815474 !important', 
+        color: '#f2f0f2 !important', 
         '&:hover': {
-            backgroundColor: '#b25fac !important', // Amarillo más oscuro al pasar el mouse
+            backgroundColor: '#b25fac !important',
         },
     },
 });

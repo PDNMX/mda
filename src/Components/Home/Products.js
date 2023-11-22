@@ -7,6 +7,11 @@ import products from "../../products.json";
 import ProductDetails from "../ProductDetails/ProductDetails";
 
 const styles = theme => ({
+    productBox: {
+        margin: theme.spacing(1), // Margen alrededor de cada caja
+        width: `calc(33% - ${theme.spacing(2)}px)`, // Ancho para 3 productos por fila
+        // ...otros estilos que puedas necesitar...
+    },
     root: {
         minHeight: 700
     },
@@ -42,7 +47,7 @@ export const Products = props => {
         <Box className={classes.box}>
             {
                 prods.map((p, i) => {
-                    return <Box key={i} m={100}>
+                    return <Box key={i} m={2} className={classes.productBox}>
                         {
                             p.disabled ?
                             <DisabledCard product={p} key={i}/>:

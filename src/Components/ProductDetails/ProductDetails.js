@@ -18,19 +18,6 @@ const styles = theme => ({
         paddingBottom: theme.spacing(4),
         minHeight: 700
     },
-    /*item: {
-        maxWidth: 1200
-    },*/
-    /* button:{
-         marginTop : theme.spacing(1),
-         marginBottom : theme.spacing(3),
-         background: '#ffe01b'
-     },*/
-    /*fab: {
-        marginTop: theme.spacing(1),
-        marginBottom: theme.spacing(3),
-        background: '#ffe01b'
-    },*/
     screenshot:{
         borderStyle: "solid",
         borderWidth: 1,
@@ -43,10 +30,6 @@ const styles = theme => ({
     icon: {
         marginRight: theme.spacing(2)
     },
-    /*chip: {
-        borderRadius: "3px",
-        marginRight: theme.spacing(1)
-    },*/
     mediaBox: {
         paddingTop: theme.spacing(2),
         maxWidth: 800
@@ -86,7 +69,8 @@ export const ProductDetails = props => {
                         <Fab  size="medium" style={{
                             marginTop: 5,
                             marginBottom: 20,
-                            background: '#ffe01b'
+                            background: '#5b2f52',
+                            color: '#f2f0f9'
                         }}
                               onClick={()=> navigate(-1)}
                         >
@@ -104,9 +88,19 @@ export const ProductDetails = props => {
                             {product.description}
                         </Typography>
 
-                        <Button variant="contained" href={product.url} target="_blank" color="secundario" sx={{
-                            marginTop : 1,
-                            marginBottom : 3,
+                        <Button 
+                            variant="contained" 
+                            href={product.url} 
+                            target="_blank" 
+                            color="secundario" 
+                            sx={{
+                                color: '#f2f0f9',
+                                backgroundColor: '#5b2f52',
+                                marginTop : 1,
+                                marginBottom : 3,
+                                '&:hover': {
+                                    backgroundColor: '#b25fac',
+                                }
                         }}>
                             Conoce más
                         </Button>
@@ -167,7 +161,8 @@ export const ProductDetails = props => {
                                     label={t}
                                     size="small"
                                     style={{
-                                        color: "#ffffff",
+                                        color: '#f2f0f9',
+                                        backgroundColor: '#5b2f52',
                                         fontWeight: "bold",
                                         borderRadius: "3px",
                                         marginRight: 5
