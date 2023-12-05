@@ -8,9 +8,13 @@ import ProductDetails from "../ProductDetails/ProductDetails";
 
 const styles = theme => ({
     productBox: {
-        margin: theme.spacing(1), // Margen alrededor de cada caja
-        width: `calc(33% - ${theme.spacing(2)}px)`, // Ancho para 3 productos por fila
-        // ...otros estilos que puedas necesitar...
+        margin: theme.spacing(1), 
+        width: `calc(33% - ${theme.spacing(2)}px)`,
+        borderTop: '2px solid rgba(87, 88, 90, 0.5)', // Borde superior
+        borderRight: '2px solid rgba(87, 88, 90, 0.5)', // Borde derecho
+        borderLeft: '2px solid rgba(87, 88, 90, 0.5)', // Borde izquierdo
+        borderBottom: 'none', // Sin borde inferior
+        boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.2)',
     },
     root: {
         minHeight: 700

@@ -3,7 +3,9 @@ import {Typography} from "@mui/material";
 const P404 = props => {
     //const {classes} = props;
     return <div>
-        <h1 align={"center"}>No encontramos lo que buscabas</h1>
+        <Typography variant="h1" align="center" style={{ color: '#5b2f52' }}>
+                No encontramos lo que buscabas
+        </Typography>
     </div>
 }
 

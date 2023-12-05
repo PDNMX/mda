@@ -23,22 +23,21 @@ const styles = theme => ({
         '&:hover': {
             backgroundColor: '#b25fac !important',
         },
+        "&:focus": {
+            background: '#ffe01b',
+            backgroundColor: '#ffe01b'
+        },
     },
 });
 
 const NavigationButtons = props => {
     const {classes} = props;
     const btColor = active => active ? "secundario": "primario";
-
-    const[setResourceType] = useState('all');
+    const[setResourceType] = useState(null);
 
     const location = useLocation();
 
-    let path = location.pathname.split("/")[2];
-
-    if(!path){
-        path ='all';
-    }
+    let path = location.pathname.split("/")[2] || 'all';
 
     return <div className={classes.root}>
         <Box className={classes.box}>
