@@ -1,4 +1,4 @@
-FROM node:16-alpine
+FROM node:18-alpine
 
 MAINTAINER Sergio Rodríguez <sergio.rdzsg@gmail.com>
 
@@ -13,4 +13,4 @@ RUN yarn add global yarn \
 
 EXPOSE 5000
 
-CMD ["serve", "-s", "build", "-l", "5000"]
+CMD ["serve", "-s", "dist", "-l", "5000"]
