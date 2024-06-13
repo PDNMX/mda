@@ -68,7 +68,7 @@ function ResponsiveDrawer(props) {
         resourceType: "all"
     });
 
-    const [selected, setSelected] = React.useState(null);
+    // const [selected, setSelected] = React.useState(null);
 
     const handleDrawerClick = (system, option) => {
         setOption(option);
@@ -76,7 +76,7 @@ function ResponsiveDrawer(props) {
             ...filters,
             system: system
         });
-        setSelected(null);
+        // setSelected(null);
     }
 
     const drawer = (

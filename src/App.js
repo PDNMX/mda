@@ -1,15 +1,15 @@
 import React from 'react';
 import Home from "./Components/Home/Home";
-import P404 from "./Components/P404";
+// import P404 from "./Components/P404";
 //import Product from "./Components/ProductDetails/ProductDetails"
 import {createTheme, ThemeProvider} from "@mui/material/styles";
-import {
-    createBrowserRouter,
-    RouterProvider,
-} from "react-router-dom";
-import Landing from "./Components/Landing/Landing";
-import FAQ from "./Components/FAQ/FAQ";
-import ResponsiveDrawer from "./Components/Home/ResposiveDrawerV2";
+// import {
+//     createBrowserRouter,
+//     RouterProvider,
+// } from "react-router-dom";
+// import Landing from "./Components/Landing/Landing";
+// import FAQ from "./Components/FAQ/FAQ";
+// import ResponsiveDrawer from "./Components/Home/ResposiveDrawerV2";
 
 
 const theme = createTheme({

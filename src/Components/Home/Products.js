@@ -18,7 +18,8 @@ const styles = theme => ({
 });
 
 export const Products = props => {
-    const {classes, filters, setFilters, selected, setSelected} = props;
+    // const {classes, filters, setFilters, selected, setSelected} = props;
+    const {classes, filters,  selected, setSelected} = props;
 
     let prods = products.filter(p => {
         if (filters.system === 0){
