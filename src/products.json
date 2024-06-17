@@ -178,13 +178,13 @@
     "disabled": false,
     "resourceType": "sys",
     "maintainer": "PDN",
-    "name": "Sistema de Declaración Patrimonial y de Intereses",
+    "name": "Sistema de Declaración Patrimonial y de Intereses v2.0.0",
     "systems": [
       1
     ],
     "abstract": "Código, manuales y otros recursos para que las instituciones pongan en marcha el sistema para capturar declaraciones patrimoniales y de intereses.",
     "description": "Sistema de Información diseñado por el Equipo de la Plataforma Digital Nacional para la presentación de Declaraciones Patrimoniales y de Intereses de los Servidores Públicos. Desarrollado usando tecnologías y estándares abiertos que facilitan la interoperabilidad con la Plataforma Digital Nacional.",
-    "cover": "https://raw.githubusercontent.com/PDNMX/assets/master/mda/default_pdn_cover.png",
+    "cover": "https://github.com/PDNMX/assets/raw/master/mda/mda_herramienta_s1_v2.png",
     "screenshots": [
       "https://github.com/PDNMX/assets/raw/master/mda/sistema_declaraciones/scr1.png",
       "https://github.com/PDNMX/assets/raw/master/mda/sistema_declaraciones/scr2.png",
