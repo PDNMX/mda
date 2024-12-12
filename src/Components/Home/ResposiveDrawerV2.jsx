@@ -26,21 +26,20 @@ import {withStyles} from "@mui/styles";
 import BarraFea from "./BarraFea";
 import Link from "@mui/material/Link";
 import PDN from "../../Assets/logo_pdn.svg";
-import {NavLink, Outlet} from "react-router-dom";
+import {NavLink, Outlet, useLocation} from "react-router-dom";
 
 const drawerWidth = 240;
 
 const styles = theme => ({
     divider: {
-        margin: `${theme.spacing(1)}px 0`, // Margen vertical reducido
-        // ...otros estilos que puedas necesitar...
-      },
+        margin: `${theme.spacing(1)}px 0`,
+    },
     pdnLogo: {
         maxWidth: 100
     },
     icon: {
         color: '#6D4061',
-        fontSize: '1.2rem', // Reduce el tamaño de los iconos
+        fontSize: '1.2rem',
     },
     toolbar1: {
         background: theme.palette.background.opaque,
@@ -51,18 +50,34 @@ const styles = theme => ({
 function ResponsiveDrawer(props) {
     const {window, classes} = props;
     const [mobileOpen, setMobileOpen] = React.useState(false);
+    const location = useLocation();
 
-    const handleDrawerToggle = () => {
-        setMobileOpen(!mobileOpen);
+    // Use location.pathname to set initial option
+    const getInitialOption = () => {
+        const path = location.pathname.split('/')[1];
+        switch(path) {
+            case 'bienvenida': return 0;
+            case 'inicio': return 1;
+            case 'FAQ': return 2;
+            case 'terminos': return 3;
+            case 'all': return 4;
+            case 'S1': return 5;
+            case 'S2': return 6;
+            case 'S3': return 7;
+            case 'S6': return 8;
+            default: return 0;
+        }
     };
 
-    const [option, setOption] = React.useState(0);
+    const [option, setOption] = React.useState(getInitialOption());
     const [filters, setFilters] = React.useState({
         system: 0,
         resourceType: "all"
     });
 
-    const [setSelected] = React.useState(null);
+    const handleDrawerToggle = () => {
+        setMobileOpen(!mobileOpen);
+    };
 
     const handleDrawerClick = (system, option) => {
         setOption(option);
@@ -70,8 +85,23 @@ function ResponsiveDrawer(props) {
             ...filters,
             system: system
         });
-        setSelected(null);
-    }
+        setMobileOpen(false); // Close drawer on mobile after selection
+    };
+
+    const CustomNavLink = React.forwardRef(({ to, children, ...props }, ref) => (
+        <NavLink
+            ref={ref}
+            to={to}
+            {...props}
+            style={({ isActive }) => ({
+                textDecoration: 'none',
+                color: 'inherit',
+                backgroundColor: isActive ? 'rgba(109, 64, 97, 0.08)' : 'transparent'
+            })}
+        >
+            {children}
+        </NavLink>
+    ));
 
     const drawer = (
         <div>
@@ -163,6 +193,7 @@ function ResponsiveDrawer(props) {
                 </ListItemButton>
 
             </List>
+
         </div>
     );
 
@@ -171,6 +202,7 @@ function ResponsiveDrawer(props) {
     return (
         <Box sx={{display: 'flex'}}>
             <CssBaseline/>
+            {/* Resto del código del AppBar y estructura principal */}
             <AppBar
                 position="fixed"
                 sx={{
@@ -178,10 +210,7 @@ function ResponsiveDrawer(props) {
                     height: '80px',
                 }}
             >
-                {/* Mostrar en desktop */}
                 <Toolbar className={classes.toolbar1}>
-                    {/*<div style={{flexGrow: 1}}/>*/}
-
                     <IconButton
                         color="inherit"
                         aria-label="open drawer"
@@ -198,37 +227,20 @@ function ResponsiveDrawer(props) {
                         <img src={PDN} alt="PDN" className={classes.pdnLogo}/>
                     </Link>
                 </Toolbar>
-
-                {/* Mostrar en movil */}
-                {/*
-                <Toolbar className={classes.toolbar3} sx={{display: { sm:'none'}}}>
-                    <IconButton
-                        color="inherit"f
-                        aria-label="open drawer"
-                        edge="start"
-                        onClick={handleDrawerToggle}
-                        sx={{ mr: 2, display: { sm: 'none' } }}
-                    >
-                        <MenuIcon />
-                    </IconButton>
-                    <Typography variant="h6" noWrap component="div">
-                        Mercado Digital Anticorrupción
-                    </Typography>
-                </Toolbar>*/}
             </AppBar>
+
             <Box
                 component="nav"
                 sx={{width: {sm: drawerWidth}, flexShrink: {sm: 0}}}
                 aria-label="mailbox folders"
             >
-                {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
                 <Drawer
                     container={container}
                     variant="temporary"
                     open={mobileOpen}
                     onClose={handleDrawerToggle}
                     ModalProps={{
-                        keepMounted: true, // Better open performance on mobile.
+                        keepMounted: true,
                     }}
                     sx={{
                         display: {xs: 'block', sm: 'none'},
@@ -250,9 +262,9 @@ function ResponsiveDrawer(props) {
                             boxSizing: 'border-box',
                             width: drawerWidth,
                             color: '#57585A',
-                            background: "#f1e9f2", 
+                            background: "#f1e9f2",
                             marginTop: '80px',
-                            height: `calc(100% - 80px)`, // Ajusta la altura considerando el marginTop
+                            height: `calc(100% - 80px)`,
                         },
                     }}
                     open
@@ -264,35 +276,21 @@ function ResponsiveDrawer(props) {
             <Box
                 component="main"
                 sx={{
-                    flexGrow: 1, p: 3, paddingTop: 5, width: {sm: `calc(100% - ${drawerWidth}px)`},
+                    flexGrow: 1,
+                    p: 3,
+                    paddingTop: 5,
+                    width: {sm: `calc(100% - ${drawerWidth}px)`},
                     color: '#f2f2f2'
                 }}
             >
                 <Toolbar/>
-
-
-                <Outlet>
-
-                    {/*<DrawerContents
-                        option={option}
-                        filters={filters}
-                        setFilters={setFilters}
-                        selected={selected}
-                        setSelected={setSelected}
-                    />*/}
-                </Outlet>
-
+                <Outlet/>
             </Box>
-
         </Box>
     );
 }
 
 ResponsiveDrawer.propTypes = {
-    /**
-     * Injected by the documentation to work in an iframe.
-     * You won't need it on your project.
-     */
     window: PropTypes.func,
 };
 
