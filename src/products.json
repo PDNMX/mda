@@ -499,11 +499,11 @@
     "id": "24",
     "resourceType": "doc",
     "maintainer": "PDN",
-    "name": "Manual de instalación y depsliegue de la herramienta de captura del S3",
+    "name": "Manual de instalación y despliegue de la herramienta de captura del S3",
     "systems": [
       3
     ],
-    "abstract": "Manual de instalación y depsliegue de la herramienta de captura del S3",
+    "abstract": "Manual de instalación y despliegue de la herramienta de captura del S3",
     "description": "Guía detallada para la instalación y configuración de la herramienta, con el objetivo de garantizar un despliegue correcto en entornos locales o en servidores de producción. Se incluyen las instrucciones necesarias para que los usuarios puedan configurar las variables de entorno, importar catálogos de información y garantizar el correcto funcionamiento de la herramienta, acorde a los estándares de seguridad y operatividad del Sistema 3.",
     "cover": "/s3-herramienta-captura.png",
     "screenshots": [],
