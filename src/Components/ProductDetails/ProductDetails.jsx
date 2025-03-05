@@ -18,13 +18,20 @@ const styles = theme => ({
         paddingBottom: theme.spacing(4),
         minHeight: 700
     },
-    screenshot:{
-        borderStyle: "solid",
+    screenshot: {
         borderWidth: 1,
         borderRadius: 2,
         maxWidth: 380,
-        [theme.breakpoints.down("sm")]:{
-            width: "100%"
+        width: "100%",
+        height: "auto",
+        objectFit: "contain",
+        display: "block",
+        background: "white",
+        margin: "0 auto",
+        aspectRatio: "16/9",
+        [theme.breakpoints.down("sm")]: {
+          width: "100%",
+          maxWidth: "100%"
         }
     },
     icon: {

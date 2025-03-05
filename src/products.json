@@ -447,25 +447,22 @@
       6
     ],
     "abstract": "Permite la captura y visualización de información de los procedimientos de contratación conforme al Estándar de Datos de Contrataciones Abiertas",
-    "description": "Contrataciones Abiertas se compone de dos módulos principales: 1) la vista pública o dashboard, que visualiza los datos registrados a través de gráficos interactivos y permite la descarga de todos los datos en formato JSON; y 2) el sistema de captura, que permite a los usuarios registrar datos y documentos de todas las etapas de los procedimientos de contratación mediante formularios sencillos correspondientes a las etapas de planeación, licitación, adjudicación, contrato y ejecución, en donde es posible capturar cada uno de los atributos contemplados en el Estándar de Datos para las Contrataciones Abiertas (OCDS por sus siglas en inglés). Además, cuenta con formularios secundarios que posibilitan el registro desglosado del presupuesto, documentos, ítems (incluye un mapa para seleccionar la ubicación donde se llevará a cabo la entrega del bien, servicio o ejecución de la obra), hitos, transacciones, entre otros.",
-    "cover": "https://raw.githubusercontent.com/datosabiertosmx/contrataciones-abiertas-infraestructura/master/Im%C3%A1genes/ContratacionesAbiertas.png",
+    "description": "La herramienta Contrataciones Abiertas facilita el registro y publicación de información referente a los procedimientos de contratación pública en México, de acuerdo con el Estándar de Datos para las Contrataciones Abiertas (EDCA-MX). Se compone de dos módulos: el de captura, donde las instituciones pueden registrar información de todas las etapas del procedimiento de contratación a través de formularios sencillos o mediante la carga de datos con ficheros JSON; y el módulo de vista pública, que presenta la información en un dashboard interactivo donde se puede consultar la información y descargarla en formatos abiertos.",
+    "cover": "https://ifai-my.sharepoint.com/personal/lilian_anaya_inai_org_mx/Documents/Documentos/Documentos%20de%20trabajo/Contrataciones%20Abiertas/Contrataciones%20Abiertas%20S6%20MDA.png",
     "screenshots": [
-      "https://raw.githubusercontent.com/datosabiertosmx/contrataciones-abiertas-infraestructura/master/Im%C3%A1genes/Visualizador_p%C3%BAblico_gr%C3%A1ficas.png",
-      "https://raw.githubusercontent.com/datosabiertosmx/contrataciones-abiertas-infraestructura/master/Im%C3%A1genes/Visualizador_p%C3%BAblico_informaci%C3%B3n_de_procedimientos_de_contrataci%C3%B3n.png",
-      "https://raw.githubusercontent.com/datosabiertosmx/contrataciones-abiertas-infraestructura/master/Im%C3%A1genes/M%C3%B3dulo_captura.png",
-      "https://raw.githubusercontent.com/datosabiertosmx/contrataciones-abiertas-infraestructura/master/Im%C3%A1genes/Formularios_secundarios.png"
+      "https://ifai-my.sharepoint.com/personal/lilian_anaya_inai_org_mx/Documents/Documentos/Documentos%20de%20trabajo/Contrataciones%20Abiertas/CA04.jpeg",
+      "https://ifai-my.sharepoint.com/personal/lilian_anaya_inai_org_mx/Documents/Documentos/Documentos%20de%20trabajo/Contrataciones%20Abiertas/CA03.jpeg",
+      "https://ifai-my.sharepoint.com/personal/lilian_anaya_inai_org_mx/Documents/Documentos/Documentos%20de%20trabajo/Contrataciones%20Abiertas/CA01.jpeg",
+      "https://ifai-my.sharepoint.com/personal/lilian_anaya_inai_org_mx/Documents/Documentos/Documentos%20de%20trabajo/Contrataciones%20Abiertas/CA02.jpeg"
     ],
-    "url": "https://github.com/datosabiertosmx/contrataciones-abiertas-infraestructura",
+    "url": " https://github.com/datosabiertosmx/contratacionesabiertas-3.0",
     "contactPoint": {
-      "organization": "Mesa de servicio de Contrataciones Abiertas",
-      "phone": "(55) 5004 2400 ext. 2611, 2126 y 2157",
+      "organization": "Dirección General de Políticas de Acceso del INAI",
+      "phone": "(55) 5004 2400 ext. 2437, 2157 y 2191 ",
       "email": "contratacionesabiertas@inai.org.mx"
     },
     "technologies": [
-      "NodeJS",
-      "NGINX",
-      "PostgreSQL",
-      "MongoDB"
+      "NodeJS", "Ubuntu", "PostgreSQL", "MongoDB" 
     ]
   },
   {
