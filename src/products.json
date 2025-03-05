@@ -448,12 +448,12 @@
     ],
     "abstract": "Permite la captura y visualización de información de los procedimientos de contratación conforme al Estándar de Datos de Contrataciones Abiertas",
     "description": "La herramienta Contrataciones Abiertas facilita el registro y publicación de información referente a los procedimientos de contratación pública en México, de acuerdo con el Estándar de Datos para las Contrataciones Abiertas (EDCA-MX). Se compone de dos módulos: el de captura, donde las instituciones pueden registrar información de todas las etapas del procedimiento de contratación a través de formularios sencillos o mediante la carga de datos con ficheros JSON; y el módulo de vista pública, que presenta la información en un dashboard interactivo donde se puede consultar la información y descargarla en formatos abiertos.",
-    "cover": "https://ifai-my.sharepoint.com/personal/lilian_anaya_inai_org_mx/Documents/Documentos/Documentos%20de%20trabajo/Contrataciones%20Abiertas/Contrataciones%20Abiertas%20S6%20MDA.png",
+    "cover": "https://github.com/PDNMX/assets/raw/8415e31744c6550be5cee93119100e7fac74e06e/mda/INAI/Contrataciones%20Abiertas%20S6%20MDA.png",
     "screenshots": [
-      "https://ifai-my.sharepoint.com/personal/lilian_anaya_inai_org_mx/Documents/Documentos/Documentos%20de%20trabajo/Contrataciones%20Abiertas/CA04.jpeg",
-      "https://ifai-my.sharepoint.com/personal/lilian_anaya_inai_org_mx/Documents/Documentos/Documentos%20de%20trabajo/Contrataciones%20Abiertas/CA03.jpeg",
-      "https://ifai-my.sharepoint.com/personal/lilian_anaya_inai_org_mx/Documents/Documentos/Documentos%20de%20trabajo/Contrataciones%20Abiertas/CA01.jpeg",
-      "https://ifai-my.sharepoint.com/personal/lilian_anaya_inai_org_mx/Documents/Documentos/Documentos%20de%20trabajo/Contrataciones%20Abiertas/CA02.jpeg"
+      "https://github.com/PDNMX/assets/raw/8415e31744c6550be5cee93119100e7fac74e06e/mda/INAI/CA04.jpeg",
+      "https://github.com/PDNMX/assets/raw/8415e31744c6550be5cee93119100e7fac74e06e/mda/INAI/CA03.jpeg",
+      "https://github.com/PDNMX/assets/raw/8415e31744c6550be5cee93119100e7fac74e06e/mda/INAI/CA01.jpeg",
+      "https://github.com/PDNMX/assets/raw/8415e31744c6550be5cee93119100e7fac74e06e/mda/INAI/CA02.jpeg"
     ],
     "url": " https://github.com/datosabiertosmx/contratacionesabiertas-3.0",
     "contactPoint": {
