@@ -34,7 +34,10 @@
     "abstract": "Herramienta de Captura de Información y API de interconexión",
     "description": "Esta herramienta permite a las entidades públicas cargar de manera eficiente información crucial sobre sanciones impuestas a servidores públicos y particulares, asegurando su integración con el resto de los sistemas de la PDN.",
     "cover": "/s3-herramienta-captura.png",
-    "screenshots": ["/s3-herramienta-captura-screenshot1.png", "/s3-herramienta-captura-screenshot2.png"],
+    "screenshots": [
+      "/s3-herramienta-captura-screenshot1.png",
+      "/s3-herramienta-captura-screenshot2.png"
+    ],
     "url": "https://github.com/PDNMX/herramienta-capturador-s3",
     "contactPoint": {
       "organization": "PDN",
@@ -462,7 +465,10 @@
       "email": "contratacionesabiertas@inai.org.mx"
     },
     "technologies": [
-      "NodeJS", "Ubuntu", "PostgreSQL", "MongoDB" 
+      "NodeJS",
+      "Ubuntu",
+      "PostgreSQL",
+      "MongoDB"
     ]
   },
   {
@@ -512,6 +518,40 @@
     },
     "technologies": [
       "Docker"
+    ]
+  },
+  {
+    "id": "26",
+    "resourceType": "sys",
+    "maintainer": "SESNA\\DGRIA",
+    "name": "Generador de Muestras ALEA",
+    "systems": [
+      1
+    ],
+    "abstract": "Herramienta para generar muestras aleatorias auditables en procesos de verificación patrimonial. Cuenta con versión web https://alea.sesna.gob.mx/.",
+    "description": "ALEA es un sistema web de la SESNA para apoyar la selección aleatoria de personas servidoras públicas sujetas a verificación patrimonial. Permite cargar el universo, definir el tamaño de la muestra y generar selecciones con elementos de trazabilidad. Está disponible en https://alea.sesna.gob.mx/ y cuenta con código fuente para su consulta, reutilización y adaptación institucional.",
+    "cover": "https://raw.githubusercontent.com/DGRIA2026/imagenes/main/AlenaPortada.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/DGRIA2026/imagenes/main/login.png",
+      "https://raw.githubusercontent.com/DGRIA2026/imagenes/main/carga.png",
+      "https://raw.githubusercontent.com/DGRIA2026/imagenes/main/resultadosAlea.png"
+    ],
+    "url": "https://github.com/DGRIA2026/ALEA-Generador-de-Muestras",
+    "contactPoint": {
+      "organization": "Secretaría Ejecutiva del Sistema Nacional Anticorrupción, a través de la Dirección General de Riesgos e Inteligencia Anticorrupción",
+      "phone": "N/A",
+      "email": "inteligencia@sesna.gob.mx"
+    },
+    "technologies": [
+      "React 19",
+      "Vite",
+      "MUI",
+      "Tailwind",
+      "NestJS",
+      "TypeORM",
+      "PostgreSQL 16",
+      "JWT Bearer",
+      "SMTP"
     ]
   }
 ]
